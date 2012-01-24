@@ -1,0 +1,12 @@
+# source ~/.nvm/nvm.sh # Load NVM function
+
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+
+export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/bin:$PATH
+
+# href of haskell tool
+HREF_DATADIR=/usr/share/href
+export HREF_DATADIR
+

@@ -1,0 +1,6 @@
+# git .completions
+source ~/.git-completion.bash
+GIT_PS1_SHOWDIRTYSTATE=true
+
+# npm competion
+# . <(npm completion)

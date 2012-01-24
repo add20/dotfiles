@@ -1,0 +1,2 @@
+# for MacOS Lion
+export CC=gcc-4.2

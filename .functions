@@ -1,0 +1,37 @@
+# Create a new directory and enter it
+function md() {
+  mkdir -p "$@" && cd "$@"
+}
+
+# cat files with filename and line number
+function file()
+{
+  for filename in $*
+  do
+    echo $filename
+    cat -n $filename
+    echo # new line
+  done
+  unset filename
+}
+
+# for TitaniumStudio
+function link.new()
+{
+  target_dir=$(cat ./target)
+  for filename in $*
+  do
+    ln -s "$PWD/$filename" "$target_dir"
+  done
+  unset target_dir filename
+}
+function link.del()
+{
+  target_dir=$(cat ./target)
+  for filename in $*
+  do
+    rm "$target_dir/$filename"
+  done
+  unset target_dir filename
+}
+
