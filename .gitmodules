@@ -1,12 +1,12 @@
 [submodule ".vim/bundle/vimdoc-ja"]
 	path = .vim/bundle/vimdoc-ja
-	url = git://github.com/vim-jp/vimdoc-ja.git
+	url = https://github.com/vim-jp/vimdoc-ja.git
 [submodule ".vim/bundle/vim-javascript"]
 	path = .vim/bundle/vim-javascript
-	url = git://github.com/pangloss/vim-javascript.git
+	url = https://github.com/pangloss/vim-javascript.git
 [submodule ".vim/bundle/vim-rails"]
 	path = .vim/bundle/vim-rails
-	url = git://github.com/tpope/vim-rails.git
+	url = https://github.com/tpope/vim-rails.git
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -36,7 +36,7 @@
 	url = https://github.com/digitaltoad/vim-jade.git
 [submodule ".vim/bundle/snipmate"]
 	path = .vim/bundle/snipmate
-	url = https://add20@github.com/add20/snipmate.vim.git
+	url = https://github.com/add20/snipmate.vim.git
 [submodule ".vim/bundle/vim-conque"]
 	path = .vim/bundle/vim-conque
-	url = https://add20@github.com/add20/vim-conque.git
+	url = https://github.com/add20/vim-conque.git
