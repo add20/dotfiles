@@ -14,7 +14,7 @@ syntax on
 let $JS_CMD='node'
 " To disable error highlighting altogether
 " if you want to highlight line comment out bolow
-let g:JSLintHighlightErrorLine = 0 
+let g:JSLintHighlightErrorLine = 0
 filetype plugin on
 
 " au BufNewFile,BufRead *.ejs set filetype=html
