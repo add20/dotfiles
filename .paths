@@ -7,3 +7,6 @@
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
+
+# for MacOS
+# export CC=gcc-4.2
