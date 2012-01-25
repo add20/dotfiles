@@ -4,6 +4,7 @@ git pull
 git submodule update --init .vim/bundle/*
 function doIt() {
   ./gitconfig.sh
+  ./vim-pathogen.sh
   rsync --exclude ".git/" \
     --exclude "bootstrap.sh" \
     --exclude "gitconfig.sh" \
