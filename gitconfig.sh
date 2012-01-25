@@ -1,5 +1,7 @@
+echo "Start setting of Git"
+
 if [ -s ~/.gitconfig ]; then
-  echo "既に'~/.gitconfig'ファイルが存在するため、何もせずに終了します。"
+  echo "Because there is a '~/.gitconfig' file already exits without doing anything."
   exit
 fi
 

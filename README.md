@@ -1,4 +1,7 @@
+
 # add20’s dotfiles
+
+I referred to `.bash_profile`, `bootstraph.sh` and `README.md` in [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
 
 ## Installation
 
@@ -20,6 +23,12 @@ Alternatively, to update while avoiding the confirmation prompt:
 ./bootstrap.sh -f
 ```
 
+```bash
+Start setting of Git
+Your Name: "enter your name"
+Your email: "enter your email"
+```
+
 ### Git-free install
 
 To install these dotfiles without Git:
@@ -30,19 +39,25 @@ cd; curl -#L https://github.com/mathiasbynens/dotfiles/tarball/master | tar -xzv
 
 To update later on, just run that command again.
 
-### Sensible OS X defaults
+## Vim bundles
 
-When setting up a new Mac, you may want to set some sensible OS X defaults:
+* nerdcommenter
+* nerdtree
+* snipmate
+* vim-coffee
+* vim-conque-
+* vim-jade
+* vim-javascript
+* vim-jst
+* vim-matchit
+* vim-rails
+* vim-ruby
+* vim-surround
+* vimdoc-ja
+* zencoding-vim
 
-```bash
-./.osx
-```
 
 ## Feedback
 
 Suggestions/improvements
 [welcome](https://github.com/add20/dotfiles/issues)!
-
-## Else
-
-I referred to `bootstraph.sh` and `README.md` in [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)

@@ -1,12 +1,12 @@
 # git .completions
 if [ ! -e ~/.git-completion.bash ]; then
   url="https://raw.github.com/git/git/master/contrib/completion/git-completion.bash"
-  echo "$url を取得しています。"
+  echo "getting the $url"
   curl "$url" > ~/.git-completion.bash
 fi
 unset url
 source ~/.git-completion.bash
 GIT_PS1_SHOWDIRTYSTATE=true
 
-# npm competion
+# npm completion
 # . <(npm completion)
