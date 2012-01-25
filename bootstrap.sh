@@ -3,12 +3,12 @@ cd "$(dirname "$0")"
 git pull
 git submodule update --init .vim/bundle/*
 function doIt() {
-	rsync --exclude ".git/" \
-        --exclude "bootstrap.sh" \
-        --exclude "setup.rb" \
-        --exclude "README.md" \
-        --exclude "*.erb" \
-        -av . ~
+  ./gitconfig.sh
+  rsync --exclude ".git/" \
+    --exclude "bootstrap.sh" \
+    --exclude "gitconfig.sh" \
+    --exclude "README.md" \
+    -av . ~
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt
