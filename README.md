@@ -8,12 +8,6 @@
 git clone https://github.com/add20/dotfiles.git && cd dotfiles && ./bootstrap.sh
 ```
 
-To setup, `cd` into your local `dotfiles` repository and then:
-
-```bash
-./setup.rb
-```
-
 To update, `cd` into your local `dotfiles` repository and then:
 
 ```bash
