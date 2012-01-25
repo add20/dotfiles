@@ -1,6 +1,12 @@
-GIT_AUTHOR_NAME=""
+if [ -s ~/.gitconfig ]; then
+  echo "既に'~/.gitconfig'ファイルが存在するため、何もせずに終了します。"
+  exit
+fi
+
+echo -n "Your Name: "; read  GIT_AUTHOR_NAME
+echo -n "Your email: "; read  GIT_AUTHOR_EMAIL
+
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL=""
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 
 # user
@@ -11,9 +17,9 @@ git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
-git config --global alias.unstage reset HEAD --
-git config --global alias.last log -1 -p HEAD
-git config --global alias.stash-unapply !git stash show -p | git apply -R
+git config --global alias.unstage "reset HEAD --"
+git config --global alias.last "log -1 -p HEAD"
+git config --global alias.stash-unapply "!git stash show -p | git apply -R"
 # color
 git config --global color.ui auto
 # core

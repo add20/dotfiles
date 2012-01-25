@@ -3,10 +3,10 @@ cd "$(dirname "$0")"
 git pull
 git submodule update --init .vim/bundle/*
 function doIt() {
-  ./initialize.sh
+  ./gitconfig.sh
   rsync --exclude ".git/" \
     --exclude "bootstrap.sh" \
-    --exclude "initialize.sh" \
+    --exclude "gitconfig.sh" \
     --exclude "README.md" \
     -av . ~
 }
