@@ -1,3 +1,4 @@
+
 # add20’s dotfiles
 
 ## Installation
@@ -28,15 +29,31 @@ To install these dotfiles without Git:
 cd; curl -#L https://github.com/mathiasbynens/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh}
 ```
 
+```bash
+Start setting of Git
+Your Name: "enter your name"
+Your email: "enter your email"
+```
+
 To update later on, just run that command again.
 
-### Sensible OS X defaults
+## Vim bundles
 
-When setting up a new Mac, you may want to set some sensible OS X defaults:
+* nerdcommenter
+* nerdtree
+* snipmate
+* vim-coffee
+* vim-conque-
+* vim-jade
+* vim-javascript
+* vim-jst
+* vim-matchit
+* vim-rails
+* vim-ruby
+* vim-surround
+* vimdoc-ja
+* zencoding-vim
 
-```bash
-./.osx
-```
 
 ## Feedback
 
