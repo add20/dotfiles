@@ -1,2 +1,8 @@
 mkdir -p .vim/autoload .vim/bundle
-curl -o .vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
+
+url=https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
+
+echo "getting the $url"
+curl -o .vim/autoload/pathogen.vim "$url"
+
+unset url

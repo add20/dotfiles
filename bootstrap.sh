@@ -8,6 +8,7 @@ function doIt() {
   rsync --exclude ".git/" \
     --exclude "bootstrap.sh" \
     --exclude "gitconfig.sh" \
+    --exclude "vim-pathogen.sh" \
     --exclude "README.md" \
     -av . ~
 }
