@@ -4,12 +4,14 @@ alias ...="cd ../.."
 
 # ls
 alias ls="ls -G"
+alias lf="ls -F"
 alias ll="ls -l"
 alias la="ls -la"
 
 alias df="df -h"
 alias du="du -h"
 
+alias j="jobs -l"
 alias where="command -v"
 
 alias rspec="rspec -c -fd"
