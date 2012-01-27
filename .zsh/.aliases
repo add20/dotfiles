@@ -1,1 +1,6 @@
 alias reload="source ~/.zshrc"
+
+alias -s bz2='tar vvtf'
+alias -s gz='tar vvtzf'
+alias -s tgz='tar vvtzf'
+alias -s zip=zipinfo
