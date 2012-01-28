@@ -6,12 +6,16 @@ source ~/.common/.paths
 source ~/.zsh/.aliases
 source ~/.zsh/.prompt
 
+autoload zed
+
+fpath=(~/.zsh/functions ${fpath})
 autoload -U compinit
 compinit
 
+### HISTORY ###
 HISTFILE=~/.zsh_history
-HISTSIZE=10000 # メモリに保存される履歴の件数。(保存数だけ履歴を検索できる)
-SAVEHIST=10000 # HISTFILE で指定したファイルに保存される履歴の件数。
+HISTSIZE=50000 # メモリに保存される履歴の件数。(保存数だけ履歴を検索できる)
+SAVEHIST=50000 # HISTFILE で指定したファイルに保存される履歴の件数。
 setopt hist_ignore_dups # ignore duplication command history list
 setopt share_history    # share command history data
 
@@ -22,6 +26,8 @@ setopt correct
 setopt nolistbeep
 setopt noautoremoveslash
 setopt complete_aliases
+
+zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' '+m:{A-Z}={a-z}'
 
 autoload predict-on
 predict-on

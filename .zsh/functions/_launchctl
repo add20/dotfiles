@@ -1,0 +1,17 @@
+#compdef date
+
+local args
+
+case "$OSTYPE" in
+  darwin*)
+    args=(
+'start[start]'
+'stop[stop]'
+'load[load]'
+'unload[unload]'
+    )
+  ;;
+esac
+
+_arguments \
+  "$args[@]"
