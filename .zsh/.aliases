@@ -4,3 +4,12 @@ alias -s bz2='tar vvtf'
 alias -s gz='tar vvtzf'
 alias -s tgz='tar vvtzf'
 alias -s zip=zipinfo
+
+case "${OSTYPE}" in
+freebsd*|darwin*)
+  alias ls="ls -G -w"
+  ;;
+linux*)
+  alias ls="ls --color"
+  ;;
+esac

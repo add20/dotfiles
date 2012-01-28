@@ -3,6 +3,7 @@ source ~/.common/.exports
 source ~/.common/.functions
 source ~/.common/.paths
 
+source ~/.zsh/.aliases
 source ~/.zsh/.prompt
 
 autoload -U compinit
