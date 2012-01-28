@@ -1,7 +1,10 @@
-PS1="%B%2~%b %F{blue}%#%f "
+autoload colors
+colors
+
+PS1="%B%2~%b %{${fg[blue]}%}%#%f%{$reset_color%} "
 # When remote login
 [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
-  PROMPT="%F{blue}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]')%f ${PS1}"
+  PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]')%{$reset_colors%} ${PROMPT}"
 
 ### Git Setting ###
 autoload -Uz add-zsh-hook
@@ -28,4 +31,4 @@ function _update_vcs_info_msg() {
 }
 add-zsh-hook precmd _update_vcs_info_msg
 
-RPROMPT="%F{green}%1(v.%1v.)%f"
+RPROMPT="%{${fg[green]}%}%1(v.%1v.)%{$reset_color%}"
