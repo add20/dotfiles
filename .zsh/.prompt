@@ -1,4 +1,7 @@
 PS1="%B%2~%b %F{blue}%#%f "
+# When remote login
+[ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
+  PROMPT="%F{blue}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]')%f ${PS1}"
 
 ### Git Setting ###
 autoload -Uz add-zsh-hook
