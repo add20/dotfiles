@@ -19,7 +19,7 @@ setopt auto_pushd
 setopt correct
 # setopt list_packed # 補完候補を詰めて表示
 setopt nolistbeep
-setopt noautorejoveslash
+setopt noautoremoveslash
 setopt complete_aliases
 
 autoload predict-on
