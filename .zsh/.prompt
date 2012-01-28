@@ -1,10 +1,10 @@
 autoload colors
 colors
 
-PS1="%B%2~%b %{${fg[blue]}%}%#%f%{$reset_color%} "
+PS1="%B%2~%b %{${fg[blue]}%}%#%{$reset_color%} "
 # When remote login
 [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
-  PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]')%{$reset_colors%} ${PROMPT}"
+  PS1="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]')%{$reset_colors%} ${PS1}"
 
 ### Git Setting ###
 autoload -Uz add-zsh-hook
