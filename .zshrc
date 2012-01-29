@@ -12,6 +12,11 @@ fpath=(~/.zsh/functions ${fpath})
 autoload -U compinit
 compinit
 
+bindkey '^p' history-beginning-search-backward
+bindkey '^n' history-beginning-search-forward
+bindkey -s '^[L' "^E|less^M"
+bindkey -s '^[G' "^E| grep "
+
 setopt auto_cd
 setopt auto_pushd
 setopt correct
