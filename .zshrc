@@ -31,6 +31,7 @@ setopt extended_glob
 #   0 9 A B C D E F G H I J K L M a b c d e f
 
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' '+m:{A-Z}={a-z}'
+zstyle ':completion:*:(processes|jobs)' menu yes select=2
 
 autoload predict-on
 predict-on
