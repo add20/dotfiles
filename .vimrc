@@ -1,14 +1,77 @@
 set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+set autoread " 他で書き換えられたら自動で読み直す
+set formatoptions=lmoq " テキスト整形オプション，マルチバイト系を追加
+
+
+" 挿入モードでCtrl+kを押すとクリップボードの内容を貼り付けられるようにする "
+imap <C-K>  <ESC>"*pa
 
 set clipboard+=unnamed
 set clipboard+=autoselect
 set number
 
+set ignorecase
+set smartcase
+
 call pathogen#infect()
 syntax on
+"------------------------------------
+" MiniBufExplorer
+"------------------------------------
+"set minibfexp
+let g:miniBufExplMapWindowNavVim=1 "hjklで移動
+let g:miniBufExplSplitBelow=0  " Put new window above
+let g:miniBufExplMapWindowNavArrows=1
+let g:miniBufExplMapCTabSwitchBufs=1
+let g:miniBufExplModSelTarget=1
+let g:miniBufExplSplitToEdge=1
+let g:miniBufExplMaxSize = 10
+
+":TmでMiniBufExplorerの表示トグル
+command! Mt :TMiniBufExplorer
+
+" :Gb <args> でGrepBufferする
+command! -nargs=1 Gb :GrepBuffer <args>
+" カーソル下の単語をGrepBufferする
+nnoremap <C-g><C-b> :<C-u>GrepBuffer<Space><C-r><C-w><Enter>
+
+" 保存時に行末の空白を除去する
+autocmd BufWritePre * :%s/\s\+$//ge
+
+"Escの2回押しでハイライト消去
+nmap <ESC><ESC> ;nohlsearch<CR><ESC>
+
+" insert mode での移動
+imap  <C-e> <END>
+imap  <C-a> <HOME>
+" インサートモードでもhjklで移動（Ctrl押すけどね）
+imap <C-j> <Down>
+imap <C-k> <Up>
+imap <C-h> <Left>
+imap <C-l> <Right>
+
+" カーソル位置の単語をyankする
+nnoremap vy vawy
+
+"ビジュアルモード時vで行末まで選択
+vnoremap v $h
+
+"
+" 括弧を自動補完
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+inoremap ( ()<LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+vnoremap { "zdi^V{<C-R>z}<ESC>
+vnoremap [ "zdi^V[<C-R>z]<ESC>
+vnoremap ( "zdi^V(<C-R>z)<ESC>
+vnoremap " "zdi^V"<C-R>z^V"<ESC>
+vnoremap ' "zdi'<C-R>z'<ESC>
 
 " Use Node.js for JavaScript interpretation
 let $JS_CMD='node'
