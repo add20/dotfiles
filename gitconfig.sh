@@ -27,3 +27,6 @@ git config --global color.ui auto
 # core
 git config --global core.excludesfile ~/.gitignore
 
+echo '[tig "bind"]
+  generic = g move-first-line
+  generic = G move-last-line' >> ~/.gitconfig
