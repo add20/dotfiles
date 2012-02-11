@@ -1,0 +1,38 @@
+# navigation
+alias ..="cd .."
+alias ...="cd ../.."
+
+# ls
+alias ls="ls -G"
+alias lf="ls -F"
+alias ll="ls -l"
+alias la="ls -la"
+
+alias df="df -h"
+alias du="du -h"
+
+alias j="jobs -l"
+alias where="command -v"
+
+alias rspec="rspec -c -fd"
+
+# Shortcuts
+alias g="git"
+alias v="vim"
+alias m="mate"
+
+# git-flow
+alias gffe="git flow feature"
+alias gfho="git flow hotfix"
+alias gfre="git flow release"
+alias gfsu="git flow support"
+
+# rails
+alias rmo="rails generate model"
+alias rmi="rails generate migration"
+alias rc="rails generate controller"
+alias rs="rails generate scaffold"
+
+# TitaniumStadio
+alias tsi="/Library/Application\ Support/Titanium/mobilesdk/osx/1.8.0.1/iphone/builder.py"
+alias tsa="/Library/Application\ Support/Titanium/mobilesdk/osx/1.8.0.1/android/builder.py"
