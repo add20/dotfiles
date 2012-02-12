@@ -17,6 +17,9 @@ set number
 set ignorecase
 set smartcase
 
+" Command-t
+nmap <C-T> <ESC>:CommandT<Enter>
+
 call pathogen#infect()
 syntax on
 "------------------------------------
@@ -49,10 +52,10 @@ nmap <ESC><ESC> ;nohlsearch<CR><ESC>
 imap  <C-e> <END>
 imap  <C-a> <HOME>
 " インサートモードでもhjklで移動（Ctrl押すけどね）
-imap <C-j> <Down>
-imap <C-k> <Up>
-imap <C-h> <Left>
-imap <C-l> <Right>
+imap <C-n> <Down>
+imap <C-p> <Up>
+imap <C-b> <Left>
+imap <C-f> <Right>
 
 " カーソル位置の単語をyankする
 nnoremap vy vawy
