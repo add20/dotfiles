@@ -18,7 +18,10 @@ set ignorecase
 set smartcase
 
 " Command-t
-nmap <C-T> <ESC>:CommandT<Enter>
+nmap ,t <ESC>:CommandT<CR>
+nmap ,b <ESC>:CommandTBuffer<CR>
+let g:CommandTMaxHeight=15
+set wildignore+=*~,*.png,*.gif
 
 call pathogen#infect()
 syntax on
