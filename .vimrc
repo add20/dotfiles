@@ -44,6 +44,7 @@ command! Mt :TMiniBufExplorer
 command! -nargs=1 Gb :GrepBuffer <args>
 " カーソル下の単語をGrepBufferする
 nnoremap <C-g><C-b> :<C-u>GrepBuffer<Space><C-r><C-w><Enter>
+nmap ,g <ESC>:Gb
 
 " 保存時に行末の空白を除去する
 autocmd BufWritePre * :%s/\s\+$//ge
