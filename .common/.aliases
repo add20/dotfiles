@@ -27,6 +27,9 @@ alias gfho="git flow hotfix"
 alias gfre="git flow release"
 alias gfsu="git flow support"
 
+# DB
+alias odb="open -a /Applications/SQLite\ Database\ Browser\ 2.0\ b1.app"
+
 # rails
 alias rmo="rails generate model"
 alias rmi="rails generate migration"
