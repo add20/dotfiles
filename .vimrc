@@ -1,11 +1,16 @@
 set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 
+au BufNewFile,BufRead *.javascript set set nowrap tabstop=4 shiftwidth=4
+au BufNewFile,BufRead *.php set set nowrap tabstop=4 shiftwidth=4
+
+set nocompatible                 " Vimっす。vi互換なしっす。
+set textwidth=0                  " 一行に長い文章を書いていても自動折り返しをしない
 set autoread " 他で書き換えられたら自動で読み直す
 set formatoptions=lmoq " テキスト整形オプション，マルチバイト系を追加
-
+set backspace=indent,eol,start   " バックスペースでなんでも消せるように
 
 " 挿入モードでCtrl+kを押すとクリップボードの内容を貼り付けられるようにする "
 imap <C-K>  <ESC>"*pa
@@ -71,7 +76,7 @@ vnoremap v $h
 " 括弧を自動補完
 inoremap { {}<LEFT>
 inoremap [ []<LEFT>
-inoremap ( ()<LEFT>
+" inoremap ( ()<LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
 vnoremap { "zdi^V{<C-R>z}<ESC>
