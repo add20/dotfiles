@@ -11,6 +11,7 @@ set textwidth=0                  " 一行に長い文章を書いていても自
 set autoread " 他で書き換えられたら自動で読み直す
 set formatoptions=lmoq " テキスト整形オプション，マルチバイト系を追加
 set backspace=indent,eol,start   " バックスペースでなんでも消せるように
+set nowrap
 
 " 挿入モードでCtrl+kを押すとクリップボードの内容を貼り付けられるようにする "
 imap <C-K>  <ESC>"*pa
