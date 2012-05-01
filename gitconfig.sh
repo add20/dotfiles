@@ -26,6 +26,9 @@ git config --global alias.stash-unapply "!git stash show -p | git apply -R"
 git config --global color.ui auto
 # core
 git config --global core.excludesfile ~/.gitignore
+# grep
+git config --global grep.lineNumber true
+git config --global alias.g "grep --break --heading --line-number"
 
 echo '[tig "bind"]
   generic = g move-first-line
