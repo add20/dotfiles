@@ -1,4 +1,11 @@
 .DS_Store
 *~
 *.swp
+*.swo
+*.o
+*.db
+*.sqlite3
+.env
 node_modules/
+.svn/
+target/
