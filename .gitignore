@@ -4,6 +4,7 @@
 *.swo
 *.o
 *.db
+*.class
 *.sqlite3
 .env
 node_modules/
