@@ -57,7 +57,9 @@ nmap ,g <ESC>:Gb
 autocmd BufWritePre * :%s/\s\+$//ge
 
 " 保存時にtabをスペースに変換する
-autocmd BufWritePre * :%s/\t/ /ge
+if expand("%") != "Makefile"
+  autocmd BufWritePre * :%s/\t/ /ge
+endif
 
 "Escの2回押しでハイライト消去
 nmap <ESC><ESC> ;nohlsearch<CR><ESC>
