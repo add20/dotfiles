@@ -20,6 +20,9 @@ NeoBundle 'Shougo/vimproc'
 " Original repos on github
 " vimdoc 日本語
 NeoBundle 'vim-jp/vimdoc-ja'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'h1mesuke/unite-outline'
+NeoBundle 'tsukkee/unite-help'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'scrooloose/nerdcommenter'
@@ -34,7 +37,6 @@ NeoBundle 'add20/snipmate.vim'
 NeoBundle 'add20/vim-conque'
 NeoBundle 'vim-scripts/grep.vim'
 NeoBundle 'mortice/taglist.vim'
-NeoBundle 'wincent/Command-T'
 
 " NeoBundle 'tpope/vim-fugitive'
 " NeoBundle 'Lokaltog/vim-easymotion'
