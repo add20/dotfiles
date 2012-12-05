@@ -1,5 +1,5 @@
 # Load NVM function
-# source ~/.nvm/nvm.sh
+# source ~/dotfiles/.nvm/nvm.sh
 
 # Load RVM function
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"

@@ -1,9 +1,9 @@
-source ~/.common/.aliases
-source ~/.common/.exports
-source ~/.common/.functions
-source ~/.common/.paths
+source ~/dotfiles/.common/.aliases
+source ~/dotfiles/.common/.exports
+source ~/dotfiles/.common/.functions
+source ~/dotfiles/.common/.paths
 
-for file in ~/.bash/.{aliases,prompt,extra}; do
+for file in ~/dotfiles/.bash/.{aliases,prompt,extra}; do
   [ -r "$file" ] && source "$file"
 done
 unset file

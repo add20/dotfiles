@@ -1,14 +1,14 @@
-source ~/.common/.aliases
-source ~/.common/.exports
-source ~/.common/.functions
-source ~/.common/.paths
+source ~/dotfiles/.common/.aliases
+source ~/dotfiles/.common/.exports
+source ~/dotfiles/.common/.functions
+source ~/dotfiles/.common/.paths
 
-source ~/.zsh/.aliases
-source ~/.zsh/.prompt
+source ~/dotfiles/.zsh/.aliases
+source ~/dotfiles/.zsh/.prompt
 
 autoload zed
 
-fpath=(~/.zsh/functions ${fpath})
+fpath=(~/dotfiles/.zsh/functions ${fpath})
 autoload -U compinit
 compinit
 
