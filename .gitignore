@@ -9,6 +9,8 @@
 node_modules/
 .svn/
 
+.vim/bundle
+
 # JVM
 *.class
 
