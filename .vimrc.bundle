@@ -27,8 +27,10 @@ NeoBundle 'h1mesuke/unite-outline'
 NeoBundle 'tsukkee/unite-help'
 " neocomplcache
 NeoBundle 'Shougo/neocomplcache'
+" snippet
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'honza/snipmate-snippets'
+NeoBundle 'add20/add20-snippets.vim'
 
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'tpope/vim-rails'
