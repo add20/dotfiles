@@ -3,12 +3,94 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
+" au BufNewFile,BufRead *.js set nowrap tabstop=4 shiftwidth=4
+" au BufNewFile,BufRead *.php set nowrap tabstop=4 shiftwidth=4
+" au BufNewFile,BufRead *.hs set nowrap tabstop=2 shiftwidth=2
+
+set nocompatible                 " Vimっす。vi互換なしっす。
+set textwidth=0                  " 一行に長い文章を書いていても自動折り返しをしない
+set autoread " 他で書き換えられたら自動で読み直す
+set formatoptions=lmoq " テキスト整形オプション，マルチバイト系を追加
+set backspace=indent,eol,start   " バックスペースでなんでも消せるように
+set nowrap
+
+" 挿入モードでCtrl+kを押すとクリップボードの内容を貼り付けられるようにする "
+imap <C-K>  <ESC>"*pa
+
 set clipboard+=unnamed
 set clipboard+=autoselect
 set number
 
+set ignorecase
+set smartcase
+
+" Command-t
+nmap ,t <ESC>:CommandT<CR>
+nmap ,b <ESC>:CommandTBuffer<CR>
+let g:CommandTMaxHeight=15
+set wildignore+=*~,*.png,*.gif
+
 call pathogen#infect()
 syntax on
+"------------------------------------
+" MiniBufExplorer
+"------------------------------------
+"set minibfexp
+let g:miniBufExplMapWindowNavVim=1 "hjklで移動
+let g:miniBufExplSplitBelow=0  " Put new window above
+let g:miniBufExplMapWindowNavArrows=1
+let g:miniBufExplMapCTabSwitchBufs=1
+let g:miniBufExplModSelTarget=1
+let g:miniBufExplSplitToEdge=1
+let g:miniBufExplMaxSize = 10
+
+":TmでMiniBufExplorerの表示トグル
+command! Mt :TMiniBufExplorer
+
+" :Gb <args> でGrepBufferする
+command! -nargs=1 Gb :GrepBuffer <args>
+" カーソル下の単語をGrepBufferする
+nnoremap <C-g><C-b> :<C-u>GrepBuffer<Space><C-r><C-w><Enter>
+nmap ,g <ESC>:Gb
+
+" 保存時に行末の空白を除去する
+autocmd BufWritePre * :%s/\s\+$//ge
+
+" 保存時にtabをスペースに変換する
+if expand("%") != "Makefile"
+  autocmd BufWritePre * :%s/\t/ /ge
+endif
+
+"Escの2回押しでハイライト消去
+nmap <ESC><ESC> ;nohlsearch<CR><ESC>
+
+" insert mode での移動
+imap  <C-e> <END>
+imap  <C-a> <HOME>
+" インサートモードでもhjklで移動（Ctrl押すけどね）
+imap <C-n> <Down>
+imap <C-p> <Up>
+imap <C-b> <Left>
+imap <C-f> <Right>
+
+" カーソル位置の単語をyankする
+nnoremap vy vawy
+
+"ビジュアルモード時vで行末まで選択
+vnoremap v $h
+
+"
+" 括弧を自動補完
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+" inoremap ( ()<LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+vnoremap { "zdi^V{<C-R>z}<ESC>
+vnoremap [ "zdi^V[<C-R>z]<ESC>
+vnoremap ( "zdi^V(<C-R>z)<ESC>
+vnoremap " "zdi^V"<C-R>z^V"<ESC>
+vnoremap ' "zdi'<C-R>z'<ESC>
 
 " Use Node.js for JavaScript interpretation
 let $JS_CMD='node'
@@ -24,14 +106,14 @@ autocmd FileType scheme :let is_gauche=1
 
 " An example for a vimrc file.
 "
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2008 Jul 02
+" Maintainer: Bram Moolenaar <Bram@vim.org>
+" Last change: 2008 Jul 02
 "
 " To use it, copy it to
 "     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
+"       for Amiga:  s:.vimrc
 "  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
+"     for OpenVMS:  sys$login:.vimrc
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
@@ -46,14 +128,14 @@ set nocompatible
 set backspace=indent,eol,start
 
 if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
+  set nobackup  " do not keep a backup file, use versions instead
 else
-  set backup		" keep a backup file
+  set backup  " keep a backup file
 endif
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
+set history=50  " keep 50 lines of command line history
+set ruler  " show the cursor position all the time
+set showcmd  " display incomplete commands
+set incsearch  " do incremental searching
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -107,7 +189,7 @@ if has("autocmd")
 
 else
 
-  set autoindent		" always set autoindenting on
+  set autoindent  " always set autoindenting on
 
 endif " has("autocmd")
 
@@ -116,5 +198,5 @@ endif " has("autocmd")
 " Only define it when not defined already.
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+    \ | wincmd p | diffthis
 endif

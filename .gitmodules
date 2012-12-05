@@ -40,3 +40,15 @@
 [submodule ".vim/bundle/vim-conque"]
 	path = .vim/bundle/vim-conque
 	url = https://github.com/add20/vim-conque.git
+[submodule ".vim/bundle/minibufexpl.vim"]
+	path = .vim/bundle/minibufexpl.vim
+	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule ".vim/bundle/grep.vim"]
+	path = .vim/bundle/grep.vim
+	url = https://github.com/vim-scripts/grep.vim.git
+[submodule ".vim/bundle/taglist.vim"]
+	path = .vim/bundle/taglist.vim
+	url = https://github.com/mortice/taglist.vim.git
+[submodule ".vim/bundle/Command-T"]
+	path = .vim/bundle/Command-T
+	url = https://github.com/wincent/Command-T.git

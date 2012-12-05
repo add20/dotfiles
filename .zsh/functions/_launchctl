@@ -1,0 +1,67 @@
+#compdef launchctl
+
+_launchctl ()
+{
+	local curcontext="$curcontext" state line
+	typeset -A opt_args
+
+	_arguments -C \
+		':command:->command' \
+		'*::options:->options'
+
+	case $state in
+		(command)
+
+			local -a subcommands
+			subcommands=(
+				'load:Load the specified configuration files or directories of configuration files.'
+				'unload:Unload the specified configuration files or directories of configuration files.'
+				'submit:A simple way of submitting a program to run without a configuration file. This mechanism also tells launchd to keep the program alive in the event of failure.'
+				'remove:Remove the job from launchd by label.'
+				'start:Start the specified job by label.'
+				'stop:Stop the specified job by label.'
+				'list:With no arguments, list all of the jobs loaded into launchd in three columns.'
+				'setenv:Set an environmental variable inside of launchd.'
+				'unsetenv:Unset an environmental variable inside of launchd.'
+				'getenv:Get an environmental variable inside of launchd.'
+				'export:Export all of the environmental variables of launchd for use in a shell eval statement.'
+				'getrusage:Get the resource utilization statistics for launchd or the children of launchd.'
+				'log:Get and set the syslog(3) log level mask.'
+				'limit:With no arguments, this command prints all the resource limits of launchd as found via getrlimit(2).'
+				'shutdown:Tell launchd to prepare for shutdown by removing all jobs.'
+				'umask:Get or optionally set the umask(2) of launchd.'
+				'bslist:This prints out Mach bootstrap services and their respective states.'
+				'bsexec:This executes the given command in the same Mach bootstrap namespace hierachy as the given PID.'
+				'bstree:This prints a hierarchical view of the entire Mach bootstrap tree.'
+				'managerpid:This prints the PID of the launchd which manages the current bootstrap.'
+				'manageruid:This prints the UID of the launchd which manages the current bootstrap.'
+				'managename:This prints the name of the launchd job manager which manages the current bootstrap.'
+				'help:Print out a quick usage statement.'
+			)
+			_describe -t commands 'launchctl' subcommands
+		;;
+
+		(options)
+			case $line[1] in
+
+				(load)
+					_arguments \
+						-w'[Overrides the Disabled key and sets it to false.]' \
+						-F'[Force the loading of the plist. Ignore the Disabled key.]' \
+						-S'[sessiontype]' \
+						-D'[domain]'
+        ;;
+
+        (unload)
+					_arguments \
+						-w'[Overrides the Disabled key and sets it to ture.]' \
+						-S'[sessiontype]' \
+						-D'[domain]'
+        ;;
+			esac
+		;;
+	esac
+}
+
+_launchctl "$@"
+

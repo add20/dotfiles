@@ -1,4 +1,21 @@
 .DS_Store
 *~
 *.swp
+*.swo
+*.o
+*.db
+*.sqlite3
+.env
 node_modules/
+.svn/
+
+# JVM
+*.class
+
+# sbt specific
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/

@@ -1,11 +1,11 @@
 # git .completions
-if [ ! -e ~/.git-completion.bash ]; then
+if [ ! -e ~/.bash/.git-completion.bash ]; then
   url="https://raw.github.com/git/git/master/contrib/completion/git-completion.bash"
   echo "getting the $url"
-  curl "$url" > ~/.git-completion.bash
+  curl "$url" > ~/.bash/.git-completion.bash
 fi
 unset url
-source ~/.git-completion.bash
+source ~/.bash/.git-completion.bash
 GIT_PS1_SHOWDIRTYSTATE=true
 
 # npm completion

@@ -1,0 +1,3 @@
+# .bash_profile
+alias bp="vim ~/.bash_profile; source ~/.bash_profile"
+alias reload=". ~/.bash_profile"

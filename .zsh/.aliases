@@ -1,0 +1,17 @@
+alias reload="source ~/.zshrc"
+
+alias -s txt='open -a textedit'
+alias -s bz2='tar vvtf'
+alias -s gz='tar vvtzf'
+alias -s tgz='tar vvtzf'
+alias -s zip=zipinfo
+alias -s exe=mono # for C# application
+
+case "${OSTYPE}" in
+freebsd*|darwin*)
+  alias ls="ls -G -w"
+  ;;
+linux*)
+  alias ls="ls --color"
+  ;;
+esac

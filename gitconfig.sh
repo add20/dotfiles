@@ -19,6 +19,9 @@ git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
+git config --global alias.df diff
+git config --global alias.df "diff --cached"
+git config --global alias.df "diff --no-ext-diff --color-words"
 git config --global alias.unstage "reset HEAD --"
 git config --global alias.last "log -1 -p HEAD"
 git config --global alias.stash-unapply "!git stash show -p | git apply -R"
@@ -26,4 +29,11 @@ git config --global alias.stash-unapply "!git stash show -p | git apply -R"
 git config --global color.ui auto
 # core
 git config --global core.excludesfile ~/.gitignore
+git config --global core.autocrlf input
+# grep
+git config --global grep.lineNumber true
+git config --global alias.g "grep --break --heading --line-number"
 
+echo '[tig "bind"]
+  generic = g move-first-line
+  generic = G move-last-line' >> ~/.gitconfig
