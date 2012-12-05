@@ -1,3 +1,5 @@
+source ~/dotfiles/.vimrc.bundle
+
 set expandtab
 set tabstop=2
 set softtabstop=2
@@ -30,7 +32,6 @@ nmap ,b <ESC>:CommandTBuffer<CR>
 let g:CommandTMaxHeight=15
 set wildignore+=*~,*.png,*.gif
 
-call pathogen#infect()
 syntax on
 "------------------------------------
 " MiniBufExplorer
