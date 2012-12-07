@@ -98,5 +98,9 @@ endif
 " Unite plugins
 cnoremap UO Unite outline<Enter>
 nnoremap <silent> [unite]o :<C-u>Unite -no-split outline<CR>
-cnoremap UH Unite outline<Enter>
+cnoremap UH Unite help<Enter>
 nnoremap <silent> [unite]h :<C-u>Unite -no-split help<CR>
+" haddock
+nnoremap <silent> [unite]ha :<C-u>UniteWithCursorWord -direction=botright -immediately haddock<CR>
+" hoogle
+nnoremap <silent> [unite]ho :<C-u>UniteWithCursorWord -direction=botright -immediately hoogle<CR>

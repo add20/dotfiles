@@ -41,6 +41,8 @@ NeoBundle 'add20/add20-snippets.vim'
 NeoBundle 'tyru/caw.vim'
 " Haskell
 NeoBundle 'ujihisa/neco-ghc'
+NeoBundle 'eagletmt/ghcmod-vim'
+NeoBundle 'eagletmt/unite-haddock'
 
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'tpope/vim-rails'
