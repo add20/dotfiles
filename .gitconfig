@@ -1,26 +1,51 @@
 [user]
   name = add20
   email = "add20g@gmail.com"
-[alias]
-  br = branch
-  ci = commit
-  co = checkout
-  st = status
-  df = diff
-  dc = diff --cached
-  dw = diff --no-ext-diff --color-words
-  unstage = reset HEAD --
-  last = log -1 -p HEAD
-  stash-unapply = !git stash show -p | git apply -R
-  g = grep --break --heading --line-number
-  graph = log --oneline --decorate --graph --all
-[grep]
-  lineNumber = true
-[color]
-  ui = auto
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
+[color]
+  ui = auto
+[branch]
+  autosetuprebase = always
+[pull]
+  rebase = true
+[grep]
+  lineNumber = true
+[alias]
+  # branch
+  b  = branch
+  br = branch
+  # commit
+  ci = commit
+  # checkout
+  co = checkout
+  # status
+  s  = status -sb
+  st = status -sb
+  ss = status -sb
+  # diff
+  d  = diff
+  df = diff
+  dc = diff --cached
+  ds = diff --staged
+  dw = diff --no-ext-diff --color-words
+  # rebase
+  rbi  = rebase -i
+  rbi1 = rebase -i HEAD^
+  rbi2 = rebase -i HEAD^^
+  rbi3 = rebase -i HEAD^^^
+  rbi4 = rebase -i HEAD^^^^
+  rbi5 = rebase -i HEAD^^^^^
+  # log
+  last = log -1 -p HEAD
+  graph = log --oneline --decorate --graph --all
+  # grep
+  g = grep --break --heading --line-number
+  # reset
+  unstage = reset HEAD --
+  # other
+  stash-unapply = !git stash show -p | git apply -R
 [tig "bind"]
   generic = g move-first-line
   generic = G move-last-line
