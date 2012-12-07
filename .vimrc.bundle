@@ -37,10 +37,11 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'honza/snipmate-snippets'
 NeoBundle 'add20/add20-snippets.vim'
+" コメントアウト
+NeoBundle 'tyru/caw.vim'
 
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'tpope/vim-rails'
-NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'tsaleh/vim-matchit'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'vim-ruby/vim-ruby'
