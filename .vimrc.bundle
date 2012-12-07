@@ -39,6 +39,8 @@ NeoBundle 'honza/snipmate-snippets'
 NeoBundle 'add20/add20-snippets.vim'
 " コメントアウト
 NeoBundle 'tyru/caw.vim'
+" Haskell
+NeoBundle 'ujihisa/neco-ghc'
 
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'tpope/vim-rails'
