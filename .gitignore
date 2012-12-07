@@ -5,6 +5,7 @@
 *.o
 *.db
 *.sqlite3
+tags
 .env
 node_modules/
 .svn/
