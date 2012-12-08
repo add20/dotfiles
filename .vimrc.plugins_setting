@@ -116,6 +116,8 @@ nnoremap <silent> [unite]ha :<C-u>UniteWithCursorWord -direction=botright -immed
 nnoremap <silent> [unite]ho :<C-u>UniteWithCursorWord -direction=botright -immediately hoogle<CR>
 " ghcmod-vim (保存後に非同期でチェックをする)
 autocmd BufWritePost *.hs GhcModCheckAsync
+" unite-haskellimport
+nnoremap <silent> [unite]hi :<C-u>UniteWithCursorWord -direction=botright -immediately haskellimport<CR>
 " unite-tag
 autocmd BufEnter *
 \   if empty(&buftype)
