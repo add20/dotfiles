@@ -100,7 +100,12 @@ cnoremap UO Unite outline<Enter>
 nnoremap <silent> [unite]o :<C-u>Unite -no-split outline<CR>
 cnoremap UH Unite help<Enter>
 nnoremap <silent> [unite]h :<C-u>Unite -no-split help<CR>
-" haddock
+" unite-haddock
 nnoremap <silent> [unite]ha :<C-u>UniteWithCursorWord -direction=botright -immediately haddock<CR>
-" hoogle
+" ghcmod-vim (hoogle)
 nnoremap <silent> [unite]ho :<C-u>UniteWithCursorWord -direction=botright -immediately hoogle<CR>
+" unite-tag
+autocmd BufEnter *
+\   if empty(&buftype)
+\|      nnoremap <buffer> <C-]> :<C-u>UniteWithCursorWord -immediately tag<CR>
+\|  endif
