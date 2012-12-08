@@ -15,6 +15,7 @@ set autoread " 他で書き換えられたら自動で読み直す
 set formatoptions=lmoq " テキスト整形オプション，マルチバイト系を追加
 set nowrap
 set foldminlines=4               " 畳み込みをしない最大行数
+set autoindent
 
 " 挿入モードでCtrl+kを押すとクリップボードの内容を貼り付けられるようにする "
 imap <C-K>  <ESC>"*pa
