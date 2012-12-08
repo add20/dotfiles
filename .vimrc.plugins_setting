@@ -1,4 +1,14 @@
 " ---------------------------------
+"  vim-colors-solarized
+" ---------------------------------
+syntax enable
+set background=light
+" solarized options
+let g:solarized_termcolors = 256
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
+colorscheme solarized
+" ---------------------------------
 "  unite.vim
 " ---------------------------------
 " The prefix key.
