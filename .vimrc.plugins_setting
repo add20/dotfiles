@@ -123,3 +123,7 @@ autocmd BufEnter *
 \   if empty(&buftype)
 \|      nnoremap <buffer> <C-]> :<C-u>UniteWithCursorWord -immediately tag<CR>
 \|  endif
+" ---------------------------------
+" stylish-haskell
+" ---------------------------------
+nnoremap <silent> [unite]hs :<C-u>%!stylish-haskell<CR>
