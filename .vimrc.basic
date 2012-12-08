@@ -60,13 +60,6 @@ vnoremap v $h
 " コンマの後に自動的にスペースを挿入
 inoremap , ,<Space>
 
-" 括弧を自動補完
-vnoremap { "zdi^V{<C-R>z}<ESC>
-vnoremap [ "zdi^V[<C-R>z]<ESC>
-vnoremap ( "zdi^V(<C-R>z)<ESC>
-vnoremap " "zdi^V"<C-R>z^V"<ESC>
-vnoremap ' "zdi'<C-R>z'<ESC>
-
 " Use Node.js for JavaScript interpretation
 let $JS_CMD='node'
 " To disable error highlighting altogether

@@ -57,10 +57,12 @@ NeoBundle 'ujihisa/neco-ghc'
 NeoBundle 'ujihisa/unite-haskellimport'
 NeoBundle 'dag/vim2hs'
 
+" 括弧
+NeoBundle 'tpope/vim-surround'
+
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tsaleh/vim-matchit'
-NeoBundle 'tpope/vim-surround'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'briancollins/vim-jst'
@@ -83,7 +85,7 @@ NeoBundle 'The-NERD-tree'
 " タグリスト
 NeoBundle 'taglist.vim'
 
-" かっこの自動補完
+" 閉じ括弧の自動補完
 NeoBundle 'AutoClose'
 
 " GrepBuffer
