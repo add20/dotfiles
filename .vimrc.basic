@@ -15,6 +15,7 @@ set formatoptions=lmoq " テキスト整形オプション，マルチバイト�
 set nowrap
 set foldminlines=4               " 畳み込みをしない最大行数
 set autoindent
+set laststatus=2
 
 " 挿入モードでCtrl+kを押すとクリップボードの内容を貼り付けられるようにする "
 imap <C-K>  <ESC>"*pa
@@ -55,6 +56,9 @@ nnoremap vy vawy
 
 "ビジュアルモード時vで行末まで選択
 vnoremap v $h
+
+" コンマの後に自動的にスペースを挿入
+inoremap , ,<Space>
 
 " 括弧を自動補完
 vnoremap { "zdi^V{<C-R>z}<ESC>
