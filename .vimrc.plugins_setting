@@ -112,8 +112,10 @@ cnoremap UH Unite help<Enter>
 nnoremap <silent> [unite]h :<C-u>Unite -no-split help<CR>
 " unite-haddock
 nnoremap <silent> [unite]ha :<C-u>UniteWithCursorWord -direction=botright -immediately haddock<CR>
-" ghcmod-vim (hoogle)
+" ghcmod-vim
 nnoremap <silent> [unite]ho :<C-u>UniteWithCursorWord -direction=botright -immediately hoogle<CR>
+nnoremap <silent> [unite]ht :<C-u>GhcModType<CR>
+nnoremap <silent> [unite]hc :<C-u>GhcModTypeClear<CR>
 " ghcmod-vim (保存後に非同期でチェックをする)
 autocmd BufWritePost *.hs GhcModCheckAsync
 " unite-haskellimport
@@ -124,6 +126,6 @@ autocmd BufEnter *
 \|      nnoremap <buffer> <C-]> :<C-u>UniteWithCursorWord -immediately tag<CR>
 \|  endif
 " ---------------------------------
-" stylish-haskell
+"  stylish-haskell
 " ---------------------------------
 nnoremap <silent> [unite]hs :<C-u>%!stylish-haskell<CR>
