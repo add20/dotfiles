@@ -104,6 +104,8 @@ nnoremap <silent> [unite]h :<C-u>Unite -no-split help<CR>
 nnoremap <silent> [unite]ha :<C-u>UniteWithCursorWord -direction=botright -immediately haddock<CR>
 " ghcmod-vim (hoogle)
 nnoremap <silent> [unite]ho :<C-u>UniteWithCursorWord -direction=botright -immediately hoogle<CR>
+" ghcmod-vim (保存後に非同期でチェックをする)
+autocmd BufWritePost *.hs GhcModCheckAsync
 " unite-tag
 autocmd BufEnter *
 \   if empty(&buftype)
