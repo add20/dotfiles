@@ -31,6 +31,8 @@
   ds = diff --staged
   dw = diff --no-ext-diff --color-words
   # rebase
+  rbm  = rebase --merge master
+  rbd  = rebase --merge develop
   rbi  = rebase -i
   rbi1 = rebase -i HEAD^
   rbi2 = rebase -i HEAD^^
