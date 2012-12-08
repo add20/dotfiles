@@ -67,18 +67,27 @@ NeoBundle 'briancollins/vim-jst'
 NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'add20/vim-conque'
-NeoBundle 'vim-scripts/grep.vim'
 " NeoBundle 'tpope/vim-fugitive'
 " NeoBundle 'Lokaltog/vim-easymotion'
 " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
+"
 " vim-scripts repos
+"
 " minibufexpl.vim : タブエディタ風にバッファ管理ウィンドウを表示
 NeoBundle 'minibufexpl.vim'
+
 " NERDTree : ツリー型エクスプローラ
 NeoBundle 'The-NERD-tree'
+
 " タグリスト
 NeoBundle 'taglist.vim'
+
+" かっこの自動補完
+NeoBundle 'AutoClose'
+
+" GrepBuffer
+NeoBundle 'grep.vim'
 " NeoBundle 'L9'
 " NeoBundle 'FuzzyFinder'
 " NeoBundle 'rails.vim'

@@ -129,3 +129,24 @@ autocmd BufEnter *
 "  stylish-haskell
 " ---------------------------------
 nnoremap <silent> [unite]hs :<C-u>%!stylish-haskell<CR>
+" ---------------------------------
+"  grep.vim
+" ---------------------------------
+" :Gb <args> でGrepBufferする
+command! -nargs=1 Gb :GrepBuffer <args>
+" カーソル下の単語をGrepBufferする
+nnoremap <C-g><C-b> :<C-u>GrepBuffer<Space><C-r><C-w><Enter>
+nmap <Leader>g <ESC>:Gb
+"------------------------------------
+" MiniBufExplorer
+"------------------------------------
+" set minibfexp
+let g:miniBufExplMapWindowNavVim=1 "hjklで移動
+let g:miniBufExplSplitBelow=0  " Put new window above
+let g:miniBufExplMapWindowNavArrows=1
+let g:miniBufExplMapCTabSwitchBufs=1
+let g:miniBufExplModSelTarget=1
+let g:miniBufExplSplitToEdge=1
+let g:miniBufExplMaxSize=10
+" :TmでMiniBufExplorerの表示トグル
+command! Mt :TMiniBufExplorer

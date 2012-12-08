@@ -9,7 +9,6 @@ set shiftwidth=2
 " au BufNewFile,BufRead *.php set nowrap tabstop=4 shiftwidth=4
 " au BufNewFile,BufRead *.hs set nowrap tabstop=2 shiftwidth=2
 
-set nocompatible                 " Vimっす。vi互換なしっす。
 set textwidth=0                  " 一行に長い文章を書いていても自動折り返しをしない
 set autoread " 他で書き換えられたら自動で読み直す
 set formatoptions=lmoq " テキスト整形オプション，マルチバイト系を追加
@@ -28,26 +27,8 @@ set ignorecase
 set smartcase
 
 syntax on
-"------------------------------------
-" MiniBufExplorer
-"------------------------------------
-"set minibfexp
-let g:miniBufExplMapWindowNavVim=1 "hjklで移動
-let g:miniBufExplSplitBelow=0  " Put new window above
-let g:miniBufExplMapWindowNavArrows=1
-let g:miniBufExplMapCTabSwitchBufs=1
-let g:miniBufExplModSelTarget=1
-let g:miniBufExplSplitToEdge=1
-let g:miniBufExplMaxSize = 10
 
-":TmでMiniBufExplorerの表示トグル
-command! Mt :TMiniBufExplorer
-
-" :Gb <args> でGrepBufferする
-command! -nargs=1 Gb :GrepBuffer <args>
-" カーソル下の単語をGrepBufferする
-nnoremap <C-g><C-b> :<C-u>GrepBuffer<Space><C-r><C-w><Enter>
-nmap <Leader>g <ESC>:Gb
+autocmd FileType scheme :let is_gauche=1
 
 " 保存時に行末の空白を除去する
 autocmd BufWritePre * :%s/\s\+$//ge
@@ -75,13 +56,7 @@ nnoremap vy vawy
 "ビジュアルモード時vで行末まで選択
 vnoremap v $h
 
-"
 " 括弧を自動補完
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
-" inoremap ( ()<LEFT>
-inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
 vnoremap { "zdi^V{<C-R>z}<ESC>
 vnoremap [ "zdi^V[<C-R>z]<ESC>
 vnoremap ( "zdi^V(<C-R>z)<ESC>
@@ -97,8 +72,6 @@ filetype plugin on
 
 " au BufNewFile,BufRead *.ejs set filetype=html
 au! BufNewFile,BufRead *.json set filetype=json " for SnipMate
-
-autocmd FileType scheme :let is_gauche=1
 
 " An example for a vimrc file.
 "
