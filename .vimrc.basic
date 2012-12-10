@@ -13,7 +13,7 @@ set textwidth=0                  " 一行に長い文章を書いていても自
 set autoread " 他で書き換えられたら自動で読み直す
 set formatoptions=lmoq " テキスト整形オプション，マルチバイト系を追加
 set nowrap
-set foldminlines=4               " 畳み込みをしない最大行数
+set foldminlines=10               " 畳み込みをしない最大行数
 set autoindent
 set laststatus=2
 
@@ -40,7 +40,7 @@ if expand("%") != "Makefile"
 endif
 
 "Escの2回押しでハイライト消去
-nmap <ESC><ESC> ;nohlsearch<CR><ESC>
+nnoremap <ESC><ESC> :nohlsearch<CR><ESC>
 
 " insert mode での移動
 imap  <C-e> <END>
