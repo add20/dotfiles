@@ -71,7 +71,8 @@ NeoBundle 'tsaleh/vim-matchit'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'briancollins/vim-jst'
-NeoBundle 'mattn/zencoding-vim'
+" Smooth-Scrollと相性が悪い(<C-B>,  <C-U>が効かなくなる)
+" NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'add20/vim-conque'
 " NeoBundle 'tpope/vim-fugitive'
@@ -95,6 +96,9 @@ NeoBundle 'AutoClose'
 
 " GrepBuffer
 NeoBundle 'grep.vim'
+
+" Smooth Scroll
+NeoBundle 'Smooth-Scroll'
 " NeoBundle 'L9'
 " NeoBundle 'FuzzyFinder'
 " NeoBundle 'rails.vim'
