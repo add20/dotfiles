@@ -99,6 +99,9 @@ NeoBundle 'grep.vim'
 
 " Smooth Scroll
 NeoBundle 'Smooth-Scroll'
+
+" キャメルケースでの移動
+NeoBundle 'camelcasemotion'
 " NeoBundle 'L9'
 " NeoBundle 'FuzzyFinder'
 " NeoBundle 'rails.vim'
