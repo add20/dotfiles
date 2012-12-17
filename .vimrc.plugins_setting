@@ -9,6 +9,10 @@ let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
 colorscheme solarized
 " ---------------------------------
+"  vim-powerline
+" ---------------------------------
+let g:Powerline_symbols = 'fancy'
+" ---------------------------------
 "  unite.vim
 " ---------------------------------
 " The prefix key.
