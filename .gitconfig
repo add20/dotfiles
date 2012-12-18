@@ -32,9 +32,6 @@
   dc = diff --cached
   ds = diff --staged
   dw = diff --no-ext-diff --color-words
-  # merge
-  mm = git checkout master  && git merge @{-1} && git branch -d @{-1}
-  md = git checkout develop && git merge @{-1} && git branch -d @{-1}
   # rebase
   rbm  = rebase --merge master
   rbd  = rebase --merge develop
