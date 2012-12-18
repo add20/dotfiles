@@ -16,6 +16,12 @@ set nowrap
 set foldminlines=10               " 畳み込みをしない最大行数
 set autoindent
 set laststatus=2
+set nobackup
+
+if has('persistent_undo')
+  set undodir=~/.vim/undo
+  set undofile
+endif
 
 " 挿入モードでCtrl+kを押すとクリップボードの内容を貼り付けられるようにする "
 imap <C-K>  <ESC>"*pa
@@ -93,11 +99,6 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-if has("vms")
-  set nobackup  " do not keep a backup file, use versions instead
-else
-  set backup  " keep a backup file
-endif
 set history=50  " keep 50 lines of command line history
 set ruler  " show the cursor position all the time
 set showcmd  " display incomplete commands

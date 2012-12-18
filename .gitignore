@@ -12,6 +12,7 @@ node_modules/
 
 .vim/bundle
 .vim/.netrwhist
+.vim/undo
 
 # JVM
 *.class
