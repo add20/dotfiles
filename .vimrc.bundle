@@ -105,6 +105,12 @@ NeoBundle 'Smooth-Scroll'
 
 " キャメルケースでの移動
 NeoBundle 'camelcasemotion'
+
+" スケルトン
+NeoBundle 'tSkeleton'
+" tSkeleton で必要
+NeoBundle 'tlib'
+
 " NeoBundle 'L9'
 " NeoBundle 'FuzzyFinder'
 " NeoBundle 'rails.vim'
