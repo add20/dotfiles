@@ -2,7 +2,7 @@
 "  vim-colors-solarized
 " ---------------------------------
 syntax enable
-set background=light
+set background=dark
 " solarized options
 let g:solarized_termcolors = 256
 let g:solarized_visibility = "high"

@@ -18,6 +18,7 @@ alias rspec="rspec -c -fd"
 
 # Shortcuts
 alias g="git"
+alias gi="git"
 alias v="vim"
 alias m="mate"
 
