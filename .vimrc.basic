@@ -10,13 +10,21 @@ set shiftwidth=2
 " au BufNewFile,BufRead *.hs set nowrap tabstop=2 shiftwidth=2
 
 set textwidth=0                  " 一行に長い文章を書いていても自動折り返しをしない
-set autoread " 他で書き換えられたら自動で読み直す
-set formatoptions=lmoq " テキスト整形オプション，マルチバイト系を追加
+set autoread                     " 他で書き換えられたら自動で読み直す
+set formatoptions+=lmoq          " テキスト整形オプション，マルチバイト系を追加
 set nowrap
-set foldminlines=10               " 畳み込みをしない最大行数
+set foldminlines=10              " 畳み込みをしない最大行数
 set autoindent
 set laststatus=2
 set nobackup
+
+" augroup CursorLine             " 現在行のハイライトをアクティブウィンドウに限定する
+"   au!
+"   au VimEnter,WinEnter,BufWinEnter * setlocal cursorcolumn
+"   au WinLeave * setlocal nocursorcolumn
+"   au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+"   au WinLeave * setlocal nocursorline
+" augroup END
 
 if has('persistent_undo')
   set undodir=~/.vim/undo

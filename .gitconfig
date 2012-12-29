@@ -23,7 +23,7 @@
   # checkout
   co = checkout
   # status
-  s  = status -sb
+  s  = status
   st = status -sb
   ss = status -sb
   # diff
