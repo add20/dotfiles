@@ -11,6 +11,9 @@ alias la="ls -la"
 alias df="df -h"
 alias du="du -h"
 
+# tmux
+alias tmux="TERM=screen-256color-bce tmux"
+
 # Shortcuts
 alias g="git"
 alias gi="git"
