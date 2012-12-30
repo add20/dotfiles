@@ -1,10 +1,8 @@
-source ~/dotfiles/.common/.aliases
-source ~/dotfiles/.common/.exports
-source ~/dotfiles/.common/.functions
-source ~/dotfiles/.common/.paths
-
-source ~/dotfiles/.zsh/.aliases
-source ~/dotfiles/.zsh/.prompt
+source ~/dotfiles/.zsh/alias.zsh
+source ~/dotfiles/.zsh/export.zsh
+source ~/dotfiles/.zsh/function.zsh
+source ~/dotfiles/.zsh/path.zsh
+source ~/dotfiles/.zsh/prompt.zsh
 
 autoload zed
 
