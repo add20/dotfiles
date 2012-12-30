@@ -6,10 +6,15 @@ antigen-lib
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen-bundle git
 antigen-bundle autojump
+antigen-bundle brew
+# antigen-bundle encode64 # function:   encode/decode strings with base64
+# antigen-bundle gas      # completion: Gas helps you manage your git authors.
+# antigen-bundle coffee   # completion: for coffee script
+# antigen-bundle bundler  # function, alias: for bundle exec
 # antigen-bundle heroku
 # antigen-bundle pip
 # antigen-bundle lein
-# antigen-bundle command-not-found
+# antigen-bundle command-not-found # only for Ubuntu
 
 # Syntax highlighting bundle.
 antigen-bundle zsh-users/zsh-syntax-highlighting
