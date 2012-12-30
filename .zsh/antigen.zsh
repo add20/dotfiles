@@ -5,6 +5,7 @@ antigen-lib
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen-bundle git
+antigen-bundle autojump
 # antigen-bundle heroku
 # antigen-bundle pip
 # antigen-bundle lein
