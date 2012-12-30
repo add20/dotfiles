@@ -19,7 +19,7 @@
   b  = branch
   br = branch
   # commit
-  ci = commit
+  ci = commit -v
   # checkout
   co = checkout
   # status
