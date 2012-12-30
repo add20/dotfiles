@@ -3,6 +3,7 @@ source ~/dotfiles/.zsh/export.zsh
 source ~/dotfiles/.zsh/function.zsh
 source ~/dotfiles/.zsh/path.zsh
 source ~/dotfiles/.zsh/prompt.zsh
+source ~/dotfiles/.zsh/antigen.zsh
 
 autoload zed
 
