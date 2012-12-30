@@ -11,10 +11,11 @@ antigen-bundle git
 # antigen-bundle command-not-found
 
 # Syntax highlighting bundle.
-# antigen-bundle zsh-users/zsh-syntax-highlighting
+antigen-bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
-antigen-theme gallois
+# antigen-theme gallois
+antigen-theme $HOME/dotfiles/.zsh/themes/add20.zsh-theme --no-local-clone
 
 # Tell antigen that you're done.
 antigen-apply

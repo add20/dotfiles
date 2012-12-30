@@ -4,6 +4,7 @@
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
+  pager = less -X
 [color]
   ui = auto
 [merge]
