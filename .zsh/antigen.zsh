@@ -7,6 +7,9 @@ antigen-lib
 antigen-bundle git
 antigen-bundle autojump
 antigen-bundle brew
+antigen-bundle gem      # completion: for gem
+antigen-bundle git-flow # completion: for git-flow
+antigen-bundle rvm      # completion: for rvm
 # antigen-bundle encode64 # function:   encode/decode strings with base64
 # antigen-bundle gas      # completion: Gas helps you manage your git authors.
 # antigen-bundle coffee   # completion: for coffee script
@@ -15,6 +18,7 @@ antigen-bundle brew
 # antigen-bundle pip
 # antigen-bundle lein
 # antigen-bundle command-not-found # only for Ubuntu
+antigen-bundle $HOME/dotfiles/.zsh/plugins/tmux --no-local-clone
 
 # Syntax highlighting bundle.
 antigen-bundle zsh-users/zsh-syntax-highlighting
