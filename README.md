@@ -17,3 +17,8 @@ Suggestions/improvements
 ## Refs
 - [dotfiles](https://github.com/yuroyoro/dotfiles)
 - [haskell.dict](https://raw.github.com/eagletmt/dotfiles/master/dot.vim/dict/haskell.dict)
+
+## Reatures
+- Vim
+- Zsh
+- tmux
