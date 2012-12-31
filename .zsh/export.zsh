@@ -11,3 +11,6 @@ export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 
 # sbt option
 export SBT_OPTS="-Dfile.encoding=UTF8"
+
+# for tmux (automatic-rename off)
+DISABLE_AUTO_TITLE=true
