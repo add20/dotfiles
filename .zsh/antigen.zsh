@@ -18,6 +18,7 @@ antigen-bundle rvm      # completion: for rvm
 # antigen-bundle pip
 # antigen-bundle lein
 # antigen-bundle command-not-found # only for Ubuntu
+antigen-bundle $HOME/dotfiles/.zsh/plugins/tmux --no-local-clone
 
 # Syntax highlighting bundle.
 antigen-bundle zsh-users/zsh-syntax-highlighting
