@@ -1,0 +1,26 @@
+#compdef nkf
+
+#  "-m[BQSN0] [MIME decode [B:base64,Q:quoted,S:strict,N:nonstrict,0:no decode]]" \
+#  "-M[BQ]    [MIME encode [B:base64 Q:quoted]]" \
+#  "-f/F      [Folding: -f60 or -f or -f60-10 (fold margin 10) F preserve nl]" \
+# "-Z[0-4]   [Default/0: Convert JISX0208 Alphabet to ASCII]" \
+#          "1: Kankaku to one space  2: to two spaces  3: HTML Entity" \
+#          "4: JISX0208 Katakana to JISX0201 Katakana" \
+# "--fb-{skip, html, xml, perl, java, subchar}" \
+#                        "Specify unassigned character's replacement" \
+#  "-X,x      [Convert Halfwidth Katakana to Fullwidth or preserve it]" \
+#  "-L[uwm]   [Line mode u:LF w:CRLF m:CR (DEFAULT noconversion)]" \
+#  "--in-place[=SUF]       [Overwrite original files]" \
+#  "--overwrite[=SUF]      [Preserve timestamp of original files]" \
+
+_arguments \
+ "-O        [Output to File (DEFAULT 'nkf.out')]" \
+ "--ic=<encoding>        [Specify the input encoding]" \
+ "--oc=<encoding>        [Specify the output encoding]" \
+ "--hiragana --katakana  [Hiragana/Katakana Conversion]" \
+ "--katakana-hiragana    [Converts each other]" \
+ "--{cap, url}-input     [Convert hex after ':' or '%']" \
+ "--numchar-input        [Convert Unicode Character Reference]" \
+ "-g --guess             [Guess the input code]" \
+ "-v --version           [Print the version]" \
+ "--help/-V              [Print this help / configuration]" \
