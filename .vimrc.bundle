@@ -1,0 +1,137 @@
+set nocompatible               " Be iMproved
+filetype off                   " Required!
+
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+NeoBundle 'Shougo/neobundle.vim'
+
+" Recommended to install
+" After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
+" NeoBundle 'Shougo/vimproc'
+" vimproc : vimから非同期実行。vimshelleで必要
+NeoBundle 'Shougo/vimproc', {
+    \ 'build' : {
+    \     'mac' : 'make -f make_mac.mak',
+    \    },
+    \ }
+
+" My Bundles here:
+"
+" Note: You don't set neobundle setting in .gvimrc!
+
+"
+" Original repos on github
+"
+" vimdoc 日本語
+NeoBundle 'vim-jp/vimdoc-ja'
+
+" color scheme
+NeoBundle 'altercation/vim-colors-solarized'
+
+" status line
+NeoBundle 'Lokaltog/vim-powerline'
+" Git (これをいれるとvim-powerlineにブランチ名が表示されるようになる)
+NeoBundle 'tpope/vim-fugitive'
+
+" Unite
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'h1mesuke/unite-outline'
+NeoBundle 'tsukkee/unite-help'
+NeoBundle 'tsukkee/unite-tag'
+
+" ctrlp (ファイル検索)
+NeoBundle 'kien/ctrlp.vim'
+
+" neocomplcache
+NeoBundle 'Shougo/neocomplcache'
+
+" snippet
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'honza/snipmate-snippets'
+NeoBundle 'add20/add20-snippets.vim'
+
+" コメントアウト
+NeoBundle 'tyru/caw.vim'
+
+" Haskell
+NeoBundle 'eagletmt/ghcmod-vim'
+NeoBundle 'eagletmt/unite-haddock'
+NeoBundle 'ujihisa/neco-ghc'
+NeoBundle 'ujihisa/unite-haskellimport'
+NeoBundle 'dag/vim2hs'
+
+" 括弧
+NeoBundle 'tpope/vim-surround'
+
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'tsaleh/vim-matchit'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'briancollins/vim-jst'
+" Smooth-Scrollと相性が悪い(<C-B>,  <C-U>が効かなくなる)
+" NeoBundle 'mattn/zencoding-vim'
+NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'add20/vim-conque'
+" NeoBundle 'tpope/vim-fugitive'
+" NeoBundle 'Lokaltog/vim-easymotion'
+" NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+"
+" vim-scripts repos
+"
+" minibufexpl.vim : タブエディタ風にバッファ管理ウィンドウを表示
+NeoBundle 'minibufexpl.vim'
+
+" NERDTree : ツリー型エクスプローラ
+NeoBundle 'The-NERD-tree'
+
+" タグリスト
+NeoBundle 'taglist.vim'
+
+" 閉じ括弧の自動補完
+NeoBundle 'AutoClose'
+
+" GrepBuffer
+NeoBundle 'grep.vim'
+
+" Smooth Scroll
+NeoBundle 'Smooth-Scroll'
+
+" キャメルケースでの移動
+NeoBundle 'camelcasemotion'
+
+" スケルトン
+NeoBundle 'tSkeleton'
+" tSkeleton で必要
+NeoBundle 'tlib'
+
+" NeoBundle 'L9'
+" NeoBundle 'FuzzyFinder'
+" NeoBundle 'rails.vim'
+
+" Non github repos
+" NeoBundle 'git://git.wincent.com/command-t.git'
+" Non git repos
+" NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
+" NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
+
+filetype plugin indent on     " Required!
+"
+" Brief help
+" :NeoBundleList          - list configured bundles
+" :NeoBundleInstall(!)    - install(update) bundles
+" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+
+" Installation check.
+if neobundle#exists_not_installed_bundles()
+ echomsg 'Not installed bundles : ' .
+       \ string(neobundle#get_not_installed_bundle_names())
+ echomsg 'Please execute ":NeoBundleInstall" command.'
+ "finish
+endif

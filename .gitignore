@@ -5,9 +5,19 @@
 *.o
 *.db
 *.sqlite3
+tags
 .env
 node_modules/
 .svn/
+
+.vim/bundle
+.vim/.netrwhist
+.vim/undo
+.vim/cache
+
+# Haskell
+dist/
+*.prof
 
 # JVM
 *.class

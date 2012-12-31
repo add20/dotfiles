@@ -1,63 +1,24 @@
 
 # add20’s dotfiles
 
-I referred to `.bash_profile`, `bootstraph.sh` and `README.md` in [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
-
 ## Installation
 
-### Using Git and the bootstrap script
+### Using Git
 
 ```bash
-git clone https://github.com/add20/dotfiles.git && cd dotfiles && ./bootstrap.sh
+git clone https://github.com/add20/dotfiles.git && cd dotfiles && sh setup.sh
 ```
-
-To update, `cd` into your local `dotfiles` repository and then:
-
-```bash
-./bootstrap.sh
-```
-
-Alternatively, to update while avoiding the confirmation prompt:
-
-```bash
-./bootstrap.sh -f
-```
-
-```bash
-Start setting of Git
-Your Name: "enter your name"
-Your email: "enter your email"
-```
-
-### Git-free install
-
-To install these dotfiles without Git:
-
-```bash
-cd; curl -#L https://github.com/mathiasbynens/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh}
-```
-
-To update later on, just run that command again.
-
-## Vim bundles
-
-* nerdcommenter
-* nerdtree
-* snipmate
-* vim-coffee
-* vim-conque-
-* vim-jade
-* vim-javascript
-* vim-jst
-* vim-matchit
-* vim-rails
-* vim-ruby
-* vim-surround
-* vimdoc-ja
-* zencoding-vim
-
 
 ## Feedback
 
 Suggestions/improvements
 [welcome](https://github.com/add20/dotfiles/issues)!
+
+## Refs
+- [dotfiles](https://github.com/yuroyoro/dotfiles)
+- [haskell.dict](https://raw.github.com/eagletmt/dotfiles/master/dot.vim/dict/haskell.dict)
+
+## Reatures
+- Vim
+- Zsh
+- tmux
