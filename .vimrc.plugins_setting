@@ -25,7 +25,7 @@ nnoremap <silent> [unite]f  :<C-u>Unite -direction=botright -buffer-name=files f
 nnoremap <silent> [unite]b  :<C-u>Unite -direction=botright buffer<CR>
 nnoremap <silent> [unite]m  :<C-u>Unite -direction=botright file_mru<CR>
 nnoremap <silent> [unite]d  :<C-u>UniteWithCurrentDir -direction=botright file<CR>
-nnoremap <silent> [unite]t  :<C-u>Unite -direction=botright -immediately file<CR>
+nnoremap <silent> [unite]t  :<C-u>Unite -direction=botright -immediately tab<CR>
 
 nnoremap <silent> [unite]c  :<C-u>UniteWithCurrentDir -buffer-name=files buffer file_mru bookmark file<CR>
 " nnoremap <silent> [unite]b  :<C-u>UniteWithBufferDir -buffer-name=files -prompt=%\  buffer file_mru bookmark file<CR>
