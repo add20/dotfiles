@@ -5,4 +5,4 @@ SAVEHIST=50000 # HISTFILE で指定したファイルに保存される履歴の
 setopt hist_ignore_dups # ignore duplication command history list
 setopt share_history    # share command history data
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
