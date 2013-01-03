@@ -16,7 +16,9 @@ NeoBundle 'Shougo/neobundle.vim'
 " vimproc : vimから非同期実行。vimshelleで必要
 NeoBundle 'Shougo/vimproc', {
     \ 'build' : {
+    \     'cygwin' : 'make -f make_cygwin.mak',
     \     'mac' : 'make -f make_mac.mak',
+    \     'unix' : 'make -f make_unix.mak'
     \    },
     \ }
 
@@ -65,15 +67,25 @@ NeoBundle 'ujihisa/neco-ghc'
 NeoBundle 'ujihisa/unite-haskellimport'
 NeoBundle 'dag/vim2hs'
 
+" Ruby
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'tpope/vim-rails'
+
+" テキストオブジェクト
+NeoBundle 'textobj-user'
+NeoBundle 'textobj-indent'
+NeoBundle 'textobj-rubyblock'
+
 " 括弧
 NeoBundle 'tpope/vim-surround'
 
+" <C-a>でtrue/false切替。他色々
+NeoBundle 'taku-o/vim-toggle'
+
 NeoBundle 'thinca/vim-quickrun'
 
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'tpope/vim-rails'
 NeoBundle 'tsaleh/vim-matchit'
-NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'briancollins/vim-jst'
 " Smooth-Scrollと相性が悪い(<C-B>,  <C-U>が効かなくなる)
