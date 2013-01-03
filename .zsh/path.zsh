@@ -1,5 +1,5 @@
 # Load NVM function
-# source ~/dotfiles/.nvm/nvm.sh
+source ~/.nvm/nvm.sh
 
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
