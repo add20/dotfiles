@@ -68,6 +68,8 @@ NeoBundle 'dag/vim2hs'
 " 括弧
 NeoBundle 'tpope/vim-surround'
 
+NeoBundle 'thinca/vim-quickrun'
+
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tsaleh/vim-matchit'

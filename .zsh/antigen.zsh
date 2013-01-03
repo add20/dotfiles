@@ -19,6 +19,7 @@ antigen-bundle sublime  # alias: for sublime
 # antigen-bundle lein
 # antigen-bundle command-not-found # only for Ubuntu
 antigen-bundle $HOME/dotfiles/.zsh/plugins/tmux --no-local-clone
+antigen-bundle $HOME/dotfiles/.zsh/plugins/rbenv --no-local-clone
 
 # Syntax highlighting bundle.
 antigen-bundle zsh-users/zsh-syntax-highlighting
