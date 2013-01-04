@@ -71,6 +71,13 @@ NeoBundle 'dag/vim2hs'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-rails'
 
+" JSON
+NeoBundle 'JSON.vim'
+
+" JavaScript
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'JavaScript-syntax'
+
 " テキストオブジェクト
 NeoBundle 'textobj-user'
 NeoBundle 'textobj-indent'
@@ -85,7 +92,6 @@ NeoBundle 'taku-o/vim-toggle'
 NeoBundle 'thinca/vim-quickrun'
 
 NeoBundle 'tsaleh/vim-matchit'
-NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'briancollins/vim-jst'
 " Smooth-Scrollと相性が悪い(<C-B>,  <C-U>が効かなくなる)
