@@ -11,10 +11,11 @@ antigen-bundle gem      # completion: for gem
 antigen-bundle git-flow # completion: for git-flow
 antigen-bundle sublime  # alias: for sublime
 antigen-bundle npm      # completion: for npm
+antigen-bundle urltools # for URL character
 # antigen-bundle encode64 # function:   encode/decode strings with base64
 # antigen-bundle gas      # completion: Gas helps you manage your git authors.
 # antigen-bundle coffee   # completion: for coffee script
-# antigen-bundle bundler  # function, alias: for bundle exec
+antigen-bundle bundler  # function, alias: for bundle exec
 # antigen-bundle heroku
 # antigen-bundle pip
 # antigen-bundle lein

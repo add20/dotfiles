@@ -70,6 +70,7 @@ NeoBundle 'dag/vim2hs'
 " Ruby
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-rails'
+NeoBundle 'taichouchou2/vim-rsense'
 
 " JSON
 NeoBundle 'JSON.vim'
@@ -87,7 +88,7 @@ NeoBundle 'textobj-rubyblock'
 NeoBundle 'tpope/vim-surround'
 
 " <C-a>でtrue/false切替。他色々
-NeoBundle 'taku-o/vim-toggle'
+" NeoBundle 'taku-o/vim-toggle'
 
 NeoBundle 'thinca/vim-quickrun'
 

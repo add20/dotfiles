@@ -11,6 +11,10 @@ alias la="ls -la"
 alias df="df -h"
 alias du="du -h"
 
+# Vim
+alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+
 # Shortcuts
 alias g="git"
 alias gi="git"

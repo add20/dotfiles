@@ -1,5 +1,5 @@
 source ~/dotfiles/.vimrc.bundle
-source $VIMRUNTIME/vimrc_example.vim
+" source $VIMRUNTIME/vimrc_example.vim
 source ~/dotfiles/.vimrc.basic
 source ~/dotfiles/.vimrc.neocomplcache
 source ~/dotfiles/.vimrc.neosnippet
