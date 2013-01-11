@@ -11,6 +11,8 @@
   ff = false
 [branch]
   autosetuprebase = always
+[push]
+ default = simple
 [pull]
   rebase = true
 [grep]
