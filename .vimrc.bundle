@@ -60,6 +60,9 @@ NeoBundle 'add20/add20-snippets.vim'
 " コメントアウト
 NeoBundle 'tyru/caw.vim'
 
+" Clojure
+NeoBundle 'VimClojure'
+
 " Haskell
 NeoBundle 'eagletmt/ghcmod-vim'
 NeoBundle 'eagletmt/unite-haddock'
