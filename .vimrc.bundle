@@ -60,6 +60,15 @@ NeoBundle 'add20/add20-snippets.vim'
 " コメントアウト
 NeoBundle 'tyru/caw.vim'
 
+" Groovy
+NeoBundle 'groovy.vim'
+
+" Gradle
+NeoBundle 'tfnico/vim-gradle'
+
+" Scala
+NeoBundle 'derekwyatt/vim-scala'
+
 " Clojure
 NeoBundle 'VimClojure'
 

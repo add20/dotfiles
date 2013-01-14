@@ -5,17 +5,18 @@ antigen-lib
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen-bundle git
-antigen-bundle autojump
-antigen-bundle brew
-antigen-bundle gem      # completion: for gem
 antigen-bundle git-flow # completion: for git-flow
-antigen-bundle sublime  # alias: for sublime
+antigen-bundle brew
+antigen-bundle gradle   # completion: for gradle tasks
+antigen-bundle gem      # completion: for gem
+antigen-bundle bundler  # function, alias: for bundle exec
 antigen-bundle npm      # completion: for npm
+antigen-bundle sublime  # alias: for sublime
 antigen-bundle urltools # for URL character
+antigen-bundle autojump
 # antigen-bundle encode64 # function:   encode/decode strings with base64
 # antigen-bundle gas      # completion: Gas helps you manage your git authors.
 # antigen-bundle coffee   # completion: for coffee script
-antigen-bundle bundler  # function, alias: for bundle exec
 # antigen-bundle heroku
 # antigen-bundle pip
 # antigen-bundle lein
