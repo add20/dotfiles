@@ -55,6 +55,7 @@ NeoBundle 'Shougo/neocomplcache'
 " snippet
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'honza/snipmate-snippets'
+NeoBundle 'tommorris/scala-vim-snippets'
 NeoBundle 'add20/add20-snippets.vim'
 
 " コメントアウト
