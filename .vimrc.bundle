@@ -127,6 +127,7 @@ NeoBundle 'The-NERD-tree'
 
 " タグリスト
 NeoBundle 'taglist.vim'
+NeoBundle 'Tagbar'
 
 " 閉じ括弧の自動補完
 NeoBundle 'AutoClose'
