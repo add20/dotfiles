@@ -80,6 +80,10 @@ NeoBundle 'ujihisa/neco-ghc'
 NeoBundle 'ujihisa/unite-haskellimport'
 NeoBundle 'dag/vim2hs'
 
+" Python
+NeoBundle 'nvie/vim-flake8'
+NeoBundle 'indentpython.vim'
+
 " Ruby
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-rails'

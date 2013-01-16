@@ -1,4 +1,8 @@
 " ---------------------------------
+"  vim-flake8 (python)
+" ---------------------------------
+autocmd BufWritePost *.py call Flake8()
+" ---------------------------------
 "  Tagbar
 " ---------------------------------
 nnoremap <silent> <leader>t :TagbarToggle<CR>
