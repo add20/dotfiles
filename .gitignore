@@ -7,7 +7,6 @@ Icon
 *.db
 *.sqlite3
 tags
-.env
 node_modules/
 .svn/
 
@@ -15,6 +14,9 @@ node_modules/
 .vim/.netrwhist
 .vim/undo
 .vim/cache
+
+# Procfile
+.env
 
 # Python
 *.py[cod]

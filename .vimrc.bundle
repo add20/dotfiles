@@ -86,11 +86,16 @@ NeoBundle 'indentpython.vim'
 
 " Ruby
 NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'tpope/vim-rails'
 NeoBundle 'taichouchou2/vim-rsense'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'slim-template/vim-slim'
 
 " JSON
 NeoBundle 'JSON.vim'
+
+" YAML
+NeoBundle 'avakhov/vim-yaml'  " for indent
+NeoBundle 'yaml.vim'
 
 " JavaScript
 NeoBundle 'pangloss/vim-javascript'

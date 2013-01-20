@@ -10,3 +10,6 @@ export PATH=$HOME/Library/Haskell/bin:$PATH
 
 # for MacOS
 # export CC=gcc-4.2
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
