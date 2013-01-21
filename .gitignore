@@ -30,6 +30,8 @@ dist/
 
 # Gradle
 .gradletasknamecache
+build/*
+.gradle/*
 
 # sbt specific
 dist/*
