@@ -61,6 +61,9 @@ NeoBundle 'add20/add20-snippets.vim'
 " コメントアウト
 NeoBundle 'tyru/caw.vim'
 
+" syntax checker
+NeoBundle 'scrooloose/syntastic'
+
 " Groovy
 NeoBundle 'groovy.vim'
 
