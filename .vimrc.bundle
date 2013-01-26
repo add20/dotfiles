@@ -70,6 +70,9 @@ NeoBundle 'groovy.vim'
 " Gradle
 NeoBundle 'tfnico/vim-gradle'
 
+" Java
+NeoBundle 'java_getset.vim'
+
 " Scala
 NeoBundle 'derekwyatt/vim-scala'
 
