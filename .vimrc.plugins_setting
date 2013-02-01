@@ -1,4 +1,10 @@
 " ---------------------------------
+"  Syntastic
+" ---------------------------------
+let g:syntastic_mode_map = { 'mode': 'passive',
+                           \ 'active_filetypes': ['java'],
+                           \ 'passive_filetypes': [] }
+" ---------------------------------
 "  grep.vim
 " ---------------------------------
 " :Gb <args> でGrepBufferする
