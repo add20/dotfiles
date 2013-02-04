@@ -11,7 +11,7 @@ let g:syntastic_mode_map = { 'mode': 'passive',
 command! -nargs=1 Gb :GrepBuffer <args>
 " カーソル下の単語をGrepBufferする
 nnoremap <C-g><C-b> :<C-u>GrepBuffer<Space><C-r><C-w><Enter>
-" nmap <Leader>g <ESC>:Gb
+nmap <Leader>g <ESC>:Gb
 " ---------------------------------
 "  vim-flake8 (python)
 " ---------------------------------
