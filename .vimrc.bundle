@@ -74,13 +74,13 @@ NeoBundleLazy 'tfnico/vim-gradle', {"autoload": {"filetypes": ["gradle"]}}
 " NeoBundle 'java_getset.vim'
 
 " Scala
-NeoBundleLazy 'derekwyatt/vim-scala', {"autoload": {"filetypes": ["scala"]}}
+NeoBundle 'derekwyatt/vim-scala'
 
 " Clojure
 NeoBundleLazy 'VimClojure', {"autoload": {"filetypes": ["clojure"]}}
 
 " Haskell
-NeoBundleLazy 'eagletmt/ghcmod-vim'        , {"autoload": {"filetypes": ["haskell"]}}
+NeoBundle 'eagletmt/ghcmod-vim'
 NeoBundleLazy 'eagletmt/unite-haddock'     , {"autoload": {"filetypes": ["haskell"]}}
 NeoBundleLazy 'ujihisa/neco-ghc'           , {"autoload": {"filetypes": ["haskell"]}}
 NeoBundleLazy 'ujihisa/unite-haskellimport', {"autoload": {"filetypes": ["haskell"]}}

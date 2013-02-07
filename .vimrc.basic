@@ -10,11 +10,9 @@ au BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwid
 au BufNewFile,BufRead *.py set filetype=python
 au BufNewFile,BufRead *.pl set filetype=perl
 au BufNewFile,BufRead *.rb set filetype=ruby
-au BufNewFile,BufRead *.hs set filetype=haskell
 au BufNewFile,BufRead *.js set filetype=javascript
 au BufNewFile,BufRead *.clj set filetype=clojure
 au BufNewFile,BufRead *.java set filetype=java
-au BufNewFile,BufRead *.scala set filetype=scala
 au BufNewFile,BufRead *.{groovy,gradle} set filetype=groovy
 
 set textwidth=0                  " 一行に長い文章を書いていても自動折り返しをしない
