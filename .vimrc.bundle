@@ -64,6 +64,9 @@ NeoBundle 'tyru/caw.vim'
 " syntax checker
 NeoBundle 'scrooloose/syntastic'
 
+" Parrot
+" NeoBundle 'parrot.vim'
+
 " Groovy
 NeoBundleLazy 'groovy.vim', {"autoload": {"filetypes": ["groovy"]}}
 
