@@ -77,7 +77,7 @@ NeoBundleLazy 'tfnico/vim-gradle', {"autoload": {"filetypes": ["gradle"]}}
 NeoBundle 'derekwyatt/vim-scala'
 
 " Clojure
-NeoBundleLazy 'VimClojure', {"autoload": {"filetypes": ["clojure"]}}
+NeoBundle 'VimClojure'
 
 " Haskell
 NeoBundle 'eagletmt/ghcmod-vim'
