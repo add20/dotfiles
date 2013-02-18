@@ -1,10 +1,16 @@
 let mapleader = ","
 let maplocalleader = ","
 
+set nocompatible
+
+set autoindent
 set expandtab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
+set backspace=indent,eol,start
+
+filetype plugin indent on
 
 au BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80
 au BufNewFile,BufRead *.py set filetype=python
@@ -13,15 +19,24 @@ au BufNewFile,BufRead *.rb set filetype=ruby
 au BufNewFile,BufRead *.js set filetype=javascript
 au BufNewFile,BufRead *.java set filetype=java
 au BufNewFile,BufRead *.{groovy,gradle} set filetype=groovy
+" au BufNewFile,BufRead *.ejs set filetype=html
+au! BufNewFile,BufRead *.json set filetype=json " for SnipMate
+
+autocmd FileType scheme :let is_gauche=1
 
 set textwidth=0                  " 一行に長い文章を書いていても自動折り返しをしない
 set autoread                     " 他で書き換えられたら自動で読み直す
 set formatoptions+=lmoq          " テキスト整形オプション，マルチバイト系を追加
 set nowrap
 set foldminlines=10              " 畳み込みをしない最大行数
-set autoindent
 set laststatus=2
-set nobackup
+
+set incsearch
+set ignorecase
+set smartcase
+
+set ruler     " show the cursor position all the time
+set showcmd   " display incomplete commands
 
 " augroup CursorLine             " 現在行のハイライトをアクティブウィンドウに限定する
 "   au!
@@ -31,6 +46,7 @@ set nobackup
 "   au WinLeave * setlocal nocursorline
 " augroup END
 
+set nobackup
 if has('persistent_undo')
   set undodir=~/.vim/undo
   set undofile
@@ -43,12 +59,9 @@ set clipboard+=unnamed
 set clipboard+=autoselect
 set number
 
-set ignorecase
-set smartcase
-
-syntax on
-
-autocmd FileType scheme :let is_gauche=1
+if has('mouse')
+  set mouse=a
+endif
 
 " 保存時に行末の空白を除去する
 autocmd BufWritePre * :%s/\s\+$//ge
@@ -58,8 +71,13 @@ if expand("%") != "Makefile"
   autocmd BufWritePre * :%s/\t/ /ge
 endif
 
-"Escの2回押しでハイライト消去
-nnoremap <ESC><ESC> :nohlsearch<CR><ESC>
+" syntax on
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  set hlsearch
+  "Escの2回押しでハイライト消去
+  nnoremap <ESC><ESC> :nohlsearch<CR><ESC>
+endif
 
 " insert mode での移動
 imap  <C-e> <END>
@@ -85,6 +103,3 @@ let $JS_CMD='node'
 " if you want to highlight line comment out bolow
 let g:JSLintHighlightErrorLine = 0
 filetype plugin on
-
-" au BufNewFile,BufRead *.ejs set filetype=html
-au! BufNewFile,BufRead *.json set filetype=json " for SnipMate
