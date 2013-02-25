@@ -9,7 +9,7 @@ function md() {
 }
 
 # cat files with filename and line number
-function file()
+function ncat()
 {
   for filename in $*
   do
