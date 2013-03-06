@@ -17,6 +17,8 @@
   rebase = true
 [grep]
   lineNumber = true
+[help]
+ autocorrect = -1
 [alias]
   # branch
   b  = branch
