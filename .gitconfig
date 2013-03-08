@@ -9,6 +9,7 @@
   ui = auto
 [merge]
   ff = false
+  log = true
 [branch]
   autosetuprebase = always
 [push]
