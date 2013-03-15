@@ -79,6 +79,12 @@ NeoBundleLazy 'tfnico/vim-gradle', {"autoload": {"filetypes": ["gradle"]}}
 " Scala
 NeoBundle 'derekwyatt/vim-scala'
 
+" Gauche
+" NeoBundle 'aharisu/vim_goshrepl'
+
+" Scheme
+" NeoBundle 'haruyama/scheme.vim'
+
 " Clojure
 NeoBundle 'VimClojure'
 
