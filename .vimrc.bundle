@@ -90,10 +90,10 @@ NeoBundle 'VimClojure'
 
 " Haskell
 NeoBundle 'eagletmt/ghcmod-vim'
-NeoBundleLazy 'eagletmt/unite-haddock'     , {"autoload": {"filetypes": ["haskell"]}}
-NeoBundleLazy 'ujihisa/neco-ghc'           , {"autoload": {"filetypes": ["haskell"]}}
-NeoBundleLazy 'ujihisa/unite-haskellimport', {"autoload": {"filetypes": ["haskell"]}}
-NeoBundleLazy 'dag/vim2hs'                 , {"autoload": {"filetypes": ["haskell"]}}
+NeoBundle 'eagletmt/unite-haddock'
+NeoBundle 'ujihisa/neco-ghc'
+NeoBundle 'ujihisa/unite-haskellimport'
+NeoBundle 'dag/vim2hs'
 
 " Python
 NeoBundleLazy 'nvie/vim-flake8' , {"autoload": {"filetypes": ["python"]}}
