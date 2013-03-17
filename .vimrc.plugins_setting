@@ -182,6 +182,6 @@ nnoremap <silent> [unite]hs :<C-u>%!stylish-haskell<CR>
 " ---------------------------------
 "  vim2hs
 " ---------------------------------
-" let g:haskell_conceal_wide = 1
-" let g:haskell_conceal              = 0
-let g:haskell_conceal_enumerations = 0
+" let g:haskell_conceal_wide         = 1 " disabled by default
+let g:haskell_conceal              = 0 " enabled by default
+let g:haskell_conceal_enumerations = 0 " enabled by default

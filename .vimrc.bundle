@@ -91,7 +91,7 @@ NeoBundle 'VimClojure'
 " Haskell
 NeoBundle 'eagletmt/ghcmod-vim'
 NeoBundle 'eagletmt/unite-haddock'
-NeoBundle 'ujihisa/neco-ghc'
+" NeoBundle 'ujihisa/neco-ghc'
 NeoBundle 'ujihisa/unite-haskellimport'
 NeoBundle 'dag/vim2hs'
 
