@@ -8,6 +8,8 @@ export PATH=$HOME/bin:$PATH
 # neocomplcache-ghc (neco-ghc) for Vim
 export PATH=$HOME/Library/Haskell/bin:$PATH
 
+export PATH=$HOME/.cabal/bin:$PATH
+
 # for MacOS
 # export CC=gcc-4.2
 
