@@ -139,7 +139,6 @@ NeoBundle 'briancollins/vim-jst'
 " NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'add20/vim-conque'
-" NeoBundle 'tpope/vim-fugitive'
 " NeoBundle 'Lokaltog/vim-easymotion'
 " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
@@ -159,8 +158,9 @@ NeoBundle 'Tagbar'
 " 閉じ括弧の自動補完
 NeoBundle 'AutoClose'
 
-" GrepBuffer
+" Grep
 NeoBundle 'grep.vim'
+NeoBundle 'ack.vim'
 
 " Smooth Scroll
 NeoBundle 'Smooth-Scroll'
