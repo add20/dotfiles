@@ -103,10 +103,10 @@ NeoBundleLazy 'indentpython.vim', {"autoload": {"filetypes": ["python"]}}
 NeoBundleLazy 'vim-perl/vim-perl', {"autoload": {"filetypes": ["perl"]}}
 
 " Ruby
-NeoBundleLazy 'vim-ruby/vim-ruby'   , {"autoload": {"filetypes": ["ruby"]}}
+NeoBundle 'vim-ruby/vim-ruby'
 NeoBundleLazy 'taichouchou2/vim-rsense', {"autoload": {"filetypes": ["ruby"]}}
 NeoBundleLazy 'tpope/vim-rails'         , {"autoload": {"filetypes": ["ruby"]}}
-NeoBundleLazy 'slim-template/vim-slim'  , {"autoload": {"filetypes": ["ruby"]}}
+NeoBundle 'slim-template/vim-slim'
 
 " JavaScript
 NeoBundleLazy 'pangloss/vim-javascript', {"autoload": {"filetypes": ["javascript"]}}
