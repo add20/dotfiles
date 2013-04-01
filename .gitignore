@@ -24,6 +24,11 @@ node_modules/
 # Haskell
 dist/
 *.prof
+.hpc/
+*.hi
+*.tix
+hpc_index*.html
+*.hs.html
 
 # JVM
 *.class
