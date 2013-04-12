@@ -61,6 +61,7 @@
   g = grep --break --heading --line-number
   # reset
   unstage = reset HEAD --
+  cancel = !git commit -a -m 'Temporary commit for cancel' && git reset --hard HEAD~
   # other
   stash-unapply = !git stash show -p | git apply -R
 [credential]

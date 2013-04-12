@@ -11,7 +11,7 @@ let g:vimclojure#ParenRainbow = 1
 "  Syntastic
 " ---------------------------------
 let g:syntastic_mode_map = { 'mode': 'passive',
-                           \ 'active_filetypes': ['java'],
+                           \ 'active_filetypes': ['java', 'c'],
                            \ 'passive_filetypes': [] }
 " ---------------------------------
 "  grep.vim
