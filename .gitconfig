@@ -15,7 +15,7 @@
 [branch]
   autosetuprebase = always
 [push]
- default = simple
+  default = simple
 [pull]
   rebase = true
 [grep]
@@ -26,6 +26,7 @@
   # branch
   b  = branch
   br = branch
+  bv = branch -av
   # commit
   ci = commit -v
   # checkout
@@ -41,8 +42,8 @@
   ds = diff --staged
   dw = diff --no-ext-diff --color-words
   # merge
-  mdm = !git co master && git merge @{-1} && git br -d @{-1}
-  mdd = !git co develop && git develop @{-1} && git br -d @{-1}
+  mdm = !git co master && git merge --no-edit @{-1} && git br -d @{-1}
+  mdd = !git co develop && git develop --no-edit @{-1} && git br -d @{-1}
   # rebase
   rbm  = rebase --merge master
   rbd  = rebase --merge develop
@@ -53,10 +54,10 @@
   rbi4 = rebase -i HEAD^^^^
   rbi5 = rebase -i HEAD^^^^^
   # remote
+  info = remote show origin
   delete-remote-branch = !git branch -a --merged | grep -v master | grep remotes/origin| sed -e 's% *remotes/origin/%%' | xargs -I% git push origin :%
   # log
-  last = log -1 -p HEAD
-  graph = log --oneline --decorate --graph --all
+  l = log --oneline --decorate --graph --all
   # grep
   g = grep --break --heading --line-number
   # reset
@@ -69,3 +70,8 @@
 [tig "bind"]
   generic = g move-first-line
   generic = G move-last-line
+[browse-remote "github.com"]
+  top = https://{host}/{path}
+  ref = https://{host}/{path}/tree/{short_ref}
+  rev = https://{host}/{path}/commit/{commit}
+  file = "https://{host}/{path}/blob/{short_rev}/{file}{line && \"#L%d\" % line}"
