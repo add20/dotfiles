@@ -5,6 +5,8 @@
   excludesfile = ~/.gitignore
   autocrlf = input
   pager = less -FRSX
+[include]
+  path = .gitconfig.local
 [color]
   ui = auto
 [commit]
