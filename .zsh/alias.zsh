@@ -17,8 +17,8 @@ alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"
 
 # Git
 alias g="git"
-alias gitst="git st"
-alias gitci="git ci"
+alias gs="git st"
+alias gi="git ci"
 
 # git-flow
 alias gffe="git flow feature"
