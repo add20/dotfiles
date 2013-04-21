@@ -95,6 +95,9 @@ NeoBundle 'eagletmt/unite-haddock'
 NeoBundle 'ujihisa/unite-haskellimport'
 NeoBundle 'dag/vim2hs'
 
+" Puppet
+NeoBundle 'Puppet-Syntax-Highlighting'
+
 " Python
 NeoBundleLazy 'nvie/vim-flake8' , {"autoload": {"filetypes": ["python"]}}
 NeoBundleLazy 'indentpython.vim', {"autoload": {"filetypes": ["python"]}}
