@@ -107,8 +107,8 @@ NeoBundleLazy 'vim-perl/vim-perl', {"autoload": {"filetypes": ["perl"]}}
 
 " Ruby
 NeoBundle 'vim-ruby/vim-ruby'
-NeoBundleLazy 'taichouchou2/vim-rsense', {"autoload": {"filetypes": ["ruby"]}}
-NeoBundleLazy 'tpope/vim-rails'         , {"autoload": {"filetypes": ["ruby"]}}
+NeoBundle 'taichouchou2/vim-rsense'
+NeoBundle 'tpope/vim-rails'
 NeoBundle 'slim-template/vim-slim'
 
 " JavaScript
