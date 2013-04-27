@@ -45,7 +45,7 @@
   dw = diff --no-ext-diff --color-words
   # merge
   mdm = !git co master && git merge --no-edit @{-1} && git br -d @{-1}
-  mdd = !git co develop && git develop --no-edit @{-1} && git br -d @{-1}
+  mdd = !git co develop && git merge --no-edit @{-1} && git br -d @{-1}
   # rebase
   rbm  = rebase --merge master
   rbd  = rebase --merge develop
