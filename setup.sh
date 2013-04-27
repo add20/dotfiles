@@ -8,10 +8,9 @@ do
 done
 
 # for oh-my-zsh
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-rm -fr ~/.oh-my-zsh/custom
-ln -s ~/dotfiles/.zsh/plugins ~/.oh-my-zsh/custom
-ln -s ~/dotfiles/.zsh/themes/add20.zsh-theme ~/.oh-my-zsh/themes/add20.zsh-theme
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+ln -s ~/dotfiles/.zsh/plugins ~/.oh-my-zsh/custom/
+ln -s ~/dotfiles/.zsh/themes ~/.oh-my-zsh/custom/
 
 # for NeoBundle
 mkdir -p ~/dotfiles/.vim/bundle
