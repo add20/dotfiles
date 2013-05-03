@@ -6,12 +6,11 @@ export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
 
 # neocomplcache-ghc (neco-ghc) for Vim
-export PATH=$HOME/Library/Haskell/bin:$PATH
+if [[ $OSTYPE == darwin* ]]; then
+  export PATH=$HOME/Library/Haskell/bin:$PATH
+fi
 
 export PATH=$HOME/.cabal/bin:$PATH
-
-# for MacOS
-# export CC=gcc-4.2
 
 ### Added by the Heroku Toolbelt
 # export PATH="/usr/local/heroku/bin:$PATH"
