@@ -92,11 +92,11 @@ NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'VimClojure'
 
 " Haskell
-NeoBundle 'eagletmt/ghcmod-vim'
-NeoBundle 'eagletmt/unite-haddock'
-" NeoBundle 'ujihisa/neco-ghc'
-NeoBundle 'ujihisa/unite-haskellimport'
-NeoBundle 'dag/vim2hs'
+NeoBundleLazy 'eagletmt/ghcmod-vim',  {"autoload": { "filetypes": ["haskell"]}}
+NeoBundleLazy 'eagletmt/unite-haddock',  {"autoload": {"filetypes": ["haskell"]}}
+" NeoBundleLazy 'ujihisa/neco-ghc',  {"autoload": {"filetypes": ["haskell"]}}
+NeoBundleLazy 'ujihisa/unite-haskellimport',  {"autoload": {"filetypes": ["haskell"]}}
+NeoBundleLazy 'dag/vim2hs',  {"autoload": {"filetypes": ["haskell"]}}
 
 " Puppet
 NeoBundle 'Puppet-Syntax-Highlighting'
