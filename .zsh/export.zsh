@@ -7,7 +7,11 @@ HISTCONTROL=ignoredups
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
 # Vim
-export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+if [[ $OSTYPE == "darwin*" ]]; then
+  export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+else
+  export EDITOR=vim
+fi
 
 # sbt option
 export SBT_OPTS="-Dfile.encoding=UTF8"
