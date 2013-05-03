@@ -112,7 +112,10 @@ NeoBundleLazy 'vim-perl/vim-perl', {"autoload": {"filetypes": ["perl"]}}
 NeoBundleLazy 'vim-ruby/vim-ruby', {"autoload": {"filetypes": ["ruby"]}}
 " NeoBundle 'taichouchou2/vim-rsense'
 " NeoBundle 'tpope/vim-rails'
+
+" Template Engine
 NeoBundle 'slim-template/vim-slim'
+NeoBundle 'digitaltoad/vim-jade'
 
 " JavaScript
 NeoBundleLazy 'pangloss/vim-javascript', {"autoload": {"filetypes": ["javascript"]}}
@@ -144,7 +147,6 @@ NeoBundle 'tsaleh/vim-matchit'
 NeoBundle 'briancollins/vim-jst'
 " Smooth-Scrollと相性が悪い(<C-B>,  <C-U>が効かなくなる)
 " NeoBundle 'mattn/zencoding-vim'
-NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'add20/vim-conque'
 " NeoBundle 'Lokaltog/vim-easymotion'
 " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
