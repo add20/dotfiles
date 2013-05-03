@@ -62,13 +62,14 @@ NeoBundle 'add20/add20-snippets.vim'
 NeoBundle 'tyru/caw.vim'
 
 " syntax checker
-NeoBundle 'scrooloose/syntastic'
+NeoBundleLazy 'scrooloose/syntastic',  {
+      \ "autoload": {"filetypes": ["java", "c", "puppet", "javascript"]}}
 
 " Parrot
 " NeoBundle 'parrot.vim'
 
 " Arduino
-NeoBundle 'tclem/vim-arduino'
+NeoBundleLazy 'tclem/vim-arduino',  {"autoload": {"filetypes": ["arduino"]}}
 
 " Groovy
 NeoBundleLazy 'groovy.vim', {"autoload": {"filetypes": ["groovy"]}}
@@ -77,19 +78,19 @@ NeoBundleLazy 'groovy.vim', {"autoload": {"filetypes": ["groovy"]}}
 NeoBundleLazy 'tfnico/vim-gradle', {"autoload": {"filetypes": ["gradle"]}}
 
 " Java
-" NeoBundle 'java_getset.vim'
+" NeoBundleLazy 'java_getset.vim',  {"autoload": {"filetypes": ["java"]}}
 
 " Scala
-NeoBundle 'derekwyatt/vim-scala'
+NeoBundleLazy 'derekwyatt/vim-scala',  {"autoload": {"filetypes": ["scala"]}}
 
 " Gauche
-" NeoBundle 'aharisu/vim_goshrepl'
+" NeoBundleLazy 'aharisu/vim_goshrepl',  {"autoload": {"filetypes": ["gauche"]}}
 
 " Scheme
-" NeoBundle 'haruyama/scheme.vim'
+" NeoBundleLazy 'haruyama/scheme.vim',  {"autoload": {"filetypes": ["scheme"]}}
 
 " Clojure
-NeoBundle 'VimClojure'
+NeoBundleLazy 'VimClojure',  {"autoload": {"filetypes": ["clojure"]}}
 
 " Haskell
 NeoBundleLazy 'eagletmt/ghcmod-vim',  {"autoload": { "filetypes": ["haskell"]}}
@@ -99,7 +100,7 @@ NeoBundleLazy 'ujihisa/unite-haskellimport',  {"autoload": {"filetypes": ["haske
 NeoBundleLazy 'dag/vim2hs',  {"autoload": {"filetypes": ["haskell"]}}
 
 " Puppet
-NeoBundle 'Puppet-Syntax-Highlighting'
+NeoBundleLazy 'Puppet-Syntax-Highlighting',  {"autoload": {"filetypes": ["puppet"]}}
 
 " Python
 NeoBundleLazy 'nvie/vim-flake8' , {"autoload": {"filetypes": ["python"]}}
@@ -110,25 +111,25 @@ NeoBundleLazy 'vim-perl/vim-perl', {"autoload": {"filetypes": ["perl"]}}
 
 " Ruby
 NeoBundleLazy 'vim-ruby/vim-ruby', {"autoload": {"filetypes": ["ruby"]}}
-" NeoBundle 'taichouchou2/vim-rsense'
-" NeoBundle 'tpope/vim-rails'
+" NeoBundleLazy 'taichouchou2/vim-rsense',  {"autoload": {"filetypes": ["ruby"]}}
+" NeoBundleLazy 'tpope/vim-rails',  {"autoload": {"filetypes": ["ruby"]}}
 
 " Template Engine
-NeoBundle 'slim-template/vim-slim'
-NeoBundle 'digitaltoad/vim-jade'
+NeoBundleLazy 'slim-template/vim-slim',  {"autoload": {"filetypes": ["slim"]}}
+NeoBundleLazy 'digitaltoad/vim-jade',  {"autoload": {"filetypes": ["jade"]}}
 
 " JavaScript
 NeoBundleLazy 'pangloss/vim-javascript', {"autoload": {"filetypes": ["javascript"]}}
 
 " CoffeeScript
-NeoBundle 'kchmck/vim-coffee-script'
+NeoBundleLazy 'kchmck/vim-coffee-script',  {"autoload": {"filetypes": ["coffee"]}}
 
 " JSON
-NeoBundle 'JSON.vim'
+NeoBundleLazy 'JSON.vim',  {"autoload": {"filetypes": ["json"]}}
 
 " YAML
-NeoBundle 'avakhov/vim-yaml'  " for indent
-NeoBundle 'yaml.vim'
+NeoBundleLazy 'avakhov/vim-yaml',  {"autoload": {"filetypes": ["yaml"]}}
+NeoBundleLazy 'yaml.vim',  {"autoload": {"filetypes": ["yaml"]}}
 
 " テキストオブジェクト
 NeoBundle 'textobj-user'
