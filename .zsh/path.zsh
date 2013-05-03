@@ -14,4 +14,4 @@ export PATH=$HOME/.cabal/bin:$PATH
 # export CC=gcc-4.2
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# export PATH="/usr/local/heroku/bin:$PATH"

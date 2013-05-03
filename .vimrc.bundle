@@ -67,6 +67,9 @@ NeoBundle 'scrooloose/syntastic'
 " Parrot
 " NeoBundle 'parrot.vim'
 
+" Arduino
+NeoBundle 'tclem/vim-arduino'
+
 " Groovy
 NeoBundleLazy 'groovy.vim', {"autoload": {"filetypes": ["groovy"]}}
 
@@ -106,7 +109,7 @@ NeoBundleLazy 'indentpython.vim', {"autoload": {"filetypes": ["python"]}}
 NeoBundleLazy 'vim-perl/vim-perl', {"autoload": {"filetypes": ["perl"]}}
 
 " Ruby
-NeoBundle 'vim-ruby/vim-ruby'
+NeoBundleLazy 'vim-ruby/vim-ruby', {"autoload": {"filetypes": ["ruby"]}}
 " NeoBundle 'taichouchou2/vim-rsense'
 " NeoBundle 'tpope/vim-rails'
 NeoBundle 'slim-template/vim-slim'
@@ -114,13 +117,15 @@ NeoBundle 'slim-template/vim-slim'
 " JavaScript
 NeoBundleLazy 'pangloss/vim-javascript', {"autoload": {"filetypes": ["javascript"]}}
 
+" CoffeeScript
+NeoBundle 'kchmck/vim-coffee-script'
+
 " JSON
 NeoBundle 'JSON.vim'
 
 " YAML
 NeoBundle 'avakhov/vim-yaml'  " for indent
 NeoBundle 'yaml.vim'
-NeoBundleLazy 'JavaScript-syntax'      , {"autoload": {"filetypes": ["javascript"]}}
 
 " テキストオブジェクト
 NeoBundle 'textobj-user'
@@ -136,7 +141,6 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'thinca/vim-quickrun'
 
 NeoBundle 'tsaleh/vim-matchit'
-NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'briancollins/vim-jst'
 " Smooth-Scrollと相性が悪い(<C-B>,  <C-U>が効かなくなる)
 " NeoBundle 'mattn/zencoding-vim'
