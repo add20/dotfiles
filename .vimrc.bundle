@@ -96,7 +96,13 @@ NeoBundleLazy 'VimClojure',  {"autoload": {"filetypes": ["clojure"]}}
 NeoBundleLazy 'eagletmt/ghcmod-vim',  {"autoload": { "filetypes": ["haskell"]}}
 NeoBundleLazy 'eagletmt/unite-haddock',  {"autoload": {"filetypes": ["haskell"]}}
 " NeoBundleLazy 'ujihisa/neco-ghc',  {"autoload": {"filetypes": ["haskell"]}}
-NeoBundleLazy 'ujihisa/unite-haskellimport',  {"autoload": {"filetypes": ["haskell"]}}
+NeoBundleLazy 'ujihisa/unite-haskellimport',  {
+      \   "autoload": {"filetypes": ["haskell"]},
+      \   "build": {
+      \     "mac": "cabal install hoogle && hoogle data",
+      \     "unix": "cabal install hoogle && hoogle data"
+      \   }
+      \ }
 NeoBundleLazy 'dag/vim2hs',  {"autoload": {"filetypes": ["haskell"]}}
 
 " Puppet
