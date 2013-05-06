@@ -4,3 +4,4 @@ source ~/dotfiles/.vimrc.basic
 source ~/dotfiles/.vimrc.neocomplcache
 source ~/dotfiles/.vimrc.neosnippet
 source ~/dotfiles/.vimrc.plugins_setting
+source ~/dotfiles/.vimrc.vim-tex

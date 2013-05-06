@@ -29,6 +29,7 @@ au BufNewFile,BufRead *.jade set filetype=jade
 " au BufNewFile,BufRead *.ejs set filetype=html
 au! BufNewFile,BufRead *.json set filetype=json
 au BufNewFile,BufRead *.yml set filetype=yaml
+au BufNewFile,BufRead *.tex set filetype=tex
 
 autocmd FileType scheme :let is_gauche=1
 
