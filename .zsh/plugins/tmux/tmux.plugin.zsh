@@ -1,5 +1,5 @@
 # for Vim?
-# alias tmux="TERM=screen-256color-bce tmux"
+alias tmux="TERM=screen-256color-bce tmux"
 
 # for zsh
 # tmuxでautomatic-rename offの設定を無視られないようにする
