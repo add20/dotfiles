@@ -50,8 +50,9 @@ let g:tagbar_type_scala = {
 syntax enable
 " solarized options
 " let g:solarized_termcolors = 256
-let g:solarized_visibility = "high"
-let g:solarized_contrast = "high"
+" let g:solarized_visibility = "high"
+" let g:solarized_contrast = "high"
+" let g:solarized_termtrans = 1
 if has('gui_running')
   set background=light
 else
