@@ -51,4 +51,4 @@ setopt prompt_subst
 
 PROMPT="$(ssh_connection)%B%2~%b %{$fg[blue]%}%#%{$reset_color%} "
 
-RPROMPT=$(rprompt-git-current-branch)
+RPROMPT='`rprompt-git-current-branch`'
