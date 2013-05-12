@@ -22,6 +22,10 @@ alias gfho="git flow hotfix"
 alias gfre="git flow release"
 alias gfsu="git flow support"
 
+# pandoc
+# alias pandoc-pdf="pandoc --latex-engine=xelatex -V mainfont=Ricty --toc"
+alias pandoc-pdf="pandoc -V documentclass=ltjarticle --latex-engine=lualatex -t pdf"
+
 alias -s bz2='tar vvtf'
 alias -s gz='tar vvtzf'
 alias -s tgz='tar vvtzf'
