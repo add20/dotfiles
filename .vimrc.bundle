@@ -65,6 +65,9 @@ NeoBundle 'tyru/caw.vim'
 NeoBundleLazy 'scrooloose/syntastic',  {
       \ "autoload": {"filetypes": ["java", "c", "puppet", "javascript"]}}
 
+" Pandoc
+NeoBundle 'vim-pandoc/vim-pandoc', {"autoload": {"filetypes": ["txt"]}}
+
 " Tex
 NeoBundleLazy 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex', {"autoload": {"filetypes": ["tex"]}}
 
