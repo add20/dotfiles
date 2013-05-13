@@ -40,11 +40,16 @@ alias -s exe=mono # for C# application
 case "${OSTYPE}" in
 darwin*)
   alias ls="ls -G -w"
+
   # Vagrant
   alias vagrant="/Applications/Vagrant/bin/vagrant"
+
   # Vim
   alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
   alias vim='vi'
+
+  # reveal.js
+  alias revealjs-init="ln -shf ~/OSS/reveal.js/{css,js,lib,plugin} ."
   ;;
 freebsd*)
   alias ls="ls -G -w"
