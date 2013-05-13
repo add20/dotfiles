@@ -24,6 +24,7 @@ alias gfsu="git flow support"
 
 # pandoc
 alias pandoc-pdf="pandoc -V mainfont=OsakaMono -V documentclass=ltjarticle --latex-engine=lualatex --toc"
+alias pandoc-slide="pandoc -s --highlight-style pygments --toc -t"
 
 alias -s bz2='tar vvtf'
 alias -s gz='tar vvtzf'
