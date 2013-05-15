@@ -22,14 +22,17 @@ alias gfho="git flow hotfix"
 alias gfre="git flow release"
 alias gfsu="git flow support"
 
+# Haskell
+alias htags="echo \":ctags\" | ghci -v0 **/*.hs"
+
 # pandoc
-alias pandoc-pdf="pandoc -V mainfont=OsakaMono -V documentclass=ltjarticle --latex-engine=lualatex --toc"
+alias pandoc-pdf="pandoc -V mainfont=OsakaMono -V documentclass=ltjarticle --latex-engine=lualatex --toc --tab-stop=2"
 alias pandoc-slide="pandoc -s --highlight-style pygments --toc -t"
 # https://github.com/jgm/pandoc/wiki/Using-pandoc-to-produce-reveal.js-slides
-alias pandoc-revealjs="pandoc -s -t html5 --template=template-revealjs.html --section-divs"
-# alias pandoc-revealjs="pandoc -s -t html5 --template=template-revealjs.html --section-divs -V theme=default -V transition=default"
 # theme=default, sky, beige, simple, serif, night, moon, solarized
 # transition=default, cube, page, concave, zoom, linear, fade, none
+# alias pandoc-revealjs="pandoc -s -t html5 --template=template-revealjs.html --section-divs -V theme=default -V transition=default"
+alias pandoc-revealjs="pandoc -s -t html5 --template=template-revealjs.html --section-divs"
 
 alias -s bz2='tar vvtf'
 alias -s gz='tar vvtzf'

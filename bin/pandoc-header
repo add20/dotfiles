@@ -1,0 +1,15 @@
+#! /usr/bin/env runhaskell
+
+import System.Environment (getArgs)
+import Data.List
+
+main :: IO ()
+main = do
+    (headerPath:_) <- getArgs
+    header <- getMeta `fmap` (readFile headerPath)
+    body <- getContents
+
+    putStrLn $ header ++ "\n" ++ body
+
+getMeta :: String -> String
+getMeta = unlines . takeWhile ("%" `isPrefixOf`) . lines
