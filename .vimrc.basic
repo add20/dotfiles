@@ -30,7 +30,7 @@ au BufNewFile,BufRead *.jade set filetype=jade
 au! BufNewFile,BufRead *.json set filetype=json
 au BufNewFile,BufRead *.yml set filetype=yaml
 au BufNewFile,BufRead *.tex set filetype=tex
-au BufNewFile,BufRead *.txt set filetype=pandoc
+au BufNewFile,BufRead *.md set filetype=pandoc
 
 autocmd FileType scheme :let is_gauche=1
 
