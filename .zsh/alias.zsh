@@ -26,7 +26,8 @@ alias gfsu="git flow support"
 alias htags="echo \":ctags\" | ghci -v0 **/*.hs"
 
 # pandoc
-alias pandoc-pdf="pandoc -V mainfont=OsakaMono -V documentclass=ltjarticle --latex-engine=lualatex --toc --tab-stop=2"
+alias pandoc-pdf="pandoc -V mainfont=OsakaMono -V documentclass=ltjarticle --latex-engine=lualatex --tab-stop=2 --toc"
+alias pandoc-pdf-no-toc="pandoc -V mainfont=OsakaMono -V documentclass=ltjarticle --latex-engine=lualatex --tab-stop=2"
 alias pandoc-slide="pandoc -s --highlight-style pygments --toc -t"
 # https://github.com/jgm/pandoc/wiki/Using-pandoc-to-produce-reveal.js-slides
 # theme=default, sky, beige, simple, serif, night, moon, solarized
