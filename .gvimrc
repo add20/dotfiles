@@ -1,7 +1,35 @@
-set guifont=Ricty\ Regular:14
+if has('gui_macvim')
+  set guifont=Ricty\ Regular:14
+  set antialias
 
-set transparency=10
+  set transparency=10
 
-set background=light
-" set background=dark
-colorscheme solarized
+  set background=light
+  " set background=dark
+  colorscheme solarized
+
+  " http://blog.conafie.jp/2011/05/bashzsh-vim.html
+  function! s:pushEnv(shname)
+    if a:shname == 'bash'
+      let l:envs = split(system('bash -c "source ~/.bashrc; source ~/.bash_profile; export"'))
+    elseif a:shname == 'zsh'
+      " let l:envs = split(system('zsh -c "source ~/.zshrc; source ~/.zshenv; export"'))
+      let l:envs = split(system('zsh -c "source ~/.zsh/path.zsh; export"'))
+    else
+      return
+    endif
+
+    for l:env in l:envs
+      unlet! l:envkeyval
+      unlet! l:envkey
+      unlet! l:envval
+      let l:envkeyval = split(l:env, '=')
+      let l:envkey = l:envkeyval[0]
+      unlet l:envkeyval[0]
+      let l:envval = join(l:envkeyval, '=')
+
+      execute 'let $' . l:envkey . '="' . l:envval . '"'
+    endfor
+  endfunction
+  call s:pushEnv('zsh')
+endif
