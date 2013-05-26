@@ -59,7 +59,7 @@ NeoBundle 'tommorris/scala-vim-snippets'
 NeoBundle 'add20/add20-snippets.vim'
 
 " コメントアウト
-NeoBundle 'tyru/caw.vim'
+NeoBundle 'tomtom/tcomment_vim'
 
 " syntax checker
 NeoBundleLazy 'scrooloose/syntastic',  {
