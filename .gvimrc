@@ -1,11 +1,14 @@
 if has('gui_macvim')
   set guifont=Ricty\ Regular:14
-  set antialias
+  " set antialias
+
+  set imdisable
 
   set transparency=10
 
-  set background=light
-  " set background=dark
+  " set background=light
+  set background=dark
+
   colorscheme solarized
 
   " http://blog.conafie.jp/2011/05/bashzsh-vim.html

@@ -70,13 +70,13 @@ let g:Powerline_symbols = 'fancy'
 nnoremap    [unite]   <Nop>
 nmap    f [unite]
 
-nnoremap <silent> [unite]a  :<C-u>UniteWithCurrentDir -direction=botright -buffer-name=files buffer file_mru bookmark file<CR>
-nnoremap <silent> [unite]u  :<C-u>Unite -direction=botright buffer file_mru<CR>
-nnoremap <silent> [unite]f  :<C-u>Unite -direction=botright -buffer-name=files file<CR>
-nnoremap <silent> [unite]b  :<C-u>Unite -direction=botright buffer<CR>
-nnoremap <silent> [unite]m  :<C-u>Unite -direction=botright file_mru<CR>
-nnoremap <silent> [unite]d  :<C-u>UniteWithCurrentDir -direction=botright file<CR>
-nnoremap <silent> [unite]t  :<C-u>Unite -direction=botright -immediately tab<CR>
+nnoremap <silent> [unite]a  :<C-u>UniteWithCurrentDir -direction=topleft -buffer-name=files buffer file_mru bookmark file<CR>
+nnoremap <silent> [unite]u  :<C-u>Unite -direction=topleft buffer file_mru<CR>
+nnoremap <silent> [unite]f  :<C-u>Unite -direction=topleft -buffer-name=files file<CR>
+nnoremap <silent> [unite]b  :<C-u>Unite -direction=topleft buffer<CR>
+nnoremap <silent> [unite]m  :<C-u>Unite -direction=topleft file_mru<CR>
+nnoremap <silent> [unite]d  :<C-u>UniteWithCurrentDir -direction=topleft file<CR>
+nnoremap <silent> [unite]t  :<C-u>Unite -direction=topleft -immediately tab<CR>
 
 nnoremap <silent> [unite]c  :<C-u>UniteWithCurrentDir -buffer-name=files buffer file_mru bookmark file<CR>
 " nnoremap <silent> [unite]b  :<C-u>UniteWithBufferDir -buffer-name=files -prompt=%\  buffer file_mru bookmark file<CR>
@@ -166,15 +166,15 @@ nnoremap <silent> [unite]o :<C-u>Unite -no-split outline<CR>
 cnoremap UH Unite help<Enter>
 nnoremap <silent> [unite]h :<C-u>Unite -no-split help<CR>
 " unite-haddock
-nnoremap <silent> [unite]ha :<C-u>UniteWithCursorWord -direction=botright -immediately haddock<CR>
+nnoremap <silent> [unite]ha :<C-u>UniteWithCursorWord -direction=topleft -immediately haddock<CR>
 " ghcmod-vim
-nnoremap <silent> [unite]ho :<C-u>UniteWithCursorWord -direction=botright -immediately hoogle<CR>
+nnoremap <silent> [unite]ho :<C-u>UniteWithCursorWord -direction=topleft -immediately hoogle<CR>
 nnoremap <silent> [unite]ht :<C-u>GhcModType<CR>
 nnoremap <silent> [unite]hc :<C-u>GhcModTypeClear<CR>
 " ghcmod-vim (保存後に非同期でチェックをする)
 autocmd BufWritePost *.hs GhcModCheckAsync
 " unite-haskellimport
-nnoremap <silent> [unite]hi :<C-u>UniteWithCursorWord -direction=botright -immediately haskellimport<CR>
+nnoremap <silent> [unite]hi :<C-u>UniteWithCursorWord -direction=topleft -immediately haskellimport<CR>
 " unite-tag
 autocmd BufEnter *
 \   if empty(&buftype)
