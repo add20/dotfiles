@@ -101,7 +101,7 @@ NeoBundleLazy 'VimClojure',  {"autoload": {"filetypes": ["clojure"]}}
 " Haskell
 NeoBundleLazy 'eagletmt/ghcmod-vim',  {"autoload": { "filetypes": ["haskell"]}}
 NeoBundleLazy 'eagletmt/unite-haddock',  {"autoload": {"filetypes": ["haskell"]}}
-" NeoBundleLazy 'ujihisa/neco-ghc',  {"autoload": {"filetypes": ["haskell"]}}
+NeoBundleLazy 'ujihisa/neco-ghc',  {"autoload": {"filetypes": ["haskell"]}}
 NeoBundleLazy 'ujihisa/unite-haskellimport',  {"autoload": {"filetypes": ["haskell"]}}
 NeoBundleLazy 'dag/vim2hs',  {"autoload": {"filetypes": ["haskell"]}}
 
@@ -137,6 +137,9 @@ NeoBundleLazy 'JSON.vim',  {"autoload": {"filetypes": ["json"]}}
 NeoBundleLazy 'avakhov/vim-yaml',  {"autoload": {"filetypes": ["yaml"]}}
 NeoBundleLazy 'yaml.vim',  {"autoload": {"filetypes": ["yaml"]}}
 
+" Smooth-Scrollと相性が悪い(<C-B>,  <C-U>が効かなくなる)
+NeoBundle 'mattn/zencoding-vim'
+
 " テキストオブジェクト
 NeoBundle 'textobj-user'
 NeoBundle 'textobj-indent'
@@ -152,8 +155,6 @@ NeoBundle 'thinca/vim-quickrun'
 
 NeoBundle 'tsaleh/vim-matchit'
 NeoBundle 'briancollins/vim-jst'
-" Smooth-Scrollと相性が悪い(<C-B>,  <C-U>が効かなくなる)
-" NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'add20/vim-conque'
 " NeoBundle 'Lokaltog/vim-easymotion'
 " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -179,7 +180,7 @@ NeoBundle 'grep.vim'
 NeoBundle 'ack.vim'
 
 " Smooth Scroll
-NeoBundle 'Smooth-Scroll'
+" NeoBundle 'Smooth-Scroll'
 
 " キャメルケースでの移動
 NeoBundle 'camelcasemotion'

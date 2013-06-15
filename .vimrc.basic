@@ -78,7 +78,7 @@ autocmd BufWritePre * :%s/\s\+$//ge
 
 " 保存時にtabをスペースに変換する
 if expand("%") != "Makefile"
-  autocmd BufWritePre * :%s/\t/ /ge
+  " autocmd BufWritePre * :%s/\t/ /ge
 endif
 
 " syntax on
