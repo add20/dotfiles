@@ -41,6 +41,7 @@ set formatoptions+=lmoq          " テキスト整形オプション，マルチ
 set nowrap
 set foldminlines=10              " 畳み込みをしない最大行数
 set laststatus=2
+set nobackup
 
 set incsearch
 set ignorecase
@@ -57,11 +58,6 @@ set showcmd   " display incomplete commands
 "   au WinLeave * setlocal nocursorline
 " augroup END
 
-set nobackup
-if has('persistent_undo')
-  set undodir=~/.vim/undo
-  set undofile
-endif
 
 " 挿入モードでCtrl+kを押すとクリップボードの内容を貼り付けられるようにする "
 imap <C-K>  <ESC>"*pa
