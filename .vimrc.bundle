@@ -65,6 +65,9 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundleLazy 'scrooloose/syntastic',  {
       \ "autoload": {"filetypes": ["java", "c", "puppet", "javascript"]}}
 
+" Nginx
+NeoBundle 'nginx.vim'
+
 " Pandoc
 NeoBundleLazy 'vim-pandoc/vim-pandoc', {"autoload": {"filetypes": ["pandoc"]}}
 

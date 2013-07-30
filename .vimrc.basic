@@ -42,6 +42,7 @@ set nowrap
 set foldminlines=10              " 畳み込みをしない最大行数
 set laststatus=2
 set nobackup
+set noswapfile
 
 set incsearch
 set ignorecase
