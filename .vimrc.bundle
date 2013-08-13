@@ -55,7 +55,7 @@ NeoBundle 'Shougo/neocomplcache'
 " snippet
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'honza/snipmate-snippets'
-NeoBundle 'tommorris/scala-vim-snippets'
+NeoBundleLazy 'tommorris/scala-vim-snippets', {"autoload": {"filetypes": ["scala"]}}
 NeoBundle 'add20/add20-snippets.vim'
 
 " コメントアウト
@@ -141,12 +141,12 @@ NeoBundleLazy 'avakhov/vim-yaml',  {"autoload": {"filetypes": ["yaml"]}}
 NeoBundleLazy 'yaml.vim',  {"autoload": {"filetypes": ["yaml"]}}
 
 " Smooth-Scrollと相性が悪い(<C-B>,  <C-U>が効かなくなる)
-NeoBundle 'mattn/zencoding-vim'
+NeoBundleLazy 'mattn/zencoding-vim', {"autoload": {"filetypes": ["html"]}}
 
 " テキストオブジェクト
 NeoBundle 'textobj-user'
 NeoBundle 'textobj-indent'
-NeoBundle 'textobj-rubyblock'
+NeoBundleLazy 'textobj-rubyblock', {"autoload": {"filetypes": ["ruby"]}}
 
 " 括弧
 NeoBundle 'tpope/vim-surround'
@@ -157,8 +157,8 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'thinca/vim-quickrun'
 
 NeoBundle 'tsaleh/vim-matchit'
-NeoBundle 'briancollins/vim-jst'
-NeoBundle 'add20/vim-conque'
+NeoBundleLazy 'briancollins/vim-jst', {"autoload": {"filetypes": ["jst", "ejs"]}}
+" NeoBundle 'add20/vim-conque'
 " NeoBundle 'Lokaltog/vim-easymotion'
 " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
