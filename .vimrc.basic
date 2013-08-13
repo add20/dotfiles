@@ -60,6 +60,11 @@ set showcmd   " display incomplete commands
 "   au WinLeave * setlocal nocursorline
 " augroup END
 
+set nobackup
+if has('persistent_undo')
+  set undodir=~/.vim/undo
+  set undofile
+endif
 
 " 挿入モードでCtrl+kを押すとクリップボードの内容を貼り付けられるようにする "
 imap <C-K>  <ESC>"*pa
