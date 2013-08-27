@@ -7,6 +7,7 @@ source ~/dotfiles/.zsh/path.zsh
 autoload zed
 
 fpath=(~/dotfiles/.zsh/functions ${fpath})
+fpath=(~/.zsh-completions/src ${fpath})
 autoload -U compinit
 compinit
 
