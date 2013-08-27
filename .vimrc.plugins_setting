@@ -14,14 +14,6 @@ let g:syntastic_mode_map = { 'mode': 'passive',
                            \ 'active_filetypes': ['java', 'c', 'cpp', 'puppet', 'javascript', 'ocaml'],
                            \ 'passive_filetypes': [] }
 " ---------------------------------
-"  grep.vim
-" ---------------------------------
-" :Gb <args> でGrepBufferする
-command! -nargs=1 Gb :GrepBuffer <args>
-" カーソル下の単語をGrepBufferする
-nnoremap <C-g><C-b> :<C-u>GrepBuffer<Space><C-r><C-w><Enter>
-nmap <Leader>g <ESC>:Gb
-" ---------------------------------
 "  vim-flake8 (python)
 " ---------------------------------
 autocmd BufWritePost *.py call Flake8()

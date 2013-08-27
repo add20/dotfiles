@@ -179,8 +179,7 @@ NeoBundle 'Tagbar'
 NeoBundle 'AutoClose'
 
 " Grep
-NeoBundle 'grep.vim'
-NeoBundle 'ack.vim'
+NeoBundle 'rking/ag.vim'
 
 " Smooth Scroll
 " NeoBundle 'Smooth-Scroll'
