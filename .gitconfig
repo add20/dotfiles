@@ -11,6 +11,8 @@
   ui = auto
 [commit]
   cleanup = whitespace
+[diff]
+	algorithm = histogram
 [merge]
   ff = false
   log = true
