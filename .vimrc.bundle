@@ -40,7 +40,7 @@ NeoBundle 'Lokaltog/vim-powerline'
 " Git (これをいれるとvim-powerlineにブランチ名が表示されるようになる)
 NeoBundle 'tpope/vim-fugitive'
 
-" Unite
+" " Unite
 NeoBundle "Shougo/unite.vim"
 NeoBundle 'h1mesuke/unite-outline'
 NeoBundle 'tsukkee/unite-help'
@@ -50,7 +50,8 @@ NeoBundle 'tsukkee/unite-tag'
 NeoBundle 'kien/ctrlp.vim'
 
 " neocomplcache
-NeoBundle 'Shougo/neocomplcache'
+" NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neocomplete.vim'
 
 " snippet
 NeoBundle 'Shougo/neosnippet'
