@@ -54,10 +54,10 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'Shougo/neocomplete.vim'
 
 " snippet
-NeoBundle 'Shougo/neosnippet'
-NeoBundle 'honza/snipmate-snippets'
-NeoBundleLazy 'tommorris/scala-vim-snippets', {"autoload": {"filetypes": ["scala"]}}
-NeoBundle 'add20/add20-snippets.vim'
+" NeoBundle 'Shougo/neosnippet.vim'
+" NeoBundle 'honza/snipmate-snippets'
+" NeoBundleLazy 'tommorris/scala-vim-snippets', {"autoload": {"filetypes": ["scala"]}}
+" NeoBundle 'add20/add20-snippets.vim'
 
 " コメントアウト
 NeoBundle 'tomtom/tcomment_vim'
