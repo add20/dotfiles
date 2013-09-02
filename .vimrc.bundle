@@ -50,8 +50,8 @@ NeoBundle 'tsukkee/unite-tag'
 NeoBundle 'kien/ctrlp.vim'
 
 " neocomplcache
-" NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'Shougo/neocomplcache'
+" NeoBundle 'Shougo/neocomplete.vim'
 
 " snippet
 " NeoBundle 'Shougo/neosnippet.vim'
