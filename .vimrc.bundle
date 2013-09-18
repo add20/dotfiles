@@ -127,6 +127,7 @@ NeoBundleLazy 'vim-ruby/vim-ruby', {"autoload": {"filetypes": ["ruby"]}}
 " Template Engine
 NeoBundleLazy 'slim-template/vim-slim',  {"autoload": {"filetypes": ["slim"]}}
 NeoBundleLazy 'digitaltoad/vim-jade',  {"autoload": {"filetypes": ["jade"]}}
+NeoBundleLazy 'briancollins/vim-jst', {"autoload": {"filetypes": ["jst", "ejs"]}}
 
 " JavaScript
 NeoBundleLazy 'pangloss/vim-javascript', {"autoload": {"filetypes": ["javascript"]}}
@@ -158,7 +159,6 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'thinca/vim-quickrun'
 
 NeoBundle 'tsaleh/vim-matchit'
-NeoBundleLazy 'briancollins/vim-jst', {"autoload": {"filetypes": ["jst", "ejs"]}}
 " NeoBundle 'add20/vim-conque'
 " NeoBundle 'Lokaltog/vim-easymotion'
 " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -177,7 +177,7 @@ NeoBundle 'taglist.vim'
 NeoBundle 'Tagbar'
 
 " 閉じ括弧の自動補完
-NeoBundle 'AutoClose'
+" NeoBundle 'AutoClose'
 
 " Grep
 NeoBundle 'rking/ag.vim'
