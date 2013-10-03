@@ -39,6 +39,7 @@ dist/
 *.tix
 hpc_index*.html
 *.hs.html
+.cabal-sandbox
 
 # JVM
 *.class
