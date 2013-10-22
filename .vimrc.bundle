@@ -102,6 +102,9 @@ NeoBundleLazy 'derekwyatt/vim-scala',  {"autoload": {"filetypes": ["scala"]}}
 " Clojure
 NeoBundleLazy 'VimClojure',  {"autoload": {"filetypes": ["clojure"]}}
 
+" D
+NeoBundleLazy 'd.vim', {"autoload": { "filetypes": ["d"]}}
+
 " Haskell
 NeoBundleLazy 'eagletmt/ghcmod-vim',  {"autoload": { "filetypes": ["haskell"]}}
 NeoBundleLazy 'eagletmt/unite-haddock',  {"autoload": {"filetypes": ["haskell"]}}

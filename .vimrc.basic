@@ -32,6 +32,7 @@ au! BufNewFile,BufRead *.json set filetype=json
 au BufNewFile,BufRead *.yml set filetype=yaml
 au BufNewFile,BufRead *.tex set filetype=tex
 au BufNewFile,BufRead *.md set filetype=pandoc
+au BufNewFile,BufRead *.d set filetype=d tabstop=4 softtabstop=4 shiftwidth=4
 au BufNewFile,BufRead /etc/nginx/* set ft=nginx
 
 autocmd FileType scheme :let is_gauche=1
