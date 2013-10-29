@@ -105,6 +105,9 @@ NeoBundleLazy 'VimClojure',  {"autoload": {"filetypes": ["clojure"]}}
 " D
 NeoBundleLazy 'd.vim', {"autoload": { "filetypes": ["d"]}}
 
+" Coq
+NeoBundleLazy 'jvoorhis/coq.vim', {"autoload": { "filetypes": ["coq"]}}
+
 " Haskell
 NeoBundleLazy 'eagletmt/ghcmod-vim',  {"autoload": { "filetypes": ["haskell"]}}
 NeoBundleLazy 'eagletmt/unite-haddock',  {"autoload": {"filetypes": ["haskell"]}}
