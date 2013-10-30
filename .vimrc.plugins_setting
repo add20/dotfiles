@@ -4,8 +4,12 @@
 let g:quickrun_config = {
             \ "d" : {
                 \ "command" : "rdmd",
-                \ "cmdopt" : "--main -unittest",
-                \ }
+                \ "cmdopt" : "--main -unittest"
+                \ },
+            \ "coq" : {
+                \ "command" : "coqc",
+                \ "cmdopt" : "-batch"
+                \}
             \ }
 let g:quickrun_config._ = {
             \ 'runner' : 'vimproc',

@@ -28,6 +28,11 @@ vendor/bundle
 # Python
 *.py[cod]
 
+# Coq
+*.glob
+*.vo
+*.v.d
+
 # Haskell
 dist/
 *.prof
