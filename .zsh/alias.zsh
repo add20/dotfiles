@@ -55,6 +55,7 @@ darwin*)
   # Vim
   alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
   alias vim='vi'
+  alias mvim='open -a MacVim'
 
   # reveal.js
   alias revealjs-init="ln -shf ~/OSS/reveal.js/{css,js,lib,plugin} ."
