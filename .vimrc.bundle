@@ -159,6 +159,12 @@ NeoBundleLazy 'textobj-rubyblock', {"autoload": {"filetypes": ["ruby"]}}
 " 括弧
 NeoBundle 'tpope/vim-surround'
 
+" 閉じ括弧の自動補完
+" NeoBundle 'AutoClose'
+
+" タブごとのcd
+NeoBundle "kana/vim-tabpagecd"
+
 " <C-a>でtrue/false切替。他色々
 " NeoBundle 'taku-o/vim-toggle'
 
@@ -181,9 +187,6 @@ NeoBundle 'The-NERD-tree'
 " タグリスト
 NeoBundle 'taglist.vim'
 NeoBundle 'Tagbar'
-
-" 閉じ括弧の自動補完
-" NeoBundle 'AutoClose'
 
 " Grep
 NeoBundle 'rking/ag.vim'
