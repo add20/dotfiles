@@ -13,6 +13,7 @@ set backspace=indent,eol,start
 filetype plugin indent on
 
 au BufNewFile,BufRead *.hs set filetype=haskell
+au BufNewFile,BufRead *.lhs set filetype=lhaskell
 au BufNewFile,BufRead *.ml set filetype=ocaml
 au BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80
 au BufNewFile,BufRead *.py set filetype=python
@@ -78,6 +79,9 @@ set number
 if has('mouse')
   set mouse=a
 endif
+
+"日本語の行の連結時には空白を入力しない。
+set formatoptions+=mM
 
 " 保存時に行末の空白を除去する
 autocmd BufWritePre * :%s/\s\+$//ge

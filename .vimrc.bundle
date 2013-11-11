@@ -109,11 +109,11 @@ NeoBundleLazy 'd.vim', {"autoload": { "filetypes": ["d"]}}
 NeoBundleLazy 'jvoorhis/coq.vim', {"autoload": { "filetypes": ["coq"]}}
 
 " Haskell
-NeoBundleLazy 'eagletmt/ghcmod-vim',  {"autoload": { "filetypes": ["haskell"]}}
-NeoBundleLazy 'eagletmt/unite-haddock',  {"autoload": {"filetypes": ["haskell"]}}
-NeoBundleLazy 'ujihisa/neco-ghc',  {"autoload": {"filetypes": ["haskell"]}}
-NeoBundleLazy 'ujihisa/unite-haskellimport',  {"autoload": {"filetypes": ["haskell"]}}
-NeoBundleLazy 'dag/vim2hs',  {"autoload": {"filetypes": ["haskell"]}}
+NeoBundleLazy 'eagletmt/ghcmod-vim', {"autoload": { "filetypes": ["haskell", "lhaskell"]}}
+NeoBundleLazy 'eagletmt/unite-haddock', {"autoload": {"filetypes": ["haskell", "lhaskell"]}}
+NeoBundleLazy 'ujihisa/neco-ghc', {"autoload": {"filetypes": ["haskell", "lhaskell"]}}
+NeoBundleLazy 'ujihisa/unite-haskellimport', {"autoload": {"filetypes": ["haskell", "lhaskell"]}}
+NeoBundleLazy 'dag/vim2hs', {"autoload": {"filetypes": ["haskell", "lhaskell"]}}
 
 " Puppet
 NeoBundleLazy 'Puppet-Syntax-Highlighting',  {"autoload": {"filetypes": ["puppet"]}}
@@ -190,6 +190,9 @@ NeoBundle 'Tagbar'
 
 " Grep
 NeoBundle 'rking/ag.vim'
+
+" コード整形
+NeoBundle 'Align'
 
 " Smooth Scroll
 " NeoBundle 'Smooth-Scroll'
