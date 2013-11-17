@@ -1,5 +1,5 @@
-:set -Wall
-:set -fno-warn-type-defaults
-:set -fno-warn-unused-do-bind
-:set -XOverloadedStrings
 :set prompt "> "
+:set -Wall
+:seti -fno-warn-type-defaults
+:seti -fno-warn-unused-do-bind
+:seti -XOverloadedStrings
