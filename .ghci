@@ -2,4 +2,3 @@
 :set -Wall
 :seti -fno-warn-type-defaults
 :seti -fno-warn-unused-do-bind
-:seti -XOverloadedStrings
