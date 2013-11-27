@@ -162,6 +162,9 @@ NeoBundle 'tpope/vim-surround'
 " 閉じ括弧の自動補完
 " NeoBundle 'AutoClose'
 
+" オートセーブ
+NeoBundle 'syui/wauto.vim'
+
 " タブごとのcd
 NeoBundle "kana/vim-tabpagecd"
 
