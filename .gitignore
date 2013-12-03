@@ -46,6 +46,7 @@ hpc_index*.html
 *.hs.html
 .cabal-sandbox
 cabal.sandbox.config
+hugsin
 
 # JVM
 *.class
