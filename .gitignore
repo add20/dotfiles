@@ -33,6 +33,9 @@ vendor/bundle
 *.vo
 *.v.d
 
+# Erlang
+*.beam
+
 # Haskell
 dist/
 *.prof
