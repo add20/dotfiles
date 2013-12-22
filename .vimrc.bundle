@@ -64,7 +64,7 @@ NeoBundle 'tomtom/tcomment_vim'
 
 " syntax checker
 NeoBundleLazy 'scrooloose/syntastic',  {
-      \ "autoload": {"filetypes": ["java", "c", "puppet", "javascript"]}}
+      \ "autoload": {"filetypes": ["java", "c", "puppet", "javascript", "elixir"]}}
 
 " Nginx
 NeoBundle 'nginx.vim'
@@ -107,6 +107,9 @@ NeoBundleLazy 'd.vim', {"autoload": { "filetypes": ["d"]}}
 
 " Coq
 NeoBundleLazy 'jvoorhis/coq.vim', {"autoload": { "filetypes": ["coq"]}}
+
+" Elixir
+NeoBundleLazy 'elixir-lang/vim-elixir', {"autoload": { "filetypes": ["elixir"]}}
 
 " Erlang
 NeoBundleLazy 'jimenezrick/vimerl', {"autoload": { "filetypes": ["erlang"]}}

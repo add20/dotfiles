@@ -12,6 +12,8 @@ set backspace=indent,eol,start
 
 filetype plugin indent on
 
+au BufNewFile,BufRead *.erl setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80
+au BufNewFile,BufRead *.erl set filetype=erlang
 au BufNewFile,BufRead *.hs set filetype=haskell
 au BufNewFile,BufRead *.lhs set filetype=lhaskell
 au BufNewFile,BufRead *.hsc set filetype=haskell

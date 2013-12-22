@@ -59,7 +59,7 @@
   rbi5 = rebase -i HEAD^^^^^
   # remote
   info = remote show origin
-  delete-remote-branch = !git branch -a --merged | grep -v master | grep remotes/origin| sed -e 's% *remotes/origin/%%' | xargs -I% git push origin :%
+  ; delete-remote-branch = !git branch -a --merged | grep -v master | grep remotes/origin| sed -e 's% *remotes/origin/%%' | xargs -I% git push origin :%
   # log
   l = log --oneline --decorate --graph --all
   # grep
