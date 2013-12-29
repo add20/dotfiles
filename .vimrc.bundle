@@ -78,8 +78,11 @@ NeoBundleLazy 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex',
 " Parrot
 " NeoBundle 'parrot.vim'
 
+" LLVM
+NeoBundleLazy 'Superbil/llvm.vim', {"autoload": {"filetypes": ["llvm"]}}
+
 " Arduino
-NeoBundleLazy 'tclem/vim-arduino',  {"autoload": {"filetypes": ["arduino"]}}
+NeoBundleLazy 'tclem/vim-arduino', {"autoload": {"filetypes": ["arduino"]}}
 
 " Groovy
 NeoBundleLazy 'groovy.vim', {"autoload": {"filetypes": ["groovy"]}}
