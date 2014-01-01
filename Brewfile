@@ -6,6 +6,21 @@ upgrade
 
 tap homebrew/versions
 
+# for casks
+tap phinze/cask || true
+install brew-cask
+cask install google-chrome
+cask install firefox
+cask install dropbox
+cask install copy
+cask install keyremap4macbook
+cask install livereload
+cask install virtualbox
+# cask install vmware-fusion
+# cask install bittorrent-sync
+cask install img2icns
+cask install skype
+
 # Version Control
 install git
 install tig
