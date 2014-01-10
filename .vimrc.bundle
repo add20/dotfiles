@@ -213,7 +213,7 @@ NeoBundle 'Align'
 NeoBundle 'camelcasemotion'
 
 " スケルトン
-NeoBundle 'tSkeleton'
+NeoBundle 'tomtom/tskeleton_vim'
 " tSkeleton で必要
 NeoBundle 'tlib'
 
