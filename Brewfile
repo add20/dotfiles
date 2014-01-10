@@ -16,8 +16,8 @@ cask install copy
 cask install keyremap4macbook
 cask install livereload
 cask install virtualbox
-# cask install vmware-fusion
-# cask install bittorrent-sync
+cask install vmware-fusion
+cask install bittorrent-sync
 cask install img2icns
 cask install skype
 
@@ -29,15 +29,15 @@ install rbenv
 # Compiler
 # install gcc49
 # install dmd
-# install elixir
-# install erlang
+install erlang
+install elixir
 # install lua
 # install objective-caml
-# install llvm
+install llvm
 
 # for Windows
-# dos2unix
-# icu4c
+install dos2unix
+# install icu4c
 
 install zsh
 install ctags
@@ -50,18 +50,18 @@ install tree
 install wget
 
 # for pgrep and pkill
-proctools
+install proctools
 
-# ffmpeg
-# imagemagick
-# fontforge
-# gnuplot
-# graphviz
-# csv-fix
-# fswatch
-# parallel
-# pstree
-# rename
+# install ffmpeg
+# install imagemagick
+# install fontforge
+# install gnuplot
+# install graphviz
+# install csv-fix
+# install fswatch
+# install parallel
+# install pstree
+# install rename
 
 # Remove outdated versions from the cellar
 cleanup

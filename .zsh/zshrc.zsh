@@ -2,7 +2,7 @@
 source ~/dotfiles/.zsh/alias.zsh
 source ~/dotfiles/.zsh/export.zsh
 source ~/dotfiles/.zsh/function.zsh
-source ~/dotfiles/.zsh/path.zsh
+# source ~/dotfiles/.zsh/path.zsh
 
 autoload zed
 
