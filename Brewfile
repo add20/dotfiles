@@ -20,6 +20,7 @@ cask install vmware-fusion
 cask install bittorrent-sync
 cask install img2icns
 cask install skype
+cask install appcleaner
 
 # Version Control
 install git
