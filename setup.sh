@@ -6,7 +6,7 @@ ln -s ~/dotfiles/.zsh/plugins ~/.oh-my-zsh/custom/
 ln -s ~/dotfiles/.zsh/themes ~/.oh-my-zsh/custom/
 git clone https://github.com/zsh-users/zsh-completions.git ~/.zsh-completions
 
-DOT_FILES=( bin .tmux.conf .zsh .zshrc .zshenv .gemrc .gitconfig .gitignore .agignore .inputrc .vimrc .gvimrc .vim .emacs .sqliterc .ghci .pandoc .stylish-haskell.yaml .hirc)
+DOT_FILES=( bin .tmux.conf .zsh .zshrc .zshenv .gemrc .gitconfig .gitattribues .gitignore .agignore .inputrc .vimrc .gvimrc .vim .emacs .sqliterc .ghci .pandoc .stylish-haskell.yaml .hirc)
 
 for file in ${DOT_FILES[@]}
 do

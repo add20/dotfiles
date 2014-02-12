@@ -3,6 +3,7 @@
   email = "add20g@gmail.com"
 [core]
   excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
   autocrlf = input
   pager = less -FRSX
 [include]

@@ -1,4 +1,5 @@
-:set prompt "> "
+:set prompt "λ "
+
 :set -Wall
 :seti -fno-warn-type-defaults
 :seti -fno-warn-unused-do-bind

@@ -21,6 +21,7 @@ cask install bittorrent-sync
 cask install img2icns
 cask install skype
 cask install appcleaner
+# cask install basictex
 
 # Version Control
 install git
