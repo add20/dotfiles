@@ -19,3 +19,9 @@ function ncat()
   done
   unset filename
 }
+
+
+mkvenv () {
+  base_python=`which python$1`
+  mkvirtualenv --python=$base_python $2
+}
