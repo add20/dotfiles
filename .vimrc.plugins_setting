@@ -42,7 +42,7 @@ let g:vimclojure#ParenRainbow = 1
 "  Syntastic
 " ---------------------------------
 let g:syntastic_mode_map = { 'mode': 'passive',
-                           \ 'active_filetypes': ['java', 'c', 'cpp', 'puppet', 'javascript', 'ocaml'],
+                           \ 'active_filetypes': ['java', 'c', 'cpp', 'puppet', 'javascript', 'ocaml', 'ruby'],
                            \ 'passive_filetypes': [] }
 " ---------------------------------
 "  vim-flake8 (python)
