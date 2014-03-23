@@ -64,7 +64,7 @@ NeoBundle 'tomtom/tcomment_vim'
 
 " syntax checker
 NeoBundleLazy 'scrooloose/syntastic',  {
-      \ "autoload": {"filetypes": ["java", "c", "puppet", "javascript", "elixir", "ruby"]}}
+      \ "autoload": {"filetypes": ["java", "c", "d", "puppet", "javascript", "elixir", "ruby"]}}
 
 " Nginx
 NeoBundle 'nginx.vim'

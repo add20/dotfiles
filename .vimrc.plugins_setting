@@ -21,13 +21,14 @@ let NERDTreeShowHidden = 1
 "  quickrun.vim
 " ---------------------------------
 let g:quickrun_config = {
-            \ "d" : {
-                \ "command" : "rdmd",
-                \ "cmdopt" : "--main -unittest"
+            \ 'd' : {
+                \ 'command' : 'rdmd',
+                \ 'cmdopt' : '--main -unittest',
+                \ 'tempfile': '%{tempname()}.d',
                 \ },
-            \ "coq" : {
-                \ "command" : "coqc",
-                \ "cmdopt" : "-batch"
+            \ 'coq' : {
+                \ 'command' : 'coqc',
+                \ 'cmdopt' : '-batch'
                 \}
             \ }
 let g:quickrun_config._ = {
@@ -42,7 +43,7 @@ let g:vimclojure#ParenRainbow = 1
 "  Syntastic
 " ---------------------------------
 let g:syntastic_mode_map = { 'mode': 'passive',
-                           \ 'active_filetypes': ['java', 'c', 'cpp', 'puppet', 'javascript', 'ocaml', 'ruby'],
+                           \ 'active_filetypes': ['java', 'c', 'd', 'cpp', 'puppet', 'javascript', 'ocaml', 'ruby'],
                            \ 'passive_filetypes': [] }
 " ---------------------------------
 "  vim-flake8 (python)
