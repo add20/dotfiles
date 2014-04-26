@@ -4,6 +4,7 @@ source ~/.nvm/nvm.sh
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
+export PATH=$HOME/.rbenv/bin:$PATH
 
 if [[ $OSTYPE == darwin* ]]; then
   # neocomplcache-ghc (neco-ghc) for Vim
