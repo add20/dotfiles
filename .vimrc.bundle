@@ -204,6 +204,10 @@ NeoBundle 'Tagbar'
 " Grep
 NeoBundle 'rking/ag.vim'
 
+" indent
+NeoBundle 'Yggdroot/indentLine'
+" NeoBundle 'nathanaelkane/vim-indent-guides'
+
 " コード整形
 NeoBundle 'Align'
 
