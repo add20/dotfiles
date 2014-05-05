@@ -15,7 +15,8 @@ alias du="du -h"
 alias g="git"
 alias gs="git st"
 alias gi="git ci"
-alias gw="git diff --color-words"
+alias gdw="git diff --color-words"
+alias gds="git ds"
 
 # git-flow
 alias gffe="git flow feature"
