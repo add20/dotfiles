@@ -85,7 +85,7 @@ NeoBundleLazy 'Superbil/llvm.vim', {"autoload": {"filetypes": ["llvm"]}}
 NeoBundleLazy 'tclem/vim-arduino', {"autoload": {"filetypes": ["arduino"]}}
 
 " Groovy
-NeoBundleLazy 'groovy.vim', {"autoload": {"filetypes": ["groovy"]}}
+NeoBundleLazy 'groovy.vim', {"autoload": {"filetypes": ["groovy", "gradle"]}}
 
 " Gradle
 NeoBundleLazy 'tfnico/vim-gradle', {"autoload": {"filetypes": ["gradle"]}}
@@ -149,6 +149,9 @@ NeoBundleLazy 'pangloss/vim-javascript', {"autoload": {"filetypes": ["javascript
 
 " CoffeeScript
 NeoBundleLazy 'kchmck/vim-coffee-script',  {"autoload": {"filetypes": ["coffee"]}}
+
+" Mustache
+NeoBundleInstall 'mustache/vim-mustache-handlebars', {"autoload": {"filetypes": ["mustache"]}}
 
 " JSON
 NeoBundleLazy 'JSON.vim',  {"autoload": {"filetypes": ["json"]}}
