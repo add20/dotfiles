@@ -5,8 +5,8 @@ alias ...="cd ../.."
 # ls
 alias ls="ls -G"
 alias lf="ls -F"
-alias ll="ls -l"
-alias la="ls -la"
+alias ll="ls -lh"
+alias la="ls -lha"
 
 alias df="df -h"
 alias du="du -h"

@@ -151,7 +151,7 @@ NeoBundleLazy 'pangloss/vim-javascript', {"autoload": {"filetypes": ["javascript
 NeoBundleLazy 'kchmck/vim-coffee-script',  {"autoload": {"filetypes": ["coffee"]}}
 
 " Mustache
-NeoBundleInstall 'mustache/vim-mustache-handlebars', {"autoload": {"filetypes": ["mustache"]}}
+NeoBundleLazy 'mustache/vim-mustache-handlebars', {"autoload": {"filetypes": ["mustache"]}}
 
 " JSON
 NeoBundleLazy 'JSON.vim',  {"autoload": {"filetypes": ["json"]}}

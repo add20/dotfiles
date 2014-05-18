@@ -35,6 +35,7 @@ au BufNewFile,BufRead *.jade set filetype=jade
 " au BufNewFile,BufRead *.ejs set filetype=html
 au! BufNewFile,BufRead *.json set filetype=json
 au BufNewFile,BufRead *.yml set filetype=yaml
+au BufNewFile,BufRead *.mustache set filetype=mustache
 au BufNewFile,BufRead *.tex set filetype=tex
 au BufNewFile,BufRead *.md set filetype=pandoc
 au BufNewFile,BufRead *.d set filetype=d tabstop=4 softtabstop=4 shiftwidth=4
