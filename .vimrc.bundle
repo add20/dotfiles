@@ -162,7 +162,7 @@ NeoBundleLazy 'yaml.vim',  {"autoload": {"filetypes": ["yaml"]}}
 
 " Smooth-Scrollと相性が悪い(<C-B>,  <C-U>が効かなくなる)
 " NeoBundleLazy 'mattn/zencoding-vim', {"autoload": {"filetypes": ["html"]}}
-NeoBundleLazy 'mattn/emmet-vim', {"autoload": {"filetypes": ["html", "erb"]}}
+NeoBundleLazy 'mattn/emmet-vim', {"autoload": {"filetypes": ["html", "erb", "mustache"]}}
 
 " テキストオブジェクト
 NeoBundle 'textobj-user'
