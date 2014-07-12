@@ -56,9 +56,11 @@ let g:vimclojure#ParenRainbow = 1
 "  Syntastic
 " ---------------------------------
 let g:syntastic_mode_map = { 'mode': 'passive',
-                           \ 'active_filetypes': ['java', 'c', 'd', 'cpp', 'puppet', 'javascript', 'ocaml', 'ruby'],
+                           \ 'active_filetypes': ['java', 'c', 'd', 'cpp', 'puppet', 'javascript', 'ocaml', 'ruby', 'rust'],
                            \ 'passive_filetypes': [] }
 let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_auto_loc_list = 1
+
 " ---------------------------------
 "  vim-flake8 (python)
 " ---------------------------------
