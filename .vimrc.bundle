@@ -134,6 +134,9 @@ NeoBundleLazy 'indentpython.vim', {"autoload": {"filetypes": ["python"]}}
 " Perl
 NeoBundleLazy 'vim-perl/vim-perl', {"autoload": {"filetypes": ["perl"]}}
 
+" Rust
+NeoBundleLazy 'wting/rust.vim', {"autoload": {"filetypes": ["rust"]}}
+
 " Ruby
 NeoBundleLazy 'vim-ruby/vim-ruby', {"autoload": {"filetypes": ["ruby"]}}
 " NeoBundleLazy 'taichouchou2/vim-rsense',  {"autoload": {"filetypes": ["ruby"]}}
