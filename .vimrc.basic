@@ -24,6 +24,7 @@ au BufNewFile,BufRead *.py set filetype=python
 au BufNewFile,BufRead *.pl set filetype=perl
 au BufNewFile,BufRead *.rb set filetype=ruby
 au BufNewFile,BufRead *.rs set filetype=rust
+au BufNewFile,BufRead *.rs setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80
 au BufNewFile,BufRead *.js set filetype=javascript
 au BufNewFile,BufRead *.coffee set filetype=coffee
 au BufNewFile,BufRead *.java set filetype=java
