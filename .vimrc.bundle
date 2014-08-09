@@ -124,6 +124,9 @@ NeoBundleLazy 'ujihisa/neco-ghc', {"autoload": {"filetypes": ["haskell", "lhaske
 NeoBundleLazy 'ujihisa/unite-haskellimport', {"autoload": {"filetypes": ["haskell", "lhaskell"]}}
 NeoBundleLazy 'dag/vim2hs', {"autoload": {"filetypes": ["haskell", "lhaskell"]}}
 
+" PureScript
+NeoBundleLazy 'raichoo/purescript-vim', {"autoload": {"filetypes": ["purescript"]}}
+
 " Puppet
 NeoBundleLazy 'Puppet-Syntax-Highlighting',  {"autoload": {"filetypes": ["puppet"]}}
 
