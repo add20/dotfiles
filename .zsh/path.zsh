@@ -1,6 +1,5 @@
 # Load NVM function
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+source ~/.nvm/nvm.sh
 
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
