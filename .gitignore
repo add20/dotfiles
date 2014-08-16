@@ -36,6 +36,11 @@ vendor/bundle
 # Erlang
 *.beam
 
+# PureScript
+.psci_modules/*
+bower_components/*
+output/*
+
 # Haskell
 dist/
 *.prof
