@@ -37,6 +37,7 @@ vendor/bundle
 *.beam
 
 # PureScript
+.psci
 .psci_modules/*
 bower_components/*
 output/*
