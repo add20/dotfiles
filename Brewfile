@@ -6,6 +6,9 @@ upgrade
 
 tap homebrew/versions
 
+tap peco/peco
+install peco
+
 # for casks
 tap phinze/cask || true
 install brew-cask
