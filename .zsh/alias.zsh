@@ -26,6 +26,9 @@ alias gfsu="git flow support"
 
 # Haskell
 alias htags="echo \":ctags\" | ghci -v0 **/*.hs"
+alias ghc-sandbox="ghc -no-user-package-db -package-db .cabal-sandbox/*-packages.conf.d"
+alias ghci-sandbox="ghci -no-user-package-db -package-db .cabal-sandbox/*-packages.conf.d"
+alias runhaskell-sandbox="runhaskell -no-user-package-db -package-db .cabal-sandbox/*-packages.conf.d"
 
 # OCaml
 alias ocaml="LANG=en_US.ISO8859-1 ocaml"
