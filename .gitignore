@@ -25,6 +25,13 @@ npm-debug.log
 .bundle
 vendor/bundle
 
+# Rust
+*.so
+*.rlib
+*.dll
+*.exe
+/target/
+
 # Python
 *.py[cod]
 
