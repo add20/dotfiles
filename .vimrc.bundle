@@ -159,6 +159,9 @@ NeoBundleLazy 'kchmck/vim-coffee-script',  {"autoload": {"filetypes": ["coffee"]
 " Mustache
 NeoBundleLazy 'mustache/vim-mustache-handlebars', {"autoload": {"filetypes": ["mustache"]}}
 
+" TOML
+NeoBundleLazy 'cespare/vim-toml', {"autoload": {"filetypes": ["toml"]}}
+
 " JSON
 NeoBundleLazy 'JSON.vim',  {"autoload": {"filetypes": ["json"]}}
 
