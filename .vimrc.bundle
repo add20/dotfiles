@@ -197,8 +197,7 @@ NeoBundle "kana/vim-tabpagecd"
 
 NeoBundle 'thinca/vim-quickrun'
 
-NeoBundle 'tsaleh/vim-matchit'
-" NeoBundle 'add20/vim-conque'
+NeoBundle 'vim-scripts/matchit.zip'
 " NeoBundle 'Lokaltog/vim-easymotion'
 " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
