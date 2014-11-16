@@ -217,11 +217,11 @@ nnoremap <silent> [unite]o :<C-u>Unite -no-split outline<CR>
 cnoremap UH Unite help<Enter>
 nnoremap <silent> [unite]h :<C-u>Unite -no-split help<CR>
 " unite-haddock
-nnoremap <silent> [unite]ha :<C-u>UniteWithCursorWord -direction=topleft -immediately haddock<CR>
+nnoremap <silent> <leader>ha :<C-u>UniteWithCursorWord -direction=topleft -immediately haddock<CR>
 " ghcmod-vim
-nnoremap <silent> [unite]ho :<C-u>UniteWithCursorWord -direction=topleft -immediately hoogle<CR>
-nnoremap <silent> [unite]ht :<C-u>GhcModType<CR>
-nnoremap <silent> [unite]hc :<C-u>GhcModTypeClear<CR>
+nnoremap <silent> <leader>ho :<C-u>UniteWithCursorWord -direction=topleft -immediately hoogle<CR>
+nnoremap <silent> <leader>ht :<C-u>GhcModType<CR>
+nnoremap <silent> <leader>hc :<C-u>GhcModTypeClear<CR>
 " ghcmod-vim (保存後に非同期でチェックをする)
 autocmd BufWritePost *.hs GhcModCheckAsync
 " unite-haskellimport
