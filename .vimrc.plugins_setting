@@ -17,7 +17,7 @@ function! s:dash(...)
   call system(printf("open dash://'%s'", word))
 endfunction
 command! -nargs=? Dash call <SID>dash(<f-args>)
-nnoremap <leader>d :<C-u>Dash<Space><C-r><C-w><Enter>
+nnoremap <leader>dash :<C-u>Dash<Space><C-r><C-w><Enter>
 " ---------------------------------
 " wauto.vim
 " ---------------------------------
@@ -37,6 +37,7 @@ nnoremap <leader>n :<C-u>AgFromSearch!<Space>--hidden<Enter>
 " The NERD Tree
 " ---------------------------------
 let NERDTreeShowHidden = 1
+nnoremap <leader>. :<C-u>NERDTreeToggle<CR>
 " ---------------------------------
 "  quickrun.vim
 " ---------------------------------
@@ -121,21 +122,21 @@ nnoremap <silent> [unite]a  :<C-u>UniteWithCurrentDir -direction=topleft -buffer
 nnoremap <silent> [unite]u  :<C-u>Unite -direction=topleft buffer file_mru<CR>
 nnoremap <silent> [unite]f  :<C-u>Unite -direction=topleft -buffer-name=files file<CR>
 nnoremap <silent> [unite]b  :<C-u>Unite -direction=topleft buffer<CR>
-nnoremap <silent> [unite]m  :<C-u>Unite -direction=topleft file_mru<CR>
-" nnoremap <silent> [unite]d  :<C-u>UniteWithCurrentDir -direction=topleft file<CR>
-nnoremap <silent> [unite]t  :<C-u>Unite -direction=topleft -immediately tab<CR>
-
-nnoremap <silent> [unite]c  :<C-u>UniteWithCurrentDir -buffer-name=files buffer file_mru bookmark file<CR>
-" nnoremap <silent> [unite]b  :<C-u>UniteWithBufferDir -buffer-name=files -prompt=%\  buffer file_mru bookmark file<CR>
+nnoremap <silent> [unite]d  :<C-u>Unite -buffer-name=files -default-action=lcd directory_mru<CR>
 nnoremap <silent> [unite]r  :<C-u>Unite -buffer-name=register register<CR>
 nnoremap <silent> [unite]o  :<C-u>Unite outline<CR>
+nnoremap <silent> [unite]t  :<C-u>Unite -direction=topleft -immediately tab<CR>
+" nnoremap <silent> [unite]m  :<C-u>Unite -direction=topleft file_mru<CR>
+" nnoremap <silent> [unite]d  :<C-u>UniteWithCurrentDir -direction=topleft file<CR>
+
+" nnoremap <silent> [unite]c  :<C-u>UniteWithCurrentDir -buffer-name=files buffer file_mru bookmark file<CR>
+" nnoremap <silent> [unite]b  :<C-u>UniteWithBufferDir -buffer-name=files -prompt=%\  buffer file_mru bookmark file<CR>
 " nnoremap <silent> [unite]f  :<C-u>Unite -buffer-name=resume resume<CR>
-nnoremap <silent> [unite]d  :<C-u>Unite -buffer-name=files -default-action=lcd directory_mru<CR>
 " nnoremap <silent> [unite]ma :<C-u>Unite mapping<CR>
 " nnoremap <silent> [unite]me :<C-u>Unite output:message<CR>
 " nnoremap  [unite]f  :<C-u>Unite source<CR>
 
-nnoremap <silent> [unite]s  :<C-u>Unite -buffer-name=files -no-split jump_point file_point buffer_tab file_rec:! file file/new file_mru<CR>
+" nnoremap <silent> [unite]s  :<C-u>Unite -buffer-name=files -no-split jump_point file_point buffer_tab file_rec:! file file/new file_mru<CR>
 
 " Start insert.
 let g:unite_enable_start_insert = 1
