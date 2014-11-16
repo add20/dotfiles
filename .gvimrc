@@ -1,10 +1,10 @@
 if has('gui_macvim')
-  set guifont=Ricty\ Regular:h13
+  set guifont=Ricty\ Regular:h14
   " set antialias
 
   set imdisable
 
-  set transparency=10
+  " set transparency=10
 
   set background=light
   " set background=dark
