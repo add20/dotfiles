@@ -9,10 +9,10 @@ Icon
 tags
 .svn/
 
-.vim/bundle
-.vim/.netrwhist
-.vim/undo
-.vim/cache
+.vim/bundle/
+.vim/.netrwhist/
+.vim/undo/
+.vim/cache/
 
 # Procfile
 .env
@@ -22,8 +22,8 @@ node_modules/
 npm-debug.log
 
 # Ruby
-.bundle
-vendor/bundle
+.bundle/
+vendor/bundle/
 
 # Rust
 *.so
@@ -45,9 +45,9 @@ vendor/bundle
 
 # PureScript
 .psci
-.psci_modules/*
-bower_components/*
-output/*
+.psci_modules/
+bower_components/
+output/
 
 # Haskell
 dist/
