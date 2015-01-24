@@ -1,7 +1,7 @@
 :set prompt "λ "
 
 :set -Wall
--- :seti -fno-warn-type-defaults
+:seti -fno-warn-type-defaults
 -- :seti -fno-warn-unused-do-bind
 
 :def hlint const . return $ ":! hlint \"src\""
