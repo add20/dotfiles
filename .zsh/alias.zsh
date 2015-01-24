@@ -53,6 +53,8 @@ case "${OSTYPE}" in
 darwin*)
   alias ls="ls -G -w"
 
+  alias godoc=`brew --prefix go`/libexec/bin/godoc
+
   # Vagrant
   alias vagrant="/Applications/Vagrant/bin/vagrant"
 
