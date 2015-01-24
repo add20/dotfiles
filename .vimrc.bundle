@@ -105,6 +105,9 @@ NeoBundleLazy 'derekwyatt/vim-scala',  {"autoload": {"filetypes": ["scala"]}}
 " Scheme
 " NeoBundleLazy 'haruyama/scheme.vim',  {"autoload": {"filetypes": ["scheme"]}}
 
+" Go
+NeoBundleLazy 'fatih/vim-go',  {"autoload": {"filetypes": ["go"]}}
+
 " Clojure
 NeoBundleLazy 'tpope/vim-leiningen',  {"autoload": {"filetypes": ["clojure"]}}
 NeoBundleLazy 'tpope/vim-fireplace',  {"autoload": {"filetypes": ["clojure"]}}
