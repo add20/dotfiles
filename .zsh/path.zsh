@@ -1,7 +1,7 @@
 # Load NVM function
 source ~/.nvm/nvm.sh
 
-export GOPATH=$HOME/code/go
+export GOPATH=$HOME
 
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
