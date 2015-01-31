@@ -1,7 +1,3 @@
-function c(){
-  cd ~/code/"$1"
-}
-
 unalias md
 # Create a new directory and enter it
 function md() {
