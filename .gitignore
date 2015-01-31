@@ -9,6 +9,8 @@ Icon
 tags
 .svn/
 
+/.zsh/antigen-hs/
+
 .vim/bundle/
 .vim/.netrwhist/
 .vim/undo/

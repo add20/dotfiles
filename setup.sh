@@ -16,4 +16,9 @@ done
 # for NeoBundle
 mkdir -p ~/dotfiles/.vim/bundle
 git clone git://github.com/Shougo/neobundle.vim.git ~/dotfiles/.vim/bundle/neobundle.vim
-vim -u ~/dotfiles/.vimrc.bundle +NeoBundleInstall! +q
+vim -u ~/dotfiles/.vimrc.bundle -c 'NeoBundleInstall!' -c 'q'
+
+# for antigen-hs
+git clone https://github.com/Tarrasch/antigen-hs.git ~/dotfiles/.zsh/antigen-hs
+cabal --no-require-sandbox install shelly
+
