@@ -17,5 +17,5 @@ fi
 export SBT_OPTS="-Dfile.encoding=UTF8"
 
 # virtualenv for Python
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+# export WORKON_HOME=$HOME/.virtualenvs
+# source /usr/local/bin/virtualenvwrapper.sh
