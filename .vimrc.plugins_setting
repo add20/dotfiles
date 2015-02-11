@@ -122,21 +122,39 @@ if has('gui_running')
 else
   set background=dark
 endif
-colorscheme solarized
+try
+  colorscheme solarized
+catch
+endtry
 " ---------------------------------
 "  vim-powerline
 " ---------------------------------
 let g:Powerline_symbols = 'fancy'
 " ---------------------------------
+"  vim-easy-align
+" ---------------------------------
+vnoremap <silent> <Enter> :EasyAlign<CR>
+" ---------------------------------
+"  vim-gitgutter
+" ---------------------------------
+nnoremap <silent> <leader>gg :<C-u>GitGutterToggle<CR>
+nnoremap <silent> <leader>gh :<C-u>GitGutterLineHighlightsToggle<CR>
+" ---------------------------------
 "  unite.vim
 " ---------------------------------
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#filters#sorter_default#use(['sorter_length'])
+let g:unite_source_history_yank_enable = 1
+try
+  call unite#filters#matcher_default#use(['matcher_fuzzy'])
+  call unite#filters#sorter_default#use(['sorter_length'])
+catch
+endtry
 
 " The prefix key.
 nnoremap    [unite]   <Nop>
-nmap    <leader>u [unite]
+nmap    <leader> [unite]
 
+nnoremap <silent> [unite]r <Plug>(unite_restart) " uniteのキャッシュをリセットする
+nnoremap <silent> [unite]p  :<C-u>Unite history/yank<CR>
 nnoremap <silent> [unite]a  :<C-u>UniteWithCurrentDir -direction=topleft -buffer-name=files buffer file_mru bookmark file<CR>
 nnoremap <silent> [unite]u  :<C-u>Unite -direction=topleft buffer file_mru<CR>
 nnoremap <silent> [unite]f  :<C-u>Unite -direction=topleft -buffer-name=files file_rec/async:!<CR>
@@ -241,6 +259,7 @@ nnoremap <silent> <leader>ha :<C-u>UniteWithCursorWord -direction=topleft -immed
 nnoremap <silent> <leader>ho :<C-u>UniteWithCursorWord -direction=topleft -immediately hoogle<CR>
 nnoremap <silent> <leader>ht :<C-u>GhcModType<CR>
 nnoremap <silent> <leader>hc :<C-u>GhcModTypeClear<CR>
+nnoremap <silent> <leader>hh :<C-u>GhcModTypeInsert<CR>
 " ghcmod-vim (保存後に非同期でチェックをする)
 autocmd BufWritePost *.hs GhcModCheckAsync
 " unite-haskellimport

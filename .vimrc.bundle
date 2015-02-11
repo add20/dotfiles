@@ -39,8 +39,9 @@ NeoBundle 'altercation/vim-colors-solarized'
 
 " status line
 NeoBundle 'Lokaltog/vim-powerline'
-" Git (これをいれるとvim-powerlineにブランチ名が表示されるようになる)
-NeoBundle 'tpope/vim-fugitive'
+" Git
+NeoBundle 'tpope/vim-fugitive' " これをいれるとvim-powerlineにブランチ名が表示されるようになる
+NeoBundle 'airblade/vim-gitgutter'
 
 " " Unite
 NeoBundle "Shougo/unite.vim"
@@ -229,7 +230,7 @@ NeoBundle 'Yggdroot/indentLine'
 " NeoBundle 'nathanaelkane/vim-indent-guides'
 
 " コード整形
-NeoBundle 'Align'
+NeoBundle 'junegunn/vim-easy-align'
 
 " Smooth Scroll
 " NeoBundle 'Smooth-Scroll'

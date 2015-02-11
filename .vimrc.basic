@@ -1,5 +1,5 @@
-let mapleader = ","
-let maplocalleader = ","
+let mapleader = ' '
+let maplocalleader = ' '
 
 set nocompatible
 
@@ -73,6 +73,11 @@ set showcmd   " display incomplete commands
 "   au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
 "   au WinLeave * setlocal nocursorline
 " augroup END
+
+if (exists('+colorcolumn'))
+  set colorcolumn=80
+  highlight ColorColumn ctermbg=9
+endif
 
 set nobackup
 if has('persistent_undo')
