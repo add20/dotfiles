@@ -8,6 +8,7 @@ Icon
 *.sqlite3
 tags
 .svn/
+/,/
 
 /.zsh/antigen-hs/
 
