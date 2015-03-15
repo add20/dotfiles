@@ -19,3 +19,6 @@ export SBT_OPTS="-Dfile.encoding=UTF8"
 # virtualenv for Python
 # export WORKON_HOME=$HOME/.virtualenvs
 # source /usr/local/bin/virtualenvwrapper.sh
+
+# OPAM configuration
+. $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

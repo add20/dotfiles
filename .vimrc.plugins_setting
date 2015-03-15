@@ -45,7 +45,7 @@ nnoremap <leader>n :<C-u>AgFromSearch!<Space>--hidden<Enter>
 " The NERD Tree
 " ---------------------------------
 let NERDTreeShowHidden = 1
-nnoremap <leader>j :<C-u>NERDTreeToggle<CR>
+nnoremap <leader>. :<C-u>NERDTreeToggle<CR>
 " ---------------------------------
 "  quickrun.vim
 " ---------------------------------

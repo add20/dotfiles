@@ -238,11 +238,6 @@ NeoBundle 'junegunn/vim-easy-align'
 " キャメルケースでの移動
 NeoBundle 'camelcasemotion'
 
-" スケルトン
-NeoBundle 'tomtom/tskeleton_vim'
-" tSkeleton で必要
-NeoBundle 'tlib'
-
 " NeoBundle 'L9'
 " NeoBundle 'FuzzyFinder'
 " NeoBundle 'rails.vim'
