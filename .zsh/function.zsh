@@ -21,3 +21,8 @@ mkvenv () {
   base_python=`which python$1`
   mkvirtualenv --python=$base_python $2
 }
+
+# for Visual Studio Code
+code () {
+    VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*
+}
