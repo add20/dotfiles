@@ -66,6 +66,7 @@ hpc_index*.html
 .cabal-sandbox
 cabal.sandbox.config
 hugsin
+.stack-work/
 
 # JVM
 *.class
