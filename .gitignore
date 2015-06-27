@@ -12,10 +12,10 @@ tags
 
 /.zsh/antigen-hs/
 
-.vim/bundle/
-.vim/.netrwhist/
-.vim/undo/
-.vim/cache/
+vim/runtime/bundle/
+vim/runtime/.netrwhist/
+vim/runtime/undo/
+vim/runtime/cache/
 
 # Procfile
 .env
