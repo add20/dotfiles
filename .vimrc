@@ -5,4 +5,4 @@ source ~/dotfiles/.vimrc.basic
 source ~/dotfiles/.vimrc.neocomplete
 " source ~/dotfiles/.vimrc.neosnippet
 source ~/dotfiles/.vimrc.plugins_setting
-source ~/dotfiles/.vimrc.vim-tex
+" source ~/dotfiles/.vimrc.vim-tex

@@ -22,3 +22,9 @@ export SBT_OPTS="-Dfile.encoding=UTF8"
 
 # OPAM configuration
 . $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+# Mono
+export MONO_GAC_PREFIX="/usr/local"
+
+# for cabal helper
+export cabal_helper_libexecdir=$HOME/Library/Haskell/libexec

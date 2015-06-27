@@ -79,12 +79,19 @@ au Syntax *.clj RainbowParenthesesLoadBraces
 " ---------------------------------
 "  Syntastic
 " ---------------------------------
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = { 'mode': 'passive',
                            \ 'active_filetypes': ['java', 'c', 'd', 'cpp', 'puppet', 'javascript', 'ocaml', 'ruby', 'rust'],
                            \ 'passive_filetypes': [] }
 let g:syntastic_ruby_checkers = ['mri', 'rubocop', 'rubylint']
-let g:syntastic_auto_loc_list = 1
-
+let g:syntastic_ocaml_checkers = ['merlin']
 " ---------------------------------
 "  vim-flake8 (python)
 " ---------------------------------
@@ -162,7 +169,7 @@ nnoremap <silent> [unite]b  :<C-u>Unite -direction=topleft buffer<CR>
 nnoremap <silent> [unite]d  :<C-u>Unite -buffer-name=files -default-action=lcd directory_mru<CR>
 nnoremap <silent> [unite]r  :<C-u>Unite -buffer-name=register register<CR>
 nnoremap <silent> [unite]o  :<C-u>Unite outline<CR>
-nnoremap <silent> [unite]t  :<C-u>Unite -direction=topleft -immediately tab<CR>
+nnoremap <silent> [unite]<TAB>  :<C-u>Unite -direction=topleft -immediately tab<CR>
 " nnoremap <silent> [unite]m  :<C-u>Unite -direction=topleft file_mru<CR>
 " nnoremap <silent> [unite]d  :<C-u>UniteWithCurrentDir -direction=topleft file<CR>
 
