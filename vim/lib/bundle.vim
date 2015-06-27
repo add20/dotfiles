@@ -76,9 +76,6 @@ NeoBundle 'nginx.vim'
 " Pandoc
 NeoBundleLazy 'vim-pandoc/vim-pandoc', {"autoload": {"filetypes": ["pandoc"]}}
 
-" Tex
-NeoBundleLazy 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex', {"autoload": {"filetypes": ["tex"]}}
-
 " Parrot
 " NeoBundle 'parrot.vim'
 
