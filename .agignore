@@ -1,0 +1,20 @@
+# VCS
+.git/
+.svn/
+.hg/
+.bzr/
+
+# Haskell
+dist/
+.cabal-sandbox/
+
+# PureScript
+node_modules/
+bower_components/
+.psci_modules/
+output/
+
+# Vim
+.vim/bundle/
+.vim/cache/
+.vim/undo/

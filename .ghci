@@ -1,2 +1,8 @@
+:set prompt "λ "
+
 :set -Wall
-:set -fno-warn-type-defaults
+:seti -fno-warn-type-defaults
+-- :seti -fno-warn-unused-do-bind
+
+:def hlint const . return $ ":! hlint \"src\""
+:def hoogle \s -> return $ ":! hoogle --count=15 \"" ++ s ++ "\""

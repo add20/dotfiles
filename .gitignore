@@ -1,4 +1,5 @@
 .DS_Store
+Icon
 *~
 *.swp
 *.swo
@@ -6,21 +7,74 @@
 *.db
 *.sqlite3
 tags
-.env
-node_modules/
 .svn/
+/,/
 
-.vim/bundle
-.vim/.netrwhist
-.vim/undo
-.vim/cache
+/zsh/antigen-hs/
+
+vim/runtime/bundle/
+vim/runtime/.netrwhist/
+vim/runtime/undo/
+vim/runtime/cache/
+
+# Procfile
+.env
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# Ruby
+.bundle/
+vendor/bundle/
+
+# Rust
+*.so
+*.rlib
+*.dll
+*.exe
+/target/
+
+# Python
+*.py[cod]
+
+# Coq
+*.glob
+*.vo
+*.v.d
+
+# Erlang
+*.beam
+
+# PureScript
+.psci
+.psci_modules/
+bower_components/
+output/
 
 # Haskell
 dist/
 *.prof
+*.hp
+*.ps
+*.aux
+.hpc/
+*.hi
+*.tix
+hpc_index*.html
+*.hs.html
+.cabal-sandbox
+cabal.sandbox.config
+hugsin
+.stack-work/
 
 # JVM
 *.class
+
+# Gradle
+.gradletasknamecache
+.gradle
+/build
 
 # sbt specific
 dist/*

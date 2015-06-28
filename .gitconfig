@@ -3,22 +3,35 @@
   email = "add20g@gmail.com"
 [core]
   excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
   autocrlf = input
-  pager = less -X -E -S
+  pager = less -FRSX
+[include]
+  path = .gitconfig.local
 [color]
   ui = auto
+[commit]
+  cleanup = strip
+[diff]
+	algorithm = histogram
 [merge]
   ff = false
+  log = true
 [branch]
   autosetuprebase = always
+[push]
+  default = simple
 [pull]
   rebase = true
 [grep]
   lineNumber = true
+[help]
+ autocorrect = -1
 [alias]
   # branch
   b  = branch
   br = branch
+  bv = branch -av
   # commit
   ci = commit -v
   # checkout
@@ -33,6 +46,9 @@
   dc = diff --cached
   ds = diff --staged
   dw = diff --no-ext-diff --color-words
+  # merge
+  mdm = !git co master && git merge --no-edit @{-1} && git br -d @{-1}
+  mdd = !git co develop && git merge --no-edit @{-1} && git br -d @{-1}
   # rebase
   rbm  = rebase --merge master
   rbd  = rebase --merge develop
@@ -42,15 +58,33 @@
   rbi3 = rebase -i HEAD^^^
   rbi4 = rebase -i HEAD^^^^
   rbi5 = rebase -i HEAD^^^^^
+  # remote
+  info = remote show origin
+  ; delete-remote-branch = !git branch -a --merged | grep -v master | grep remotes/origin| sed -e 's% *remotes/origin/%%' | xargs -I% git push origin :%
   # log
-  last = log -1 -p HEAD
-  graph = log --oneline --decorate --graph --all
+  l = log --oneline --decorate --graph --all
   # grep
   g = grep --break --heading --line-number
   # reset
   unstage = reset HEAD --
+  cancel = !git commit -a -m 'Temporary commit for cancel' && git reset --hard HEAD~
   # other
   stash-unapply = !git stash show -p | git apply -R
+[credential]
+  helper = git-credential-osxkeychain
 [tig "bind"]
   generic = g move-first-line
   generic = G move-last-line
+[browse-remote "github.com"]
+  top = https://{host}/{path}
+  ref = https://{host}/{path}/tree/{short_ref}
+  rev = https://{host}/{path}/commit/{commit}
+  file = "https://{host}/{path}/blob/{short_rev}/{file}{line && \"#L%d\" % line}"
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[ghq]
+  root = ~/src
