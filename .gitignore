@@ -10,7 +10,7 @@ tags
 .svn/
 /,/
 
-/.zsh/antigen-hs/
+/zsh/antigen-hs/
 
 vim/runtime/bundle/
 vim/runtime/.netrwhist/
