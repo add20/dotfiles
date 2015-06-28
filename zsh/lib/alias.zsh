@@ -16,6 +16,8 @@ alias gs="git st"
 alias gi="git ci"
 alias gdw="git diff --color-words"
 alias gds="git ds"
+alias gp="git push"
+alias gl="git l"
 
 # git-flow
 alias gffe="git flow feature"
