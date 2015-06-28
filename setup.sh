@@ -1,5 +1,8 @@
 #!/bin/sh
 
+sh vim/install.sh
+sh zsh/install.sh
+
 DOT_FILES=( .tmux.conf .gemrc .bundle .gitconfig .gitattribues .gitignore .agignore .inputrc .emacs .sqliterc .ghci .pandoc .stylish-haskell.yaml .hirc)
 
 for file in ${DOT_FILES[@]}
