@@ -43,6 +43,11 @@ autoload predict-on
 predict-on
 # setopt no_multios "example: % < file1 < file2"
 
+# zsh: stop backward-kill-word on directory delimiter
+# http://stackoverflow.com/questions/444951/zsh-stop-backward-kill-word-on-directory-delimiter
+autoload -U select-word-style
+select-word-style bash
+
 case "${TERM}" in
 kterm*|xterm*)
     export LSCOLORS=exfxcxdxbxegedabagacad
