@@ -16,7 +16,10 @@ fpath=(~/github.com/zsh-users/zsh-completions/src $fpath)
 autoload -U compinit
 compinit
 
-bindkey -e
+bindkey '^p' history-beginning-search-backward
+bindkey '^n' history-beginning-search-forward
+bindkey -s '^[L' "^E|less^M"
+bindkey -s '^[G' "^E| grep "
 
 setopt auto_cd
 setopt auto_pushd
@@ -39,11 +42,6 @@ zstyle ':completion:*:default' menu select=1
 autoload predict-on
 predict-on
 # setopt no_multios "example: % < file1 < file2"
-
-# zsh: stop backward-kill-word on directory delimiter
-# http://stackoverflow.com/questions/444951/zsh-stop-backward-kill-word-on-directory-delimiter
-autoload -U select-word-style
-select-word-style bash
 
 case "${TERM}" in
 kterm*|xterm*)
