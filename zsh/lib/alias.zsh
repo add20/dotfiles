@@ -12,6 +12,7 @@ alias du="du -h"
 
 # Git
 alias g="git"
+alias ga="git add"
 alias gs="git st"
 alias gi="git ci"
 alias gdw="git diff --color-words"
