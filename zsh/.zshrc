@@ -33,6 +33,8 @@ setopt extended_glob
 
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z} r:|[-_.]=**' '+m:{A-Z}={a-z}'
 zstyle ':completion:*:(processes|jobs)' menu yes select=2
+# 補完候補をインタラクティブに選択する
+zstyle ':completion:*:default' menu select=1
 
 autoload predict-on
 predict-on
