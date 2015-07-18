@@ -1,4 +1,9 @@
 " ---------------------------------
+" fast-tags
+" ---------------------------------
+au BufWritePost *.hs  silent !$ZSH_HOME/plugin/init-tags %
+au BufWritePost *.hsc silent !$ZSH_HOME/plug/init-tags %
+" ---------------------------------
 " vim-go
 " ---------------------------------
 let g:go_fmt_command = "goimports"
