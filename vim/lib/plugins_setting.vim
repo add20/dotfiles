@@ -277,10 +277,10 @@ autocmd BufWritePost *.hs GhcModCheckAsync
 " unite-haskellimport
 nnoremap <silent> <leader>hi :<C-u>UniteWithCursorWord -direction=topleft -immediately haskellimport<CR>
 " unite-tag
-autocmd BufEnter *
-\   if empty(&buftype)
-\|      nnoremap <buffer> <C-]> :<C-u>UniteWithCursorWord -immediately tag<CR>
-\|  endif
+" autocmd BufEnter *
+" \   if empty(&buftype)
+" \|      nnoremap <buffer> <C-]> :<C-u>UniteWithCursorWord -immediately tag<CR>
+" \|  endif
 " ---------------------------------
 "  stylish-haskell
 " ---------------------------------
