@@ -38,3 +38,5 @@ function peco-vim () {
 }
 zle -N peco-vim
 bindkey '^\' peco-vim
+
+alias -g P='| peco'
