@@ -6,8 +6,8 @@ execute "set rtp+=" . g:opamshare . "/merlin/vim"
 " ---------------------------------
 " fast-tags
 " ---------------------------------
-au BufWritePost *.hs  silent !$ZSH_HOME/plugin/init-tags %
-au BufWritePost *.hsc silent !$ZSH_HOME/plug/init-tags %
+" au BufWritePost *.hs  silent !$ZSH_HOME/plugin/init-tags %
+" au BufWritePost *.hsc silent !$ZSH_HOME/plug/init-tags %
 " ---------------------------------
 " vim-go
 " ---------------------------------
@@ -100,7 +100,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = { 'mode': 'passive',
                            \ 'active_filetypes': ['java', 'c', 'd', 'cpp', 'puppet', 'javascript', 'ocaml', 'ruby', 'rust'],
                            \ 'passive_filetypes': [] }
-let g:syntastic_ruby_checkers = ['mri', 'rubocop', 'rubylint']
+let g:syntastic_ruby_checkers = ['mri']
 let g:syntastic_ocaml_checkers = ['merlin']
 " ---------------------------------
 "  vim-flake8 (python)

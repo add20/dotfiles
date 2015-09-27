@@ -25,6 +25,3 @@ export SBT_OPTS="-Dfile.encoding=UTF8"
 
 # Mono
 export MONO_GAC_PREFIX="/usr/local"
-
-# for cabal helper
-# export cabal_helper_libexecdir=$HOME/Library/Haskell/libexec
