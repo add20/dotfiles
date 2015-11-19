@@ -14,6 +14,6 @@ neobundle_path=~/.vim/bundle/neobundle.vim
 if [ -d $neobundle_path ]; then
   git -C $neobundle_path pull -q
 else
-  git clone git://github.com/Shougo/neobundle.vim.git
+  git clone git://github.com/Shougo/neobundle.vim.git $neobundle_path
 fi
 vim -u ~/dotfiles/vim/lib/bundle.vim -c 'NeoBundleInstall!' -c 'q'
