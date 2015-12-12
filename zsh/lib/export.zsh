@@ -1,7 +1,18 @@
 # Don’t clear the screen after quitting a manual page
 # export MANPAGER="less -X"
 
-export LANG=ja_JP.UTF-8
+case $TERM in
+kterm*|xterm)
+    LC_CTYPE=C
+    LANG=C
+    ;;
+*)
+    LC_CTYPE=ja_JP.UTF-8
+    LANG=ja_JP.UTF-8
+    ;;
+esac
+export LC_CTYPE
+export LANG
 
 # HISTORY
 HISTCONTROL=ignoredups
