@@ -44,7 +44,7 @@ function rprompt-git-current-branch {
 # https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/mortalscumbag.zsh-theme
 function ssh_connection() {
   if [[ -n $SSH_CONNECTION ]]; then
-    echo "%{$fg_bold[red]%}(ssh) "
+    echo "%{$fg_bold[red]%}($HOST) "
   fi
 }
 
