@@ -1,6 +1,8 @@
 # Don’t clear the screen after quitting a manual page
 # export MANPAGER="less -X"
 
+export LANG=ja_JP.UTF-8
+
 # HISTORY
 HISTCONTROL=ignoredups
 # Make some commands not show up in history
