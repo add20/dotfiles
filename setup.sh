@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-sh vim/install.sh
-sh zsh/install.sh
+bash vim/install.sh
+bash zsh/install.sh
 
 DOT_FILES=( .tmux.conf .gemrc .bundle .gitconfig .gitattribues .gitignore .agignore .inputrc .emacs .sqliterc .ghci .pandoc .stylish-haskell.yaml .hirc)
 
