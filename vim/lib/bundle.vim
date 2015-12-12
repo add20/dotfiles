@@ -15,17 +15,13 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-let g:make = 'gmake'
-if system('uname -o') =~ '^GNU/'
-        let g:make = 'make'
-endif
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
 \     'windows' : 'tools\\update-dll-mingw',
 \     'cygwin' : 'make -f make_cygwin.mak',
 \     'mac' : 'make -f make_mac.mak',
 \     'linux' : 'make',
-\     'unix' : g:make,
+\     'unix' : 'gmake',
 \    },
 \ }
 
@@ -123,6 +119,9 @@ NeoBundleLazy 'elixir-lang/vim-elixir', {"autoload": { "filetypes": ["elixir"]}}
 
 " Erlang
 NeoBundleLazy 'jimenezrick/vimerl', {"autoload": { "filetypes": ["erlang"]}}
+
+" Elm
+NeoBundleLazy 'lambdatoast/elm.vim', {"autoload": { "filetypes": ["elm"]}}
 
 " Haskell
 NeoBundleLazy 'eagletmt/ghcmod-vim', {"autoload": { "filetypes": ["haskell", "lhaskell"]}}

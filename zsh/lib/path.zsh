@@ -9,6 +9,7 @@ if [[ $OSTYPE == darwin* ]]; then
   export PATH=$HOME/Library/Haskell/bin:$PATH
 fi
 
+export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.cabal/bin:$PATH
 
 ### Added by the Heroku Toolbelt
