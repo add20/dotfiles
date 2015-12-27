@@ -13,8 +13,8 @@ autoload zed
 
 fpath=(~/dotfiles/zsh/functions ${fpath})
 fpath=(~/github.com/zsh-users/zsh-completions/src $fpath)
-autoload -U compinit
-compinit
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
 
 bindkey '^p' history-beginning-search-backward
 bindkey '^n' history-beginning-search-forward
@@ -74,6 +74,7 @@ source $ZSH_HOME/plugin/enter_cmd.zsh
 source $ZSH_HOME/plugin/peco.zsh
 source $ZSH_HOME/plugin/rbenv.zsh
 source $ZSH_HOME/plugin/nvm.zsh
+source $ZSH_HOME/plugin/stack.zsh
 # source $ZSH_HOME/plugin/tmux.zsh
 # source $ZSH_HOME/plugin/texlive.zsh
 source ~/src/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
