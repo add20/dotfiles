@@ -106,7 +106,7 @@ NeoBundleLazy 'fatih/vim-go',  {"autoload": {"filetypes": ["go"]}}
 NeoBundleLazy 'tpope/vim-leiningen',  {"autoload": {"filetypes": ["clojure"]}}
 NeoBundleLazy 'tpope/vim-fireplace',  {"autoload": {"filetypes": ["clojure"]}}
 NeoBundleLazy 'guns/vim-clojure-static',  {"autoload": {"filetypes": ["clojure"]}}
-NeoBundle 'kien/rainbow_parentheses.vim'
+" NeoBundle 'kien/rainbow_parentheses.vim'
 
 " D
 NeoBundleLazy 'd.vim', {"autoload": { "filetypes": ["d"]}}

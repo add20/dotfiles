@@ -82,10 +82,10 @@ let g:vimclojure#ParenRainbow = 1
 " ---------------------------------
 "  rainbow_parentheses.vim
 " ---------------------------------
-au VimEnter *.clj RainbowParenthesesToggle
-au Syntax *.clj RainbowParenthesesRound
-au Syntax *.clj RainbowParenthesesLoadSquare
-au Syntax *.clj RainbowParenthesesLoadBraces
+" au VimEnter *.clj RainbowParenthesesToggle
+" au Syntax *.clj RainbowParenthesesRound
+" au Syntax *.clj RainbowParenthesesLoadSquare
+" au Syntax *.clj RainbowParenthesesLoadBraces
 " ---------------------------------
 "  Syntastic
 " ---------------------------------
