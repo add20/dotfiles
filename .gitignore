@@ -83,3 +83,12 @@ lib_managed/
 src_managed/
 project/boot/
 project/plugins/project/
+
+# Clojure
+.lein-deps-sum
+.lein-repl-history
+.lein-plugins/
+.lein-failures
+.nrepl-port
+.nrepl-history
+
