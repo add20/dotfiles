@@ -1,5 +1,5 @@
 if has('gui_macvim')
-  set guifont=Ricty\ Regular:h14
+  set guifont=Inconsolata\ for\ Powerline:h14
   " set antialias
 
   set imdisable

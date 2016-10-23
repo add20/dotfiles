@@ -12,8 +12,10 @@ tags
 
 /zsh/antigen-hs/
 
+vim/runtime/autoload/
+vim/runtime/plugged/
 vim/runtime/bundle/
-vim/runtime/.netrwhist/
+vim/runtime/.netrwhist
 vim/runtime/undo/
 vim/runtime/cache/
 

@@ -17,6 +17,17 @@ let g:go_fmt_command = "goimports"
 " let g:go_highlight_methods = 1
 " let g:go_highlight_structs = 1
 " ---------------------------------
+" rustfmt
+" ---------------------------------
+let g:rustfmt_autosave = 1
+let g:rustfmt_command = '$HOME/.cargo/bin/rustfmt'
+" ---------------------------------
+" vim-racer
+" ---------------------------------
+set hidden
+let g:racer_cmd = '$HOME/.cargo/bin/racer'
+let $RUST_SRC_PATH="$HOME/src/github.com/rust-lang/rust/src/"
+" ---------------------------------
 " tcomment_vim
 " ---------------------------------
 if !exists('g:tcomment_types')
@@ -144,9 +155,15 @@ try
 catch
 endtry
 " ---------------------------------
-"  vim-powerline
+"  vim-airline
 " ---------------------------------
-let g:Powerline_symbols = 'fancy'
+set t_Co=256
+set laststatus=2
+" set showtabline=2
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline_theme='dark'
+let g:airline_powerline_fonts = 1
 " ---------------------------------
 "  vim-easy-align
 " ---------------------------------
@@ -277,6 +294,7 @@ nnoremap <silent> <leader>ho :<C-u>UniteWithCursorWord -direction=topleft -immed
 nnoremap <silent> <leader>ht :<C-u>GhcModType<CR>
 nnoremap <silent> <leader>hc :<C-u>GhcModTypeClear<CR>
 nnoremap <silent> <leader>hh :<C-u>GhcModTypeInsert<CR>
+nnoremap <silent> <leader>hf :<C-u>GhcModSplitFunCase<CR>
 " ghcmod-vim (保存後に非同期でチェックをする)
 autocmd BufWritePost *.hs GhcModCheckAsync
 " unite-haskellimport

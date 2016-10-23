@@ -56,8 +56,6 @@ case "${OSTYPE}" in
 darwin*)
   alias ls="ls -G -w"
 
-  alias godoc=`brew --prefix go`/libexec/bin/godoc
-
   # Vim
   alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
   alias vim='vi'
