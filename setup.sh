@@ -3,7 +3,7 @@
 bash vim/install.sh
 bash zsh/install.sh
 
-DOT_FILES=( .tmux.conf .gemrc .bundle .gitconfig .gitattribues .gitignore .agignore .inputrc .emacs .sqliterc .ghci .pandoc .stylish-haskell.yaml .hirc)
+DOT_FILES=( .gemrc .bundle .gitconfig .gitattribues .gitignore .agignore .sqliterc .ghci )
 
 for file in ${DOT_FILES[@]}
 do
