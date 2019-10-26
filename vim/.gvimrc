@@ -9,7 +9,7 @@ if has('gui_macvim')
   set background=light
   " set background=dark
 
-  colorscheme solarized
+  " colorscheme solarized
 
   " gVim で前回終了時のウィンドウの位置とサイズを記憶する
   " http://vim-users.jp/2010/01/hack120/

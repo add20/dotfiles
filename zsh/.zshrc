@@ -69,13 +69,13 @@ source $ZSH_HOME/lib/function.zsh
 source $ZSH_HOME/lib/path.zsh
 # source $ZSH_HOME/theme/prompt.zsh
 source $ZSH_HOME/theme/add20.zsh
-source $ZSH_HOME/plugin/nix.zsh
+# source $ZSH_HOME/plugin/nix.zsh
 source $ZSH_HOME/plugin/auto_ls.zsh
 source $ZSH_HOME/plugin/enter_cmd.zsh
 source $ZSH_HOME/plugin/peco.zsh
 source $ZSH_HOME/plugin/rbenv.zsh
-source $ZSH_HOME/plugin/nvm.zsh
+# source $ZSH_HOME/plugin/nvm.zsh
 source $ZSH_HOME/plugin/stack.zsh
 # source $ZSH_HOME/plugin/tmux.zsh
 # source $ZSH_HOME/plugin/texlive.zsh
-source ~/src/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/src/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
