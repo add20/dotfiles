@@ -27,9 +27,9 @@ Plug 'junegunn/vim-easy-align'
 Plug 'tomtom/tcomment_vim'
 
 " テキストオブジェクト
-Plug 'textobj-user'
-Plug 'textobj-indent'
-Plug 'textobj-rubyblock', { 'for': 'ruby' }
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-indent'
+Plug 'nelstrom/vim-textobj-rubyblock', { 'for': 'ruby' }
 
 Plug 'vim-scripts/matchit.zip'
 
@@ -58,15 +58,15 @@ Plug 'Yggdroot/indentLine'
 " Plug 'Smooth-Scroll'
 
 " キャメルケースでの移動
-Plug 'camelcasemotion'
+Plug 'vim-scripts/camelcasemotion'
 
 " -----------------------------------------------------------------------------
 "  IDE Functionality
 " -----------------------------------------------------------------------------
 
 " syntax checker
-" Plug 'scrooloose/syntastic', { 'for': [ 'java', 'c', 'd', 'puppet', 'javascript', 'elixir', 'ruby' , 'rust', 'go', 'ocaml'] }
-Plug 'scrooloose/syntastic'
+Plug 'vim-syntastic/syntastic', { 'for': [ 'java', 'c', 'd', 'puppet', 'javascript', 'elixir', 'ruby' , 'rust', 'go', 'ocaml'] }
+" Plug 'vim-syntastic/syntastic'
 
 " status line
 Plug 'vim-airline/vim-airline'
@@ -99,11 +99,13 @@ Plug 'Shougo/neocomplete.vim'
 Plug 'thinca/vim-quickrun'
 
 " NERDTree : ツリー型エクスプローラ
-Plug 'The-NERD-tree', { 'on':  'NERDTreeToggle' }
+" Plug 'vim-scripts/The-NERD-tree', { 'on':  'NERDTreeToggle' }
+" dev version
+Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
 
 " タグリスト
-Plug 'taglist.vim'
-Plug 'Tagbar'
+Plug 'vim-scripts/taglist.vim'
+Plug 'preservim/Tagbar'
 
 " Grep
 Plug 'rking/ag.vim'
@@ -116,10 +118,10 @@ Plug 'rking/ag.vim'
 Plug 'Superbil/llvm.vim',        { 'for': 'llvm' }
 Plug 'tclem/vim-arduino',        { 'for': 'arduino' }
 Plug 'fatih/vim-go',             { 'for': 'go', 'tag': '*', 'do': ':GoInstallBinaries' }
-Plug 'd.vim',                    { 'for': 'd' }
+Plug 'JesseKPhillips/d.vim',     { 'for': 'd' }
 " Plug 'java_getset.vim',        { 'for': 'java' }
 Plug 'derekwyatt/vim-scala',     { 'for': 'scala' }
-Plug 'groovy.vim',               { 'for': ['groovy', 'gradle'] }
+Plug 'vim-scripts/groovy.vim',   { 'for': ['groovy', 'gradle'] }
 Plug 'tfnico/vim-gradle',        { 'for': 'gradle' }
 " Plug 'haruyama/scheme.vim',    { 'for': 'scheme' }
 " Plug 'aharisu/vim_goshrepl',   { 'for': 'gauche' }
@@ -146,7 +148,7 @@ Plug 'dag/vim2hs',                  { 'for': ['haskell', 'lhaskell'] }
 
 " Python
 Plug 'nvie/vim-flake8' , { 'for': 'python' }
-Plug 'indentpython.vim', { 'for': 'python' }
+Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
 
 Plug 'vim-perl/vim-perl', { 'for': 'perl' }
 
@@ -159,9 +161,9 @@ Plug 'vim-ruby/vim-ruby',       { 'for': 'ruby' }
 " Plug 'taichouchou2/vim-rsense', { 'for': 'ruby' }
 " Plug 'tpope/vim-rails',         { 'for': 'ruby' }
 
-Plug 'nginx.vim'
+Plug 'vim-scripts/nginx.vim'
 Plug 'vim-pandoc/vim-pandoc', { 'for': 'pandoc' }
-Plug 'Puppet-Syntax-Highlighting', { 'for': 'puppet' }
+Plug 'vim-scripts/Puppet-Syntax-Highlighting', { 'for': 'puppet' }
 
 " Template Engine
 Plug 'slim-template/vim-slim',           { 'for': 'slim' }
@@ -171,9 +173,9 @@ Plug 'mustache/vim-mustache-handlebars', { 'for': 'mustache' }
 
 " Configuration format
 Plug 'cespare/vim-toml', { 'for': 'toml' }
-Plug 'JSON.vim',         { 'for': 'json' }
+Plug 'vim-scripts/JSON.vim', { 'for': 'json' }
 Plug 'avakhov/vim-yaml', { 'for': 'yaml' }
-Plug 'yaml.vim',         { 'for': 'yaml' }
+Plug 'vim-scripts/yaml.vim', { 'for': 'yaml' }
 
 " Smooth-Scrollと相性が悪い(<C-B>,  <C-U>が効かなくなる)
 " Plug 'mattn/zencoding-vim', { 'for': 'html' }
