@@ -148,7 +148,9 @@ syntax enable
 if has('gui_running')
   set background=light
 else
-  set background=dark
+  let g:solarized_termcolors = 256
+  " set background=dark
+  set background=light
 endif
 try
   colorscheme solarized
