@@ -6,6 +6,8 @@
   attributesfile = ~/.gitattributes
   autocrlf = input
   pager = less -FRSX
+[init]
+  defaultBranch = main
 [include]
   path = .gitconfig.local
 [color]
@@ -47,7 +49,7 @@
   ds = diff --staged
   dw = diff --no-ext-diff --color-words
   # merge
-  mdm = !git co master && git merge --no-edit @{-1} && git br -d @{-1}
+  mdm = !git co main && git merge --no-edit @{-1} && git br -d @{-1}
   mdd = !git co develop && git merge --no-edit @{-1} && git br -d @{-1}
   # rebase
   rbm  = rebase --merge master
@@ -82,7 +84,7 @@
   file = "https://{host}/{path}/blob/{short_rev}/{file}{line && \"#L%d\" % line}"
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true

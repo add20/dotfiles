@@ -74,7 +74,8 @@ source $ZSH_HOME/plugin/auto_ls.zsh
 source $ZSH_HOME/plugin/enter_cmd.zsh
 source $ZSH_HOME/plugin/peco.zsh
 source $ZSH_HOME/plugin/rbenv.zsh
-# source $ZSH_HOME/plugin/nvm.zsh
+source $ZSH_HOME/plugin/ruby-build.zsh
+source $ZSH_HOME/plugin/nvm.zsh
 source $ZSH_HOME/plugin/stack.zsh
 # source $ZSH_HOME/plugin/tmux.zsh
 # source $ZSH_HOME/plugin/texlive.zsh

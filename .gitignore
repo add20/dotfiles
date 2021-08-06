@@ -1,5 +1,6 @@
 .DS_Store
-Icon
+Icon
+
 *~
 *.swp
 *.swo
@@ -13,6 +14,7 @@ tags
 /zsh/antigen-hs/
 
 vim/runtime/autoload/
+vim/runtime/pack/
 vim/runtime/plugged/
 vim/runtime/bundle/
 vim/runtime/.netrwhist

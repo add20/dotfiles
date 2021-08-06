@@ -59,7 +59,7 @@ darwin*)
   # Vim
   alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
   alias vim='vi'
-  alias mvim='/Applications/MacVim.app/Contents/MacOS/mvim'
+  alias mvim='/Applications/MacVim.app/Contents/bin/mvim'
   alias mvimdiff='/Applications/MacVim.app/Contents/MacOS/mvimdiff'
   # alias ctags='/Applications/MacVim.app/Contents/MacOS/ctags "$@"'
 
