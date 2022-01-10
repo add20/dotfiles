@@ -21,6 +21,9 @@ vim/runtime/.netrwhist
 vim/runtime/undo/
 vim/runtime/cache/
 
+# Visual Studio Code
+.vscode/
+
 # Procfile
 .env
 

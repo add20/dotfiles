@@ -12,7 +12,7 @@ setopt hist_no_store              # histroyコマンドは記録しない
 autoload zed
 
 fpath=(~/dotfiles/zsh/functions ${fpath})
-fpath=(~/github.com/zsh-users/zsh-completions/src $fpath)
+fpath=(~/src/github.com/zsh-users/zsh-completions/src $fpath)
 autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 

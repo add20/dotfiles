@@ -2,11 +2,17 @@
 
 ln -sf ~/dotfiles/zsh/.zshrc ~/.zshrc
 
-lib_path=~/src/github.com/zsh-users/zsh-syntax-highlighting
-if [ -d $lib_path ]; then
-  git -C $lib_path pull -q
-else
-  mkdir -p ~/src/github.com/zsh-users
-  git clone -q https://github.com/zsh-users/zsh-syntax-highlighting.git $lib_path
-fi
-
+mkdir -p ~/src/github.com/zsh-users
+DIRS=( github.com/zsh-users/{zsh-syntax-highlighting,zsh-completions} )
+for DIR in ${DIRS[@]}
+do
+  # You shouldn't use '~'. You must use '$HOME'.
+  # https://stackoverflow.com/questions/973093/strange-error-checking-if-directory-exists-with-bash-script
+  LIB="$HOME/src/$DIR"
+  URL="https://$DIR.git"
+  if [ -d $LIB ]; then
+    git -C $LIB pull -q
+  else
+    git clone -q $URL $LIB
+  fi
+done
