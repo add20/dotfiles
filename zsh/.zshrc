@@ -79,6 +79,7 @@ source $ZSH_HOME/plugin/nvm.zsh
 source $ZSH_HOME/plugin/ghcup.zsh
 source $ZSH_HOME/plugin/stack.zsh
 source $ZSH_HOME/plugin/rust.zsh
+source $ZSH_HOME/plugin/juliaup.zsh
 source $ZSH_HOME/plugin/coursier.zsh
 # source $ZSH_HOME/plugin/tmux.zsh
 # source $ZSH_HOME/plugin/texlive.zsh
