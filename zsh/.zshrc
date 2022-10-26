@@ -82,6 +82,7 @@ source $ZSH_HOME/plugin/rust.zsh
 source $ZSH_HOME/plugin/juliaup.zsh
 source $ZSH_HOME/plugin/pyenv.zsh
 source $ZSH_HOME/plugin/coursier.zsh
+source $ZSH_HOME/plugin/goenv.zsh
 # source $ZSH_HOME/plugin/tmux.zsh
 # source $ZSH_HOME/plugin/texlive.zsh
 # source ~/src/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
