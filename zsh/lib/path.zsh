@@ -1,4 +1,5 @@
-export GOPATH=$HOME
+# goenvでGOPATHが設定される
+# export GOPATH=$HOME
 
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
