@@ -23,6 +23,7 @@ vim/runtime/cache/
 
 # Visual Studio Code
 .vscode/
+.lsp/
 
 # Procfile
 .env
@@ -98,4 +99,5 @@ project/plugins/project/
 .lein-failures
 .nrepl-port
 .nrepl-history
-
+.calva/
+.clj-kondo/
