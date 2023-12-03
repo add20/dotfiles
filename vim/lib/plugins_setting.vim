@@ -285,27 +285,27 @@ endif
 " ---------------------------------
 "  Unite plugins
 " ---------------------------------
-cnoremap UO Unite outline<Enter>
-nnoremap <silent> [unite]o :<C-u>Unite -no-split outline<CR>
-cnoremap UH Unite help<Enter>
-nnoremap <silent> [unite]h :<C-u>Unite -no-split help<CR>
-" unite-haddock
-nnoremap <silent> <leader>ha :<C-u>UniteWithCursorWord -direction=topleft -immediately haddock<CR>
-" ghcmod-vim
-nnoremap <silent> <leader>ho :<C-u>UniteWithCursorWord -direction=topleft -immediately hoogle<CR>
-nnoremap <silent> <leader>ht :<C-u>GhcModType<CR>
-nnoremap <silent> <leader>hc :<C-u>GhcModTypeClear<CR>
-nnoremap <silent> <leader>hh :<C-u>GhcModTypeInsert<CR>
-nnoremap <silent> <leader>hf :<C-u>GhcModSplitFunCase<CR>
-" ghcmod-vim (保存後に非同期でチェックをする)
-autocmd BufWritePost *.hs GhcModCheckAsync
-" unite-haskellimport
-nnoremap <silent> <leader>hi :<C-u>UniteWithCursorWord -direction=topleft -immediately haskellimport<CR>
-" unite-tag
-" autocmd BufEnter *
-" \   if empty(&buftype)
-" \|      nnoremap <buffer> <C-]> :<C-u>UniteWithCursorWord -immediately tag<CR>
-" \|  endif
+" cnoremap UO Unite outline<Enter>
+" nnoremap <silent> [unite]o :<C-u>Unite -no-split outline<CR>
+" cnoremap UH Unite help<Enter>
+" nnoremap <silent> [unite]h :<C-u>Unite -no-split help<CR>
+" " unite-haddock
+" nnoremap <silent> <leader>ha :<C-u>UniteWithCursorWord -direction=topleft -immediately haddock<CR>
+" " ghcmod-vim
+" nnoremap <silent> <leader>ho :<C-u>UniteWithCursorWord -direction=topleft -immediately hoogle<CR>
+" nnoremap <silent> <leader>ht :<C-u>GhcModType<CR>
+" nnoremap <silent> <leader>hc :<C-u>GhcModTypeClear<CR>
+" nnoremap <silent> <leader>hh :<C-u>GhcModTypeInsert<CR>
+" nnoremap <silent> <leader>hf :<C-u>GhcModSplitFunCase<CR>
+" " ghcmod-vim (保存後に非同期でチェックをする)
+" autocmd BufWritePost *.hs GhcModCheckAsync
+" " unite-haskellimport
+" nnoremap <silent> <leader>hi :<C-u>UniteWithCursorWord -direction=topleft -immediately haskellimport<CR>
+" " unite-tag
+" " autocmd BufEnter *
+" " \   if empty(&buftype)
+" " \|      nnoremap <buffer> <C-]> :<C-u>UniteWithCursorWord -immediately tag<CR>
+" " \|  endif
 " ---------------------------------
 "  stylish-haskell
 " ---------------------------------

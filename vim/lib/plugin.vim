@@ -8,7 +8,7 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+" Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 " -----------------------------------------------------------------------------
 "  Extent Vim Operation
@@ -64,8 +64,14 @@ Plug 'vim-scripts/camelcasemotion'
 "  IDE Functionality
 " -----------------------------------------------------------------------------
 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh'
+    \ }
+
 " syntax checker
-Plug 'vim-syntastic/syntastic', { 'for': [ 'java', 'c', 'd', 'puppet', 'javascript', 'elixir', 'ruby' , 'rust', 'go', 'ocaml'] }
+" Plug 'vim-syntastic/syntastic', { 'for': [ 'java', 'c', 'd', 'puppet', 'javascript', 'elixir', 'ruby' , 'rust', 'go', 'ocaml'] }
 " Plug 'vim-syntastic/syntastic'
 
 " status line
@@ -79,16 +85,16 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 " Unite
-Plug 'Shougo/unite.vim'
-Plug 'Shougo/neomru.vim'
-Plug 'Shougo/unite-outline'
-Plug 'tsukkee/unite-help'
-Plug 'tsukkee/unite-tag'
+" Plug 'Shougo/unite.vim'
+" Plug 'Shougo/neomru.vim'
+" Plug 'Shougo/unite-outline'
+" Plug 'tsukkee/unite-help'
+" Plug 'tsukkee/unite-tag'
 
 " ctrlp (ファイル検索)
 Plug 'kien/ctrlp.vim'
 
-Plug 'Shougo/neocomplete.vim'
+" Plug 'Shougo/neocomplete.vim'
 
 " snippet
 " Plug 'Shougo/neosnippet.vim'
@@ -140,10 +146,10 @@ Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
 " Plug 'kien/rainbow_parentheses.vim'
 
 " Haskell
-Plug 'eagletmt/ghcmod-vim',         { 'for': ['haskell', 'lhaskell'] }
-Plug 'eagletmt/unite-haddock',      { 'for': ['haskell', 'lhaskell'] }
-Plug 'ujihisa/neco-ghc',            { 'for': ['haskell', 'lhaskell'] }
-Plug 'ujihisa/unite-haskellimport', { 'for': ['haskell', 'lhaskell'] }
+" Plug 'eagletmt/ghcmod-vim',         { 'for': ['haskell', 'lhaskell'] }
+" Plug 'eagletmt/unite-haddock',      { 'for': ['haskell', 'lhaskell'] }
+" Plug 'ujihisa/neco-ghc',            { 'for': ['haskell', 'lhaskell'] }
+" Plug 'ujihisa/unite-haskellimport', { 'for': ['haskell', 'lhaskell'] }
 Plug 'dag/vim2hs',                  { 'for': ['haskell', 'lhaskell'] }
 
 " Python

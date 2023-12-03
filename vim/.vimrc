@@ -4,6 +4,7 @@ source ~/dotfiles/vim/lib/base.vim
 " source ~/dotfiles/vim/lib/neocomplete.vim
 " source ~/dotfiles/vim/lib/neosnippet.vim
 source ~/dotfiles/vim/lib/plugins_setting.vim
+source ~/dotfiles/vim/lib/coc.vim
 
 " for Windows
 set runtimepath+=$HOME/.vim,$HOME/.vim/after
