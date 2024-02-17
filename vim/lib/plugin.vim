@@ -167,6 +167,12 @@ Plug 'vim-ruby/vim-ruby',       { 'for': 'ruby' }
 " Plug 'taichouchou2/vim-rsense', { 'for': 'ruby' }
 " Plug 'tpope/vim-rails',         { 'for': 'ruby' }
 
+" F#
+Plug 'fsharp/vim-fsharp', {
+      \ 'for': 'fsharp',
+      \ 'do':  'make fsautocomplete',
+      \}
+
 Plug 'vim-scripts/nginx.vim'
 Plug 'vim-pandoc/vim-pandoc', { 'for': 'pandoc' }
 Plug 'vim-scripts/Puppet-Syntax-Highlighting', { 'for': 'puppet' }
