@@ -1,1 +1,1 @@
-[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
+export PATH="$HOME/.ghcup/bin:$PATH"
