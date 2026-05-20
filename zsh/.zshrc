@@ -68,7 +68,8 @@ source $ZSH_HOME/lib/export.zsh
 source $ZSH_HOME/lib/function.zsh
 source $ZSH_HOME/lib/path.zsh
 # source $ZSH_HOME/theme/prompt.zsh
-source $ZSH_HOME/theme/add20.zsh
+# source $ZSH_HOME/theme/add20.zsh
+source $ZSH_HOME/theme/starship.zsh
 source $ZSH_HOME/plugin/homebrew.zsh
 # source $ZSH_HOME/plugin/nix.zsh
 source $ZSH_HOME/plugin/auto_ls.zsh
