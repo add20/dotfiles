@@ -14,6 +14,9 @@ function do_enter() {
         echo -e "\e[0;33m--- git status ---\e[0m"
         git status -sb
     fi
+    # for Starship prompt double newline.
+    echo
+    echo
     zle reset-prompt
     return 0
 }
