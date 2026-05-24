@@ -71,6 +71,7 @@ source $ZSH_HOME/lib/path.zsh
 # source $ZSH_HOME/theme/add20.zsh
 source $ZSH_HOME/theme/starship.zsh
 source $ZSH_HOME/plugin/homebrew.zsh
+source $ZSH_HOME/plugin/port.zsh
 # source $ZSH_HOME/plugin/nix.zsh
 source $ZSH_HOME/plugin/auto_ls.zsh
 source $ZSH_HOME/plugin/enter_cmd.zsh
