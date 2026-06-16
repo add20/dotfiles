@@ -16,3 +16,5 @@ for file in ${CONFIG_FILES[@]}
 do
     ln -s "$HOME/dotfiles/$file" "$HOME/.config/$file"
 done
+
+ln -s "$HOME/dotfiles/.claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
